@@ -1,0 +1,1 @@
+必须pom.xml配置jar，必须application.properties配置连接数据库，再测试

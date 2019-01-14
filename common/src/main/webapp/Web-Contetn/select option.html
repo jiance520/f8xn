@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>select option</title>
+</head>
+<body>
+<script>
+    function func_suc_getXmlProvice(xml) {
+        //jquery的查找功能
+        var sheng = $(xml).find("prov");
+
+        //jquery的遍历与查询匹配 eq功能,并将其放到下拉框中
+        sheng.each(function(i) {
+            province.append("<option value=" + i + ">"
+                + sheng.eq(i).attr("text") + "</option>");
+        });
+    }
+</script>
+</body>
+</html>

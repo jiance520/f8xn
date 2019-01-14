@@ -1,0 +1,1 @@
+java -jar D:\workspace\idea\f8xn\userAndPwd\src\main\resources\templates\mybatisGenerator-mysql\mybatis-generator-core-1.3.2.jar -configfile D:\workspace\idea\f8xn\userAndPwd\src\main\resources\templates\mybatisGenerator-mysql\generator.xml -overwrite

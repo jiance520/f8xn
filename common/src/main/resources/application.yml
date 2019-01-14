@@ -1,0 +1,11 @@
+#application.yml我的配置如下：
+
+spring:
+mvc:
+static-path-pattern: /**
+resources:
+static-locations: classpath:/static/
+thymeleaf:
+prefix: classpath:/templates/
+suffix: .html
+cache: false #关闭缓存
