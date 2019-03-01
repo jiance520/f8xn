@@ -51,6 +51,7 @@
     <%--vue引用的css、js文件--%>
     <script type="text/javascript" src="vue/vue.js" ></script>
     <script type="text/javascript" src="vue/axios.js" ></script>
+    <script type="text/javascript" src="vue/vue-resource.js" ></script>
     <%--&lt;%&ndash;二维码引用的js&ndash;%&gt;--%>
     <script type="text/javascript" src="js/qrcode/jquery.qrcode.js" ></script>
     <script type="text/javascript" src="js/qrcode/qrcode.js" ></script> 
