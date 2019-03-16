@@ -1,4 +1,2 @@
 2019-03-04 20:16:51 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655) DruidDataSource.java INFO {dataSource-1} inited
 2019-03-04 20:16:52 com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1370) DruidDataSource.java INFO {dataSource-1} closed
-2019-03-16 14:21:50 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655) DruidDataSource.java INFO {dataSource-1} inited
-2019-03-16 14:21:53 com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1370) DruidDataSource.java INFO {dataSource-1} closed

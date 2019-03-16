@@ -27,7 +27,7 @@
             <property name="trimStrings" value="true" />  
        </javaModelGenerator>
        <!-- 生成mapper.xml文件位置 -->
-       <sqlMapGenerator targetPackage="resources.mapper"  targetProject="D:\workspace\idea\f8xn\userAndPwd\src\main">
+       <sqlMapGenerator targetPackage="resources.mapper"  targetProject="D:\workspace\idea\f8xn\userAndPwd\src\main\java">
             <property name="enableSubPackages" value="false" />  
         </sqlMapGenerator>
        <!--自动 生成mapper.xml对应client，也就是接口dao -->
