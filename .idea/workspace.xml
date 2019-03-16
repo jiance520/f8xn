@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a3d1cd8e-b6a3-473c-89a8-c9020d33a902" name="Default" comment="2019.3.16">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_jasper_8_5_29.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_5_29.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_ecj_3_12_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_jobs_2_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_0_1_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_1_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_1_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/account_lib.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/account.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/src/main/java/com/App.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/src/main/java/f8xn/App.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/src/main/java/f8xn/SpringBootStartApplication.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/src/main/java/f8xn/dao/UserMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/src/main/java/f8xn/entity/User.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/src/main/java/f8xn/shiro/Kaptcha/KaptchaConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/src/main/java/f8xn/shiro/Kaptcha/KaptchaController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/src/main/java/f8xn/shiro/action/MainController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/src/main/java/f8xn/shiro/action/ProductController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/src/main/java/f8xn/shiro/action/UserController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/src/main/java/f8xn/shiro/config/ShiroConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/src/main/java/f8xn/shiro/dao/UserMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/src/main/java/f8xn/shiro/entity/User.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/src/main/java/f8xn/shiro/filter/UserFormAuthenticationFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/src/main/java/f8xn/shiro/realm/MyRealm.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/src/main/java/f8xn/shiro/service/UserService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/src/main/java/f8xn/shiro/service/impl/UserServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/src/test/java/f8xn/test/TestBean.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/account/src/test/java/f8xn/test/UserMapperTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/baseutil/src/main/java/f8xn/action/UploadController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/baseutil/src/main/java/f8xn/interceptor/MyConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/baseutil/src/main/java/f8xn/interceptor/TestInterceptor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/baseutil/src/main/java/f8xn/interceptor/Token.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/baseutil/src/main/java/f8xn/interceptor/TokenInterceptor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/baseutil/src/main/java/f8xn/triggerListener/MyTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/baseutil/src/main/java/f8xn/triggerListener/QuartzConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/baseutil/src/main/java/f8xn/triggerListener/TriggerListenerLogMonitor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/baseutil/src/main/java/f8xn/util/DelRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/baseutil/src/main/java/f8xn/util/JdbcUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/baseutil/src/main/java/f8xn/util/MyBatisUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/baseutil/src/main/java/f8xn/util/MyIOReplace.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/baseutil/src/main/java/f8xn/util/MyUtilService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/baseutil/src/main/java/f8xn/util/MyUtilTable.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/baseutil/src/main/java/f8xn/util/PoiUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/baseutil/src/main/java/f8xn/util/UserPasswordUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/common.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/com/SpringBootStartApplication.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/QRCode/QRCodeController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/QRCode/QRCodeUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/SMSCode/SMSCode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/SMSCode/VeryCodeController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/action/ApplicationListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/action/CodeFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/action/SessionFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/action/ValidateController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/actionmy/IndexController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/actionservlet/CheckCodeServlet.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/actionservlet/ImageServlet.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/alipay/config/AccountsServlet.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/alipay/config/AlipayConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/baidu/ueditor/ActionEnter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/baidu/ueditor/ConfigManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/baidu/ueditor/Encoder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/baidu/ueditor/PathFormat.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/baidu/ueditor/define/ActionMap.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/baidu/ueditor/define/ActionState.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/baidu/ueditor/define/AppInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/baidu/ueditor/define/BaseState.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/baidu/ueditor/define/FileType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/baidu/ueditor/define/MIMEType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/baidu/ueditor/define/MultiState.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/baidu/ueditor/define/State.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/baidu/ueditor/hunter/FileManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/baidu/ueditor/hunter/ImageHunter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/baidu/ueditor/upload/Base64Uploader.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/baidu/ueditor/upload/BinaryUploader.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/baidu/ueditor/upload/StorageManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/baidu/ueditor/upload/Uploader.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/redis/action/BootController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/redis/config/RedisConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/redis/entity/Goods.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/redis/utils/RedisClient.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/redis/utils/SerializeUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/sql/sql.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/test/Mytest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/main/java/f8xn/test/uu.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/src/test/java/com/test/TestBean.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wenjia/src/main/java/f8xn/App.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wenjia/src/main/java/f8xn/SpringBootStartApplication.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wenjia/src/test/java/f8xn/test/TestBean.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wenjia/wenjia.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/account_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/account_war.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/account_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/account_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/wenjia_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/wenjia_war.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/wenjia_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/wenjia_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_9.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_9.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_31.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_31.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alipay_sdk_alipay_sdk_java_3_4_27_ALL.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alipay_sdk_alipay_sdk_java_3_4_27_ALL.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_penggle_kaptcha_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_penggle_kaptcha_2_3_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_theborakompanioni_thymeleaf_extras_shiro_2_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_theborakompanioni_thymeleaf_extras_shiro_2_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_04.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_04.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_core_3_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_core_3_1_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_javase_3_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_javase_3_1_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jhlabs_filters_2_0_235_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jhlabs_filters_2_0_235_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_0_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_0_3_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_23_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_23_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_23_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_23_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_23_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_23_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_23_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_23_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_23_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_23_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_23_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_23_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_1_6_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_1_6_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_expression_processor_1_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_expression_processor_1_1_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_2_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_2_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_1_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_1_12.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_5_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_5_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_17.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_17.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_17.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_17.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_17.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_17.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_cache_1_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_cache_1_4_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_core_1_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_core_1_4_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_ogdl_1_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_ogdl_1_4_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_4_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_cipher_1_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_cipher_1_4_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_core_1_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_core_1_4_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_hash_1_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_hash_1_4_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_event_1_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_event_1_4_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_lang_1_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_lang_1_4_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_4_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_4_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_29.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_29.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_29.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_29.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_29.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_29.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_4_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_15.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_15.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_9_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_9_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20180813.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20180813.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_jobs_2_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_jobs_2_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_0_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_0_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_0_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_0_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_6_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_6_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_0_6_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_0_6_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_0_6_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_0_6_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_5_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_5_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_5_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_0_5_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_5_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_5_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_5_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_5_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_0_5_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_5_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_5_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_5_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_5_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_9_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_9_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_9_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_9_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_5_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/log4j.log" afterPath="$PROJECT_DIR$/account/log4j.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/logs.log" afterPath="$PROJECT_DIR$/account/logs.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/pom.xml" afterPath="$PROJECT_DIR$/account/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/account/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/account/src/main/resources/application.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/account/src/main/resources/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/resources/logback-spring.xml" afterPath="$PROJECT_DIR$/account/src/main/resources/logback-spring.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/resources/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/account/src/main/resources/mapper/UserMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/account/src/main/resources/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/resources/templates/login.html" afterPath="$PROJECT_DIR$/account/src/main/resources/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/resources/templates/product/add.html" afterPath="$PROJECT_DIR$/account/src/main/resources/templates/product/add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/resources/templates/product/list.html" afterPath="$PROJECT_DIR$/account/src/main/resources/templates/product/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/resources/templates/product/update.html" afterPath="$PROJECT_DIR$/account/src/main/resources/templates/product/update.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/resources/templates/unauth.html" afterPath="$PROJECT_DIR$/account/src/main/resources/templates/unauth.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/account/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/webapp/js/adddate.js" afterPath="$PROJECT_DIR$/account/src/main/webapp/js/adddate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/webapp/js/jquery-1.12.4.js" afterPath="$PROJECT_DIR$/account/src/main/webapp/js/jquery-1.12.4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/webapp/js/jquery-1.12.4.min.js" afterPath="$PROJECT_DIR$/account/src/main/webapp/js/jquery-1.12.4.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/webapp/js/npm.js" afterPath="$PROJECT_DIR$/account/src/main/webapp/js/npm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/webapp/js/qrcode/jquery.qrcode.js" afterPath="$PROJECT_DIR$/account/src/main/webapp/js/qrcode/jquery.qrcode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/webapp/js/qrcode/qrcode.js" afterPath="$PROJECT_DIR$/account/src/main/webapp/js/qrcode/qrcode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/webapp/js/qrcode/utf.js" afterPath="$PROJECT_DIR$/account/src/main/webapp/js/qrcode/utf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/webapp/login.html" afterPath="$PROJECT_DIR$/account/src/main/webapp/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/webapp/vue/font/fontello.svg" afterPath="$PROJECT_DIR$/account/src/main/webapp/vue/font/fontello.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/webapp/vue/vue-router.js" afterPath="$PROJECT_DIR$/account/src/main/webapp/vue/vue-router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/webapp/vue/vue.js" afterPath="$PROJECT_DIR$/account/src/main/webapp/vue/vue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/src/main/webapp/vue/vuex.js" afterPath="$PROJECT_DIR$/account/src/main/webapp/vue/vuex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/log4j.log" afterPath="$PROJECT_DIR$/common/log4j.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/logs.log" afterPath="$PROJECT_DIR$/common/logs.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/pom.xml" afterPath="$PROJECT_DIR$/common/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/common/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/common/src/main/resources/application.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/bak_data/mongoDB/action/BootController.java" afterPath="$PROJECT_DIR$/common/src/main/resources/bak_data/mongoDB/action/BootController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/bak_data/mongoDB/dao/BaseDAO.java" afterPath="$PROJECT_DIR$/common/src/main/resources/bak_data/mongoDB/dao/BaseDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/bak_data/mongoDB/dao/BaseDAOImpl.java" afterPath="$PROJECT_DIR$/common/src/main/resources/bak_data/mongoDB/dao/BaseDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/bak_data/mongoDB/entity/Person.java" afterPath="$PROJECT_DIR$/common/src/main/resources/bak_data/mongoDB/entity/Person.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/bak_data/mongoDB/service/BaseService.java" afterPath="$PROJECT_DIR$/common/src/main/resources/bak_data/mongoDB/service/BaseService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/bak_data/mongoDB/service/impl/BaseServiceImpl.java" afterPath="$PROJECT_DIR$/common/src/main/resources/bak_data/mongoDB/service/impl/BaseServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/bak_data/mongoDB/utils/BeanUtil.java" afterPath="$PROJECT_DIR$/common/src/main/resources/bak_data/mongoDB/utils/BeanUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/bak_data/mongoDB/utils/MongoDBUtil.java" afterPath="$PROJECT_DIR$/common/src/main/resources/bak_data/mongoDB/utils/MongoDBUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/bak_data/mybatisGenerator-mysql/generator.xml" afterPath="$PROJECT_DIR$/common/src/main/resources/bak_data/mybatisGenerator-mysql/generator.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/bak_data/mybatisGenerator-mysql/generator.xml.bak" afterPath="$PROJECT_DIR$/common/src/main/resources/bak_data/mybatisGenerator-mysql/generator.xml.bak" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/bak_data/mybatisGenerator-mysql/mybatis-3-config.dtd" afterPath="$PROJECT_DIR$/common/src/main/resources/bak_data/mybatisGenerator-mysql/mybatis-3-config.dtd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/bak_data/mybatisGenerator-mysql/mybatis-3-mapper.dtd" afterPath="$PROJECT_DIR$/common/src/main/resources/bak_data/mybatisGenerator-mysql/mybatis-3-mapper.dtd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/bak_data/原始文件web.xml" afterPath="$PROJECT_DIR$/common/src/main/resources/bak_data/原始文件web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/bak_data/备份server.xml" afterPath="$PROJECT_DIR$/common/src/main/resources/bak_data/备份server.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/common/src/main/resources/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/logback-spring.xml" afterPath="$PROJECT_DIR$/common/src/main/resources/logback-spring.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/shiro.ini" afterPath="$PROJECT_DIR$/common/src/main/resources/shiro.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/static/redis-test.html" afterPath="$PROJECT_DIR$/common/src/main/resources/static/redis-test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/static/success.html" afterPath="$PROJECT_DIR$/common/src/main/resources/static/success.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/common/src/main/resources/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/SMS-test.jsp" afterPath="$PROJECT_DIR$/common/src/main/webapp/SMS-test.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/common/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/Web-Contetn/jquery-1.8.3.min.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/Web-Contetn/jquery-1.8.3.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/Web-Contetn/province_city.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/Web-Contetn/province_city.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/Web-Contetn/province_city_select.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/Web-Contetn/province_city_select.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/Web-Contetn/province_city_select_Info.xml" afterPath="$PROJECT_DIR$/common/src/main/webapp/Web-Contetn/province_city_select_Info.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/Web-Contetn/select option.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/Web-Contetn/select option.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/alipay.jsp" afterPath="$PROJECT_DIR$/common/src/main/webapp/alipay.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/alipay.trade.close.jsp" afterPath="$PROJECT_DIR$/common/src/main/webapp/alipay.trade.close.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/alipay.trade.fastpay.refund.query.jsp" afterPath="$PROJECT_DIR$/common/src/main/webapp/alipay.trade.fastpay.refund.query.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/alipay.trade.page.pay.jsp" afterPath="$PROJECT_DIR$/common/src/main/webapp/alipay.trade.page.pay.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/alipay.trade.query.jsp" afterPath="$PROJECT_DIR$/common/src/main/webapp/alipay.trade.query.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/alipay.trade.refund.jsp" afterPath="$PROJECT_DIR$/common/src/main/webapp/alipay.trade.refund.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/bootstrap/bootstrap-theme.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/bootstrap/bootstrap-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/bootstrap/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/bootstrap/bootstrap-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/bootstrap/bootstrap.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/bootstrap/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/bootstrap/bootstrap.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/bootstrap/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/bootstrap/bootstrap.min.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/bootstrap/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/bootstrap/demo.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/bootstrap/demo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/bootstrap/signin.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/bootstrap/signin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/datagrid-detailview.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/datagrid-detailview.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/easyloader.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/easyloader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/easyui-lang-zh_CN.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/easyui-lang-zh_CN.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/jquery.easyui.min.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/jquery.easyui.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/accordion.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/accordion.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/calendar.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/calendar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/combo.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/combo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/combobox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/combobox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/datagrid.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/datagrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/datebox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/datebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/dialog.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/dialog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/easyui.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/easyui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/filebox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/filebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/layout.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/linkbutton.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/linkbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/menu.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/menu.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/menubutton.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/menubutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/messager.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/messager.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/numberbox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/numberbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/pagination.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/pagination.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/panel.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/panel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/progressbar.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/progressbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/propertygrid.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/propertygrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/searchbox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/searchbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/slider.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/spinner.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/spinner.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/splitbutton.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/splitbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/tabs.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/tabs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/textbox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/textbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/tooltip.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/tooltip.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/tree.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/tree.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/validatebox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/validatebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/window.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/black/window.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/accordion.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/accordion.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/calendar.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/calendar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/combo.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/combo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/combobox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/combobox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/datagrid.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/datagrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/datebox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/datebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/dialog.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/dialog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/easyui.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/easyui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/filebox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/filebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/layout.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/linkbutton.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/linkbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/menu.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/menu.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/menubutton.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/menubutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/messager.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/messager.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/numberbox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/numberbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/pagination.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/pagination.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/panel.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/panel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/progressbar.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/progressbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/propertygrid.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/propertygrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/searchbox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/searchbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/slider.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/spinner.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/spinner.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/splitbutton.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/splitbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/tabs.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/tabs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/textbox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/textbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/tooltip.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/tooltip.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/tree.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/tree.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/validatebox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/validatebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/window.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/bootstrap/window.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/color.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/color.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/accordion.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/accordion.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/calendar.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/calendar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/combo.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/combo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/combobox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/combobox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/datagrid.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/datagrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/datebox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/datebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/dialog.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/dialog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/easyui.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/easyui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/filebox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/filebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/layout.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/linkbutton.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/linkbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/menu.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/menu.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/menubutton.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/menubutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/messager.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/messager.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/numberbox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/numberbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/pagination.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/pagination.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/panel.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/panel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/progressbar.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/progressbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/propertygrid.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/propertygrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/searchbox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/searchbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/slider.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/spinner.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/spinner.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/splitbutton.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/splitbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/tabs.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/tabs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/textbox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/textbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/tooltip.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/tooltip.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/tree.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/tree.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/validatebox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/validatebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/window.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/default/window.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/accordion.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/accordion.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/calendar.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/calendar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/combo.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/combo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/combobox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/combobox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/datagrid.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/datagrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/datebox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/datebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/dialog.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/dialog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/easyui.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/easyui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/filebox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/filebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/layout.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/linkbutton.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/linkbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/menu.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/menu.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/menubutton.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/menubutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/messager.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/messager.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/numberbox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/numberbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/pagination.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/pagination.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/panel.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/panel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/progressbar.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/progressbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/propertygrid.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/propertygrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/searchbox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/searchbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/slider.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/spinner.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/spinner.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/splitbutton.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/splitbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/tabs.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/tabs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/textbox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/textbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/tooltip.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/tooltip.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/tree.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/tree.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/validatebox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/validatebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/window.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/gray/window.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/icon.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/icon.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/accordion.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/accordion.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/calendar.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/calendar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/combo.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/combo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/combobox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/combobox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/datagrid.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/datagrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/datebox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/datebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/dialog.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/dialog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/easyui.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/easyui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/filebox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/filebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/layout.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/linkbutton.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/linkbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/menu.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/menu.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/menubutton.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/menubutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/messager.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/messager.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/numberbox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/numberbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/pagination.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/pagination.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/panel.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/panel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/progressbar.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/progressbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/propertygrid.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/propertygrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/searchbox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/searchbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/slider.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/spinner.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/spinner.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/splitbutton.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/splitbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/tabs.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/tabs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/textbox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/textbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/tooltip.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/tooltip.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/tree.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/tree.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/validatebox.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/validatebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/window.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/easyUI/themes/metro/window.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/echarts/dist/chart/map.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/echarts/dist/chart/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/echarts/dist/echarts-all.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/echarts/dist/echarts-all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/echarts/dist/echarts.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/echarts/dist/echarts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/bar.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/bar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/chord.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/chord.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/eventRiver.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/eventRiver.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/force.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/force.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/funnel.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/funnel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/gauge.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/gauge.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/k.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/k.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/line.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/line.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/map.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/pie.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/pie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/radar.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/radar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/scatter.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/chart/scatter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/echarts-all.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/echarts-all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/echarts.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/echarts/source/echarts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/forward.jsp" afterPath="$PROJECT_DIR$/common/src/main/webapp/forward.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/image-scale/css/three in one.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/image-scale/css/three in one.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/image-scale/js/ThreeInOne.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/image-scale/js/ThreeInOne.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/image-scale/js滑动效果+放大镜效果.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/image-scale/js滑动效果+放大镜效果.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/common/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/js/adddate.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/js/adddate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/js/jquery-1.12.4.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/js/jquery-1.12.4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/js/jquery-1.12.4.min.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/js/jquery-1.12.4.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/js/npm.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/js/npm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/js/qrcode/jquery.qrcode.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/js/qrcode/jquery.qrcode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/js/qrcode/qrcode.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/js/qrcode/qrcode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/js/qrcode/utf.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/js/qrcode/utf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/loginControl.jsp" afterPath="$PROJECT_DIR$/common/src/main/webapp/loginControl.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/model.jsp" afterPath="$PROJECT_DIR$/common/src/main/webapp/model.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/notify_url.jsp" afterPath="$PROJECT_DIR$/common/src/main/webapp/notify_url.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/qrcode.jsp" afterPath="$PROJECT_DIR$/common/src/main/webapp/qrcode.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/register.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/return_url.jsp" afterPath="$PROJECT_DIR$/common/src/main/webapp/return_url.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/token.jsp" afterPath="$PROJECT_DIR$/common/src/main/webapp/token.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/anchor/anchor.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/anchor/anchor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/attachment/attachment.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/attachment/attachment.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/attachment/attachment.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/attachment/attachment.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/attachment/attachment.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/attachment/attachment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/background/background.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/background/background.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/background/background.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/background/background.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/background/background.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/background/background.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/charts/chart.config.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/charts/chart.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/charts/charts.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/charts/charts.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/charts/charts.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/charts/charts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/charts/charts.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/charts/charts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/emotion/emotion.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/emotion/emotion.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/emotion/emotion.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/emotion/emotion.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/emotion/emotion.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/emotion/emotion.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/gmap/gmap.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/gmap/gmap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/help/help.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/help/help.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/help/help.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/help/help.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/help/help.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/help/help.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/image/image.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/image/image.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/image/image.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/image/image.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/image/image.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/image/image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/insertframe/insertframe.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/insertframe/insertframe.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/internal.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/internal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/link/link.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/link/link.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/map/map.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/map/map.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/map/show.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/map/show.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/music/music.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/music/music.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/music/music.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/music/music.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/music/music.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/music/music.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/preview/preview.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/preview/preview.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/scrawl/scrawl.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/scrawl/scrawl.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/scrawl/scrawl.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/scrawl/scrawl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/scrawl/scrawl.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/scrawl/scrawl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/searchreplace/searchreplace.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/searchreplace/searchreplace.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/searchreplace/searchreplace.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/searchreplace/searchreplace.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/snapscreen/snapscreen.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/snapscreen/snapscreen.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/spechars/spechars.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/spechars/spechars.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/spechars/spechars.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/spechars/spechars.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/table/edittable.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/table/edittable.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/table/edittable.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/table/edittable.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/table/edittable.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/table/edittable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/table/edittd.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/table/edittd.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/table/edittip.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/table/edittip.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/template/config.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/template/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/template/template.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/template/template.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/template/template.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/template/template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/template/template.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/template/template.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/video/video.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/video/video.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/video/video.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/video/video.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/video/video.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/video/video.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/webapp/webapp.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/webapp/webapp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/wordimage/tangram.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/wordimage/tangram.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/wordimage/wordimage.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/wordimage/wordimage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/wordimage/wordimage.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/dialogs/wordimage/wordimage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/index.html" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/jsp/config.json" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/jsp/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/jsp/controller.jsp" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/jsp/controller.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/lang/en/en.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/lang/en/en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/lang/zh-cn/zh-cn.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/lang/zh-cn/zh-cn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/themes/default/css/ueditor.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/themes/default/css/ueditor.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/themes/default/css/ueditor.min.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/themes/default/css/ueditor.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/themes/default/dialogbase.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/themes/default/dialogbase.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/themes/iframe.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/themes/iframe.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/SyntaxHighlighter/shCore.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/SyntaxHighlighter/shCore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/codemirror/codemirror.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/codemirror/codemirror.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/codemirror/codemirror.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/codemirror/codemirror.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/adapters/mootools-adapter.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/adapters/mootools-adapter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/adapters/prototype-adapter.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/adapters/prototype-adapter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/adapters/standalone-framework.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/adapters/standalone-framework.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/highcharts-more.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/highcharts-more.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/highcharts-more.src.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/highcharts-more.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/highcharts.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/highcharts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/highcharts.src.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/highcharts.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/annotations.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/annotations.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/annotations.src.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/annotations.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/canvas-tools.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/canvas-tools.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/canvas-tools.src.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/canvas-tools.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/data.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/data.src.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/data.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/drilldown.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/drilldown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/drilldown.src.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/drilldown.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/exporting.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/exporting.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/exporting.src.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/exporting.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/funnel.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/funnel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/funnel.src.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/funnel.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/heatmap.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/heatmap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/heatmap.src.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/heatmap.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/map.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/map.src.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/map.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/no-data-to-display.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/no-data-to-display.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/themes/dark-blue.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/themes/dark-blue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/themes/dark-green.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/themes/dark-green.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/themes/gray.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/themes/gray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/themes/grid.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/themes/grid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/themes/skies.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/highcharts/themes/skies.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/jquery-1.10.2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/jquery-1.10.2.min.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/jquery-1.10.2.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/video-js/font/vjs.svg" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/video-js/font/vjs.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/video-js/video-js.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/video-js/video-js.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/video-js/video-js.min.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/video-js/video-js.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/video-js/video.dev.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/video-js/video.dev.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/video-js/video.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/video-js/video.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.css" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.custom.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.custom.min.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.custom.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.flashonly.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.flashonly.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.flashonly.min.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.flashonly.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.html5only.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.html5only.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.html5only.min.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.html5only.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.min.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.withoutimage.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.withoutimage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/zeroclipboard/ZeroClipboard.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/zeroclipboard/ZeroClipboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/ueditor.all.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/ueditor.all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/ueditor.all.min.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/ueditor.all.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/ueditor.config.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/ueditor.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/ueditor.parse.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/ueditor.parse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/ueditor/ueditor.parse.min.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/ueditor/ueditor.parse.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/vue/font/fontello.svg" afterPath="$PROJECT_DIR$/common/src/main/webapp/vue/font/fontello.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/vue/vue-router.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/vue/vue-router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/vue/vue.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/vue/vue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/webapp/vue/vuex.js" afterPath="$PROJECT_DIR$/common/src/main/webapp/vue/vuex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs.log" afterPath="$PROJECT_DIR$/logs.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenjia/log4j.log" afterPath="$PROJECT_DIR$/wenjia/log4j.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenjia/pom.xml" afterPath="$PROJECT_DIR$/wenjia/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenjia/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/wenjia/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenjia/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/wenjia/src/main/resources/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenjia/src/main/resources/logback-spring.xml" afterPath="$PROJECT_DIR$/wenjia/src/main/resources/logback-spring.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenjia/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/wenjia/src/main/resources/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenjia/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/wenjia/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenjia/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/wenjia/src/main/webapp/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/common_lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
+    </list>
+    <ignored path="$PROJECT_DIR$/wenjia/target/" />
+    <ignored path="$PROJECT_DIR$/common/target/" />
+    <ignored path="$PROJECT_DIR$/account/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/common/src/main/resources/bak_data/mybatisGenerator-mysql/generator.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/source/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\OneDrive\mydata\maven\local and aliyun Repository settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="133" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="801" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="f8xn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="f8xn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="f8xn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="f8xn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="f8xn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="bak_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="f8xn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="bak_data" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatisGenerator-mysql" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.tomcat8.0.45">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="tomcat8.0.45" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="6dcf99b6-6f8e-4528-8758-9ce4017386ed" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="account:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_f8xn_8" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52994" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="52995" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="Make" enabled="false" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="account:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3d1cd8e-b6a3-473c-89a8-c9020d33a902" name="Default" comment="" />
+      <created>1552714889288</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552714889288</updated>
+      <workItem from="1552714897506" duration="1689000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1689000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1000" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1582618" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2019.3.16" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019.3.16" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/common/src/main/resources/bak_data/mybatisGenerator-mysql/generator.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="29" column="115" lean-forward="true" selection-start-line="29" selection-start-column="115" selection-end-line="29" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>account:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>account</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
