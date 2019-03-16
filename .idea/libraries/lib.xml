@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="common-lib">
+  <library name="lib">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/lib" />
     </CLASSES>
