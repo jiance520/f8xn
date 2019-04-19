@@ -18,3 +18,8 @@
 [DEBUG]2019-03-04 20:26:56,346-<==      Total: 1
 [DEBUG]2019-03-04 20:26:56,358-==>  Preparing: update shiro.t_user set password = ? where id=? 
 [DEBUG]2019-03-04 20:26:56,359-==> Parameters: ef83d5a0a7e52c2bab29db9d4026ae4f(String), 1(Integer)
+[DEBUG]2019-03-16 15:33:10,249-==>  Preparing: select * from t_user where name=? 
+[DEBUG]2019-03-16 15:33:10,276-==> Parameters: eric(String)
+[DEBUG]2019-03-16 15:33:10,305-<==      Total: 1
+[DEBUG]2019-03-16 15:33:10,317-==>  Preparing: update shiro.t_user set password = ? where id=? 
+[DEBUG]2019-03-16 15:33:10,317-==> Parameters: ef83d5a0a7e52c2bab29db9d4026ae4f(String), 1(Integer)

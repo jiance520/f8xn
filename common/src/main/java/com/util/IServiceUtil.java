@@ -1,11 +1,12 @@
 package com.util;
+
 import java.io.*;
 
-public class MyIOReplace {
-    //不能放外部，  
+public class IServiceUtil {
+    //不能放外部，
     public static void read(String basepath) throws IOException {
         File basefile = new File(basepath);
-        File newfile = new File(basepath + "\\impl");
+        File newfile = new File(basepath.substring(0,basepath.length()-4) + "\\service");
         newfile.mkdirs();
         FileReader fileReader = null;
         FileWriter fileWriter = null;
@@ -29,21 +30,14 @@ public class MyIOReplace {
 //            System.out.println(stringBuffer);//可以用%c输出数字对应的字符(System.out.printf("c%",num))
                     unicode = bufferedReader.read();//读取文件的下一个字符。
                 }
-                int index = stringBuffer.toString().indexOf("Integer");
 ////          ---------------------------这里执行相关的替换----------------------------
-                String newObject =strArr[i].substring(0,strArr[i].length()-12).substring(1);
+                String newObject = strArr[i].substring(0,strArr[i].length()-11);
                 File newChildFile = null;
-                String string = MyUtilService.servieReplace(newObject);
-                if(index==-1){
-                    string = string.replaceAll("Integer","Long");
-                }
-                stringBuffer = new StringBuffer(string);
-                System.out.println("-----strArr[i]:"+strArr[i]);
-                System.out.println("-----newObject:"+newObject);
-                System.out.println("-----stringBuffer:\n"+stringBuffer);
+
+                stringBuffer = replace(stringBuffer,newObject);
 //            ---------------------------这里执行相关的替换----------------------------
 //                   输出文件
-                newChildFile = new File(basefile.getCanonicalPath() + "\\impl\\" + newObject+"Service.java");
+                newChildFile = new File(basepath.substring(0,basepath.length()-4) + "\\service\\" + "I"+newObject+"Service.java");
                 System.out.println("-----newChildFile:"+newChildFile.toString());
                 fileWriter = new FileWriter(newChildFile);
                 bufferedWriter = new BufferedWriter(fileWriter);
@@ -61,7 +55,17 @@ public class MyIOReplace {
         bufferedReader.close();
         fileReader.close();
     }
+    public static String captureName(String name){
+        return name.substring(0,1).toUpperCase()+name.substring(1);
+    }
+    public static StringBuffer replace(StringBuffer stringBuffer,String newObject){
+        newObject = captureName(newObject);
+        String str = stringBuffer.toString();
+        String str1 = str.replaceAll(newObject+"Mapper","I"+newObject+"Service");
+        String str2 = str1.replaceAll("guo.dao","guo.service");
+        return new StringBuffer(str2);
+    }
     public static void main(String[] args) throws IOException {
-        MyIOReplace.read("D:\\workspace\\idea\\guo\\zufang\\src\\main\\java\\guo\\service");
+        IServiceUtil.read("D:\\workspace\\idea\\guo\\zufang\\src\\main\\java\\guo\\dao");
     }
 }

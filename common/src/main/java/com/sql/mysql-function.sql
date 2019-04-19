@@ -1,0 +1,32 @@
+-- -- select floor(12.4) from dual;
+-- PREPARE stmt1 FROM 'select sqrt(pow(?,2)+pow(?,2)) as hypotenuse';-- pow次方
+-- SET @a = 3;
+-- SET @b = 4;
+-- EXECUTE stmt1 USING @a,@b;
+-- DEALLOCATE PREPARE stmt1;
+-- DROP PREPARE stmt1;
+-- 
+-- 
+-- DROP FUNCTION adffun;
+-- DELIMITER $$
+-- CREATE FUNCTION adffun(a INT,b INT) RETURNS VARCHAR(200) -- 不能用create or replace?
+-- BEGIN
+-- DECLARE tempdata VARCHAR(200) DEFAULT '1191';
+-- DECLARE num INT;
+-- SET @str = '';
+-- WHILE a<=3 DO
+--  WHILE b<=3 DO
+--  SELECT '1191' INTO tempdata;
+--  SET @str = CONCAT(@str,'[',a,']','[',b,']',tempdata,'\n');
+--  SET b = b +1;
+--  END WHILE;
+--  SET a = a +1;
+--  SET b = 1;
+-- END WHILE;
+-- RETURN @str;
+-- END $$
+-- 
+-- SET @a = 1;
+-- SET @b= 1;
+-- SELECT adffun(@a,@b);
+-- 
