@@ -1,0 +1,5 @@
+[DEBUG]2019-05-03 03:57:01,324-==>  Preparing: select * from t_user where name=? 
+[DEBUG]2019-05-03 03:57:01,355-==> Parameters: eric(String)
+[DEBUG]2019-05-03 03:57:01,373-<==      Total: 0
+[DEBUG]2019-05-03 03:57:01,384-==>  Preparing: update shiro.t_user set password = ? where id=? 
+[DEBUG]2019-05-03 03:57:01,385-==> Parameters: ef83d5a0a7e52c2bab29db9d4026ae4f(String), 1(Integer)

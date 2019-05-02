@@ -1,0 +1,2 @@
+2019-05-02 07:46:09 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655) DruidDataSource.java INFO {dataSource-1} inited
+2019-05-02 07:46:10 com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1370) DruidDataSource.java INFO {dataSource-1} closed
