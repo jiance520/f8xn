@@ -6,24 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1568dfca-8969-4884-97bc-00b72aab7ae1" name="Default" comment="加入jdk8">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_jobs_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/account_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/account_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/wenjia_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/wenjia_war_exploded.xml" afterDir="false" />
+    <list default="true" id="1568dfca-8969-4884-97bc-00b72aab7ae1" name="Default" comment="无更新">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/account.iml" beforeDir="false" afterPath="$PROJECT_DIR$/account/account.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/Mytest.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/Mytest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/log4j.log" beforeDir="false" afterPath="$PROJECT_DIR$/common/log4j.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wenjia/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wenjia/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wenjia/wenjia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wenjia/wenjia.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/account/target/" />
@@ -65,14 +51,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/account/src/main/java/com/Mytest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="125">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/account/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1825">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
             </state>
           </provider>
         </entry>
@@ -156,7 +151,17 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="account Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="account Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -165,9 +170,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-70" />
-    <option name="width" value="810" />
-    <option name="height" value="730" />
+    <option name="x" value="-10" />
+    <option name="width" value="735" />
+    <option name="height" value="990" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -584,7 +589,10 @@
       <workItem from="1556700438047" duration="775000" />
       <workItem from="1556727394081" duration="502000" />
       <workItem from="1556753817412" duration="1174000" />
-      <workItem from="1556825930044" duration="974000" />
+      <workItem from="1556825930044" duration="1728000" />
+      <workItem from="1556848955669" duration="1394000" />
+      <workItem from="1556853589100" duration="1298000" />
+      <workItem from="1557071540322" duration="668000" />
     </task>
     <task id="LOCAL-00001" summary="2019.3.16">
       <created>1552720401818</created>
@@ -614,11 +622,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556120984445</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="无更新">
+      <created>1556827177250</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556827177250</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34730000" />
+    <option name="totallyTimeSpent" value="38844000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -631,8 +646,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="798" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.3090909" visible="true" weight="0.1541555" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.3090909" visible="true" weight="0.16018766" />
       <window_info id="Structure" order="1" sideWeight="0.49446493" weight="0.24396783" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" sideWeight="0.6909091" side_tool="true" weight="0.17761394" />
@@ -722,7 +738,8 @@
     <MESSAGE value="2019.4.16" />
     <MESSAGE value="2019.4.24" />
     <MESSAGE value="加入jdk8" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入jdk8" />
+    <MESSAGE value="无更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="无更新" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -962,13 +979,6 @@
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/account/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1825">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wenjia/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1825">
@@ -978,11 +988,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/account/src/main/java/com/Mytest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="125">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/account/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1825">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
         </state>
       </provider>
     </entry>
@@ -1040,7 +1057,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|account</last-edited>
+          <last-edited>Spring|wenjia</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
