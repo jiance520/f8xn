@@ -14,6 +14,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--设置移动端自适应-->
     <meta http-equiv="content-type" content="text/html;charset=utf-8"><!--网站显示语言编码-->
     <meta http-equiv="refresh" content="3600;url=http://www.f8xn.top"><!--定时网站3600秒后，跳转到http://www.f8xn.top，达到更新-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
     <!--vue引用的css、js文件-->
     <script type="text/javascript" src="vue/vue.js"></script>
     <!--去除html页面中GET http://localhost:8080/favicon.ico 404 (Not Found)-->
@@ -22,8 +25,8 @@
         * {
             margin: 0 auto;
             padding: 0;
-            font:normal 20px 微软雅黑;
-            border: 1px solid #444;
+            font:normal 100% 微软雅黑;
+            /*border: 1px solid #444;*/
         }
         html, body {
             height: 100%;
@@ -32,14 +35,47 @@
             /*background-color:#2C143F;*/
             background-color:#1E5200;
         }
+        .form-group *{
+            font:normal 30px "微软雅黑 Light";
+            border:2px solid #444;
+        }
     </style>
 </head>
 <body>
-<header style="height:31%"></header>
-<section style="height:32%;text-align: center">
-    <section style="width: 600px;height:400px;display:inline-block;background-color: #6FC037"></section>
+<header style="height:28%"></header>
+<section style="height:44%;text-align: center">
+    <section class="sec-from" style="width: 500px;height:300px;display:flex;align-items:center;background-color: #6FC037;">
+<!--    <section class="sec-from" style="width: 600px;height:400px;display:flex;align-items:center;background-color: #6FC037;">-->
+<!--    <section class="sec-from" style="width:30%;height:100%;display:flex;align-items:center;background-color: #6FC037;">-->
+        <form action="#" method="" class="form-horizontal"><!--class="form-horizontal"-->
+            <div class="form-group">
+                <label class="col-md-3 control-label">用户名:</label><!--class="control-label"-->
+                <input class="col-md-8" placeholder="admin"/>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">密码:</label><!--class="control-label"-->
+                <input class="col-md-8" placeholder="123"/>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">验证码:</label><!--class="control-label"-->
+                <input class="col-md-4" placeholder="123"/>
+                <input class="col-md-4" placeholder="123"/>
+            </div>
+            <div class="form-group" style="display:flex;justify-content: center;border:2px solid #18cb7e;">
+                <div class="col-md-3"></div>
+                <button class="col-md-3 btn btn-primary">登陆</button>
+                <div class="col-md-1"></div>
+                <button class="col-md-3 btn btn-primary">注册</button>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-3"></div>
+                <a class="col-md-6" href="javascript:void(0)">忘记密码</a>
+            </div>
+        </form>
+    </section>
 </section>
-<section style="height:31%"></section>
+<section style="height:22%"></section>
 <footer style="display:flex;justify-items:center;font: normal 20px/20px 微软雅黑">
     <div style="display: inline-block;">
         <a style="display:inline-block;text-decoration: none;" target="_blank"
@@ -47,20 +83,16 @@
             <img style="float:left;line-height: 20px" src="img/beian.png"/><span
                 style="float:left;display:inline-block;color:#939393;">湘公网安备 43050302000163号</span></a>
         <a style="vertical-align:top;display:inline-block;text-decoration: none" target="_blank"
-           href="http://www.miitbeian.gov.cn/">
+           href="http://www.beian.miit.gov.cn/">
             <span style="float:left;color:#939393;">湘ICP备18023926号-1</span></a>
     </div>
 </footer>
 <script type="text/javascript">
     const parent = new Object();
-    const parent2 = {
-        let:num = 1
-    }
-    const child = {
-//        let:
-    }
-    function parent1() {
-        
+    window.onload=function () {
+        new Vue({
+
+        });
     }
 </script>
 </body>

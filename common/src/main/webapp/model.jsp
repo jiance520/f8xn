@@ -74,7 +74,7 @@
             <img style="float:left;line-height: 20px" src="img/beian.png"/><span
                 style="float:left;display:inline-block;color:#939393;">湘公网安备 43050302000163号</span></a>
         <a style="vertical-align:top;display:inline-block;text-decoration: none" target="_blank"
-           href="http://www.miitbeian.gov.cn/">
+           href="http://www.beian.miit.gov.cn/">
             <span style="float:left;color:#939393;">湘ICP备18023926号-1</span></a>
     </div>
 </div>
