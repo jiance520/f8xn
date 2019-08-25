@@ -1,7 +1,8 @@
-package com.util;
+package com.utils;
 
 
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Component;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -14,12 +15,13 @@ import java.util.List;
  * @version 时间：2018年5月10日 上午10:05:42
  * 所有的类属性和方法都是静态的属性和方法,如果不初始化，都默认使用Oracle中的mytable用户中的orcl
  */
+@Component
 public class JdbcUtil {//工具类，针对不同的数据库，使用同样的jdbc方法。
 	private static Logger logger = Logger.getLogger(JdbcUtil.class.getName());
-	private static String driver = "oracle.jdbc.driver.OracleDriver";//
-	private static String url = "jdbc:oracle:thin:@localhost:1521:orcl";
-	private static String user = "qshop";
-	private static String password = "qshop";
+	private static String driver = "com.mysql.jdbc.Driver";//
+	private static String url = "jdbc:mysql://localhost:3306/shiro?characterEncoding=utf8";
+	private static String user = "root";
+	private static String password = "root";
 	private static Connection conn = null;
 	private static PreparedStatement pst = null;
 	private static ResultSet rst = null;
@@ -42,7 +44,7 @@ public class JdbcUtil {//工具类，针对不同的数据库，使用同样的j
 		super();
 	}
 //	使用构造方法初始化工具类,必须是非静态属性
-    public JdbcUtil(String driver,String url ,String user,String password) {
+    public JdbcUtil(String driver, String url , String user, String password) {
         this.driver = driver;
         this.url = url;
         this.user = user;

@@ -12,9 +12,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.utils.JdbcUtil;
 import org.apache.log4j.Logger;
 
-import com.util.JdbcUtil;
 /**
  * @version 时间：2018年6月12日 上午9:45:23
  *
