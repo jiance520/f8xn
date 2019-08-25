@@ -51,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="317" column="16" selection-start-line="317" selection-start-column="16" selection-end-line="317" selection-end-column="16" />
+            <state relative-caret-position="275">
+              <caret line="327" column="56" lean-forward="true" selection-start-line="327" selection-start-column="56" selection-end-line="327" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -175,18 +175,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="f8xn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -529,6 +519,7 @@
       <workItem from="1566745443994" duration="405000" />
       <workItem from="1566745856101" duration="3612000" />
       <workItem from="1566749689667" duration="7000" />
+      <workItem from="1566750116769" duration="49000" />
     </task>
     <task id="LOCAL-00001" summary="2019.3.16">
       <created>1552720401818</created>
@@ -586,11 +577,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566749435378</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="定时更新+工具类">
+      <created>1566750148391</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1566750148391</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68379000" />
+    <option name="totallyTimeSpent" value="68428000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -603,8 +601,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.3090909" visible="true" weight="0.21715818" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3090909" visible="true" weight="0.21983914" />
       <window_info id="Structure" order="1" sideWeight="0.49446493" weight="0.24396783" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" sideWeight="0.6909091" side_tool="true" weight="0.17761394" />
@@ -1007,8 +1006,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="317" column="16" selection-start-line="317" selection-start-column="16" selection-end-line="317" selection-end-column="16" />
+        <state relative-caret-position="275">
+          <caret line="327" column="56" lean-forward="true" selection-start-line="327" selection-start-column="56" selection-end-line="327" selection-end-column="56" />
         </state>
       </provider>
     </entry>
