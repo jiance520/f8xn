@@ -6,6 +6,8 @@ import org.springframework.stereotype.Component;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
@@ -19,7 +21,7 @@ import java.util.List;
 public class JdbcUtil {//工具类，针对不同的数据库，使用同样的jdbc方法。
 	private static Logger logger = Logger.getLogger(JdbcUtil.class.getName());
 	private static String driver = "com.mysql.jdbc.Driver";//
-	private static String url = "jdbc:mysql://localhost:3306/shiro?characterEncoding=utf8";
+	private static String url = "jdbc:mysql://localhost:3306/milmajordb2012127?characterEncoding=utf8";
 	private static String user = "root";
 	private static String password = "root";
 	private static Connection conn = null;
@@ -335,7 +337,9 @@ public class JdbcUtil {//工具类，针对不同的数据库，使用同样的j
 				e.printStackTrace();
 			}
 		}
-		logger.debug("全部关闭成功");
+		Calendar calendar = Calendar.getInstance();
+		Date time = calendar.getTime();
+		logger.debug("全部关闭成功："+time);
 	}
 	public static void main(String[] args) {
 		nullList("PRODUCT");

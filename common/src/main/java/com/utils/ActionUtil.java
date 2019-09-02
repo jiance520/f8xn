@@ -1,0 +1,262 @@
+package com.utils;
+
+import org.springframework.beans.BeansException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+import org.springframework.stereotype.Component;
+
+import java.io.File;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Map;
+//必须获取主键，不能用于查询所有。
+@Component
+public class ActionUtil implements ApplicationContextAware {
+    private static ApplicationContext applicationContext;
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        if(ActionUtil.applicationContext == null){
+            ActionUtil.applicationContext = applicationContext;
+        }
+    }
+    public static Object actionAll(Map<String,Object> jsonMap){
+        URL oneUpdateURL = OneUpdate.class.getResource("");//当前类所在的本地URL。
+        String oneUpdatePath = oneUpdateURL.toString();
+        System.out.println("oneUpdateURLStr:"+oneUpdatePath);
+        oneUpdatePath=oneUpdatePath.replaceAll("file:/","");
+        oneUpdatePath=oneUpdatePath.replaceAll("target/classes","src/main/java");
+        String utils = StringIndex.substringLastIndexOf(oneUpdatePath,"/",1,2);
+        String daoPath = oneUpdatePath.replaceAll(utils, "dao");
+        File daoFolderFile = new File(daoPath);
+        String[] mapperFileStrArr = daoFolderFile.list();/*返回所有的文件名*///TesttypeMapper.java,
+        //System.out.println("-----mapperFileStrArr:"+ Arrays.toString(mapperFileStrArr));
+        String tableName = jsonMap.get("tablename").toString();
+        tableName = tableName.substring(0,1).toUpperCase()+tableName.substring(1);
+        String actionType = jsonMap.get("actiontype").toString();
+        String selectByPrimaryKey = "selectByPrimaryKey";
+        String deleteByPrimaryKey = "deleteByPrimaryKey";
+        String insertSelective = "insertSelective";
+        String updateByPrimaryKeySelective = "updateByPrimaryKeySelective";
+        String mapPrimaryName=jsonMap.get("primaryname1").toString();//deciseID/mrank_id
+        //primaryval1必须转化为跟bean属性一样
+        String beanIdName = MapToBeanUtil.mapKeyToField(mapPrimaryName);//deciseid
+        String idVal = null;
+        if(mapPrimaryName!=null){
+            idVal = jsonMap.get(mapPrimaryName).toString();//15
+        }
+        System.out.println("-----primaryname1/mapPrimaryName:"+mapPrimaryName);
+        System.out.println("-----beanIdName:"+beanIdName);
+        System.out.println("-----idVal:"+idVal);
+
+        Object invoke = null;
+        try {
+            Class<?> entityClass = Class.forName("guo.entity."+tableName);
+            Constructor<?> entityConstructor = entityClass.getDeclaredConstructor();
+            Object backBean = MapToBeanUtil.backBean(entityConstructor.newInstance(), jsonMap);
+            if(tableName!=null&&!"".equals(tableName)){
+                for (int i = 0; i <mapperFileStrArr.length ; i++) {
+                    //mapperFileStrArr[i]=mapperFileStrArr[i].replaceAll("Mapper.java","");//直接运行是.java，启动服务是.class
+                    mapperFileStrArr[i]=mapperFileStrArr[i].replaceAll("Mapper.class","");
+                    if(mapperFileStrArr[i].equals(tableName)){
+                        if(actionType.equals(selectByPrimaryKey)){
+                            Class<?> cs = Class.forName("guo.service.impl."+mapperFileStrArr[i]+"Service");//+mapperFileStrArr[i]+"Service"
+                            //Constructor<?> c = cs.getDeclaredConstructor();
+
+                            //非自增主键，手写主键，数据库实际有主键
+                            Class fieldType = null;
+                            if(mapPrimaryName!=null&&!"".equals(mapPrimaryName)){
+                                fieldType = MapToBeanUtil.mapAttrKeyType(backBean,beanIdName);//属性必须包含在实体类的bean中，否则抛异常,中止执行！
+                            }
+                            Method method = cs.getDeclaredMethod(selectByPrimaryKey,fieldType);
+                            //System.out.println("-----method:"+method.toString());
+                            String serviceBeanStr = mapperFileStrArr[i]+"Service";
+                            serviceBeanStr=serviceBeanStr.substring(0,1).toLowerCase()+serviceBeanStr.substring(1);
+                            //IT_decisemanagetableService t_decisemanagetableService = (IT_decisemanagetableService)applicationContext.getBean(serviceBeanStr);//最好使用接口转型，必须启动服务才能获取
+                            //T_decisemanagetableService t_decisemanagetableService = (T_decisemanagetableService)c.newInstance();//失败.InvocationTargetException: null
+                            System.out.println("-----idVal:"+idVal);
+                            System.out.println("-----backBean:"+backBean);
+                            System.out.println("-----serviceBeanStr:"+serviceBeanStr);
+                            invoke = method.invoke(applicationContext.getBean(serviceBeanStr),MapToBeanUtil.valToBeanVal(backBean,beanIdName,idVal));
+                            System.out.println("-----invoke查询:"+invoke.toString());
+                        }
+                        else if(actionType.equals(insertSelective)){
+                            Class<?> cs = Class.forName("guo.service.impl."+mapperFileStrArr[i]+"Service");//+mapperFileStrArr[i]+"Service"
+                            Method method = cs.getDeclaredMethod(insertSelective,entityClass);
+                            System.out.println("-----method:"+method.toString());
+                            String serviceBeanStr = mapperFileStrArr[i]+"Service";
+                            serviceBeanStr=serviceBeanStr.substring(0,1).toLowerCase()+serviceBeanStr.substring(1);
+                            invoke = method.invoke(applicationContext.getBean(serviceBeanStr),backBean);
+                            System.out.println("-----invoke插入:"+invoke.toString());
+                        }
+                        else if(actionType.equals(updateByPrimaryKeySelective)){
+                            Class<?> cs = Class.forName("guo.service.impl."+mapperFileStrArr[i]+"Service");//+mapperFileStrArr[i]+"Service"
+                            Method method = cs.getDeclaredMethod(updateByPrimaryKeySelective,entityClass);
+                            System.out.println("-----method:"+method.toString());
+                            String serviceBeanStr = mapperFileStrArr[i]+"Service";
+                            serviceBeanStr=serviceBeanStr.substring(0,1).toLowerCase()+serviceBeanStr.substring(1);
+                            invoke = method.invoke(applicationContext.getBean(serviceBeanStr),backBean);
+                            System.out.println("-----invoke修改:"+invoke.toString());
+                        }
+                        else if(actionType.equals(deleteByPrimaryKey)){
+                            Class<?> cs = Class.forName("guo.service.impl."+mapperFileStrArr[i]+"Service");//+mapperFileStrArr[i]+"Service"
+                            Class fieldType = null;
+                            if(mapPrimaryName!=null&&!"".equals(mapPrimaryName)){
+                                fieldType = MapToBeanUtil.mapAttrKeyType(backBean,beanIdName);//属性必须包含在实体类的bean中，否则抛异常,中止执行！
+                            }
+
+                            Method method = cs.getDeclaredMethod(deleteByPrimaryKey,fieldType);
+                            System.out.println("-----method:"+method.toString());
+                            String serviceBeanStr = mapperFileStrArr[i]+"Service";
+                            serviceBeanStr=serviceBeanStr.substring(0,1).toLowerCase()+serviceBeanStr.substring(1);
+
+                            invoke = method.invoke(applicationContext.getBean(serviceBeanStr),MapToBeanUtil.valToBeanVal(backBean,beanIdName,idVal));
+                            System.out.println("-----invoke删除:"+invoke.toString());
+                        }
+                        break;
+                    }
+                }
+            }
+            else {
+                System.out.println("-----没有传过来tablename，调用通用接口失败");
+            }
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return invoke;
+    }
+    public static Object actionAllTwo(Map<String,Object> jsonMap){
+        URL oneUpdateURL = OneUpdate.class.getResource("");//当前类所在的本地URL。
+        String oneUpdatePath = oneUpdateURL.toString();
+        System.out.println("oneUpdateURLStr:"+oneUpdatePath);
+        oneUpdatePath=oneUpdatePath.replaceAll("file:/","");
+        oneUpdatePath=oneUpdatePath.replaceAll("target/classes","src/main/java");
+        String utils = StringIndex.substringLastIndexOf(oneUpdatePath,"/",1,2);
+        String daoPath = oneUpdatePath.replaceAll(utils, "dao");
+        File daoFolderFile = new File(daoPath);
+        String[] mapperFileStrArr = daoFolderFile.list();/*返回所有的文件名*///TesttypeMapper.java,
+        //System.out.println("-----mapperFileStrArr:"+ Arrays.toString(mapperFileStrArr));
+        String tableName = jsonMap.get("tablename").toString();
+        tableName = tableName.substring(0,1).toUpperCase()+tableName.substring(1);
+        String actionType = jsonMap.get("actiontype").toString();
+        String selectByPrimaryKey = "selectByPrimaryKey";
+        String deleteByPrimaryKey = "deleteByPrimaryKey";
+        String insertSelective = "insertSelective";
+        String updateByPrimaryKeySelective = "updateByPrimaryKeySelective";
+        //String primaryval1 = jsonMap.get("primaryname1").toString().toLowerCase();
+        ArrayList<String> arrMapKeyName = new ArrayList<String>();
+        ArrayList<String> arrMapPrimaryName = new ArrayList<String>();
+        ArrayList<String> arrBeanIdName = new ArrayList<String>();
+        ArrayList arrIdVal = new ArrayList();
+        Object invoke = null;
+        try {
+            Class<?> entityClass = Class.forName("guo.entity."+tableName);
+            Constructor<?> entityConstructor = entityClass.getDeclaredConstructor();
+            Object backBean = MapToBeanUtil.backBean(entityConstructor.newInstance(), jsonMap);
+            int primaryNum = 0;
+            //循环判断map中是否有多个key=primary1 primary2
+            for(Map.Entry<String,Object> jsonMapEntry:jsonMap.entrySet()){
+                String jsonMapAttrKey = jsonMapEntry.getKey();
+                String jsonmapattrkey = jsonMapAttrKey.substring(0,jsonMapAttrKey.length()-1);
+                if(jsonmapattrkey.equals("primaryname")){
+                    primaryNum++;
+                    arrMapKeyName.add(jsonmapattrkey+primaryNum);//jsonmapattrkey=primaryname
+                    String mapPrimaryName = jsonMap.get(arrMapKeyName.get(primaryNum-1)).toString();//w_flat_id,w_equip_id
+                    String beanIdName = MapToBeanUtil.mapKeyToField(mapPrimaryName);//wFlatId
+                    arrMapPrimaryName.add(mapPrimaryName);//w_flat_id,w_equip_id
+                    arrBeanIdName.add(beanIdName);//wFlatId,wEquipId
+                    arrIdVal.add(jsonMap.get(arrMapPrimaryName.get(primaryNum-1)));
+                }
+            }
+            System.out.println("-----arrMapKeyName:"+arrMapKeyName);
+            System.out.println("-----arrMapPrimaryName:"+arrMapPrimaryName);
+            System.out.println("-----arrBeanIdName:"+arrBeanIdName);
+            System.out.println("-----arrIdVal:"+arrIdVal);
+            if(tableName!=null&&!"".equals(tableName)){
+                for (int i = 0; i <mapperFileStrArr.length ; i++) {
+                    //mapperFileStrArr[i]=mapperFileStrArr[i].replaceAll("Mapper.java","");//直接运行是.java，启动服务是.class
+                    mapperFileStrArr[i]=mapperFileStrArr[i].replaceAll("Mapper.class","");
+                    if(mapperFileStrArr[i].equals(tableName)){
+                        if(actionType.equals(selectByPrimaryKey)){
+                            Class<?> cs = Class.forName("guo.service.impl."+mapperFileStrArr[i]+"Service");//+mapperFileStrArr[i]+"Service"
+                            //Constructor<?> c = cs.getDeclaredConstructor();
+
+                            //非自增主键，手写主键，数据库实际有主键
+                            Class fieldKeyType1 = MapToBeanUtil.mapAttrKeyType(backBean,arrBeanIdName.get(0));//属性必须包含在实体类的bean中，否则抛异常,中止执行！
+                            Class fieldKeyType2 = MapToBeanUtil.mapAttrKeyType(backBean,arrBeanIdName.get(1));
+                            //for(String primaryname:arrMapKeyName){}
+                            System.out.println("-----arrBeanIdName.get(0):"+arrBeanIdName.get(0));
+                            Method method = cs.getDeclaredMethod(selectByPrimaryKey,fieldKeyType1,fieldKeyType2);
+                            //System.out.println("-----method:"+method.toString());
+                            String serviceBeanStr = mapperFileStrArr[i]+"Service";
+                            serviceBeanStr=serviceBeanStr.substring(0,1).toLowerCase()+serviceBeanStr.substring(1);
+                            //IT_decisemanagetableService t_decisemanagetableService = (IT_decisemanagetableService)applicationContext.getBean(serviceBeanStr);//最好使用接口转型，必须启动服务才能获取
+                            //T_decisemanagetableService t_decisemanagetableService = (T_decisemanagetableService)c.newInstance();//失败.InvocationTargetException: null
+                            invoke = method.invoke(applicationContext.getBean(serviceBeanStr),MapToBeanUtil.valToBeanVal(backBean,arrBeanIdName.get(0),arrIdVal.get(0)),MapToBeanUtil.valToBeanVal(backBean,arrBeanIdName.get(1),arrIdVal.get(1)));
+                            System.out.println("-----invoke查询:"+invoke.toString());
+                        }
+                        else if(actionType.equals(insertSelective)){
+                            Class<?> cs = Class.forName("guo.service.impl."+mapperFileStrArr[i]+"Service");//+mapperFileStrArr[i]+"Service"
+                            Method method = cs.getDeclaredMethod(insertSelective,entityClass);
+                            System.out.println("-----method:"+method.toString());
+                            String serviceBeanStr = mapperFileStrArr[i]+"Service";
+                            serviceBeanStr=serviceBeanStr.substring(0,1).toLowerCase()+serviceBeanStr.substring(1);
+                            invoke = method.invoke(applicationContext.getBean(serviceBeanStr),backBean);
+                            System.out.println("-----invoke插入:"+invoke.toString());
+                        }
+                        else if(actionType.equals(updateByPrimaryKeySelective)){
+                            Class<?> cs = Class.forName("guo.service.impl."+mapperFileStrArr[i]+"Service");//+mapperFileStrArr[i]+"Service"
+                            Method method = cs.getDeclaredMethod(updateByPrimaryKeySelective,entityClass);
+                            System.out.println("-----method:"+method.toString());
+                            String serviceBeanStr = mapperFileStrArr[i]+"Service";
+                            serviceBeanStr=serviceBeanStr.substring(0,1).toLowerCase()+serviceBeanStr.substring(1);
+                            invoke = method.invoke(applicationContext.getBean(serviceBeanStr),backBean);
+                            System.out.println("-----invoke修改:"+invoke.toString());
+                        }
+                        else if(actionType.equals(deleteByPrimaryKey)){
+                            Class<?> cs = Class.forName("guo.service.impl."+mapperFileStrArr[i]+"Service");//+mapperFileStrArr[i]+"Service"
+                            Class fieldKeyType1 = MapToBeanUtil.mapAttrKeyType(backBean,arrBeanIdName.get(0));
+                            Class fieldKeyType2 = MapToBeanUtil.mapAttrKeyType(backBean,arrBeanIdName.get(1));
+
+                            Method method = cs.getDeclaredMethod(deleteByPrimaryKey,fieldKeyType1,fieldKeyType2);
+                            System.out.println("-----method:"+method.toString());
+                            String serviceBeanStr = mapperFileStrArr[i]+"Service";
+                            serviceBeanStr=serviceBeanStr.substring(0,1).toLowerCase()+serviceBeanStr.substring(1);
+
+                            invoke = method.invoke(applicationContext.getBean(serviceBeanStr),MapToBeanUtil.valToBeanVal(backBean,arrBeanIdName.get(0),arrIdVal.get(0)),MapToBeanUtil.valToBeanVal(backBean,arrBeanIdName.get(1),arrIdVal.get(1)));
+                            System.out.println("-----invoke删除:"+invoke.toString());
+                        }
+                        break;
+                    }
+                }
+            }
+            else {
+                System.out.println("-----没有传过来tablename，调用通用接口失败");
+            }
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return invoke;
+    }
+    public static Object actionViewAll(Map<String,Object> jsonMap){
+        return null;
+    }
+}
