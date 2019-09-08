@@ -7,17 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1568dfca-8969-4884-97bc-00b72aab7ae1" name="Default" comment="定时更新+工具类">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utils/ActionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utils/CommonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utils/FoldersDeep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utils/MapToBeanUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utils/OneUpdate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utils/SpringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utils/StrToDate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utils/StringIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utils/TestPattern.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/utils/JdbcUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/utils/JdbcUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/utils/TestPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/utils/TestPattern.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/account/target/" />
     <ignored path="$PROJECT_DIR$/common/target/" />
@@ -58,11 +49,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="579">
               <caret line="327" column="56" selection-start-line="327" selection-start-column="56" selection-end-line="327" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/utils/TestPattern.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="9" column="40" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/utils/StrToDate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="238" column="47" selection-start-line="238" selection-start-column="40" selection-end-line="238" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -136,6 +145,7 @@
         <option value="$PROJECT_DIR$/common/src/main/java/com/utils/LoginController.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/utils/ActionUtil.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/utils/CommonController.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/utils/TestPattern.java" />
       </list>
     </option>
   </component>
@@ -167,17 +177,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="common Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="common Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -195,6 +195,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,7 +243,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,7 +283,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FoldersDeep">
+  <component name="RunManager" selected="Application.TestPattern">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -292,6 +292,20 @@
     </configuration>
     <configuration name="FoldersDeep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.utils.FoldersDeep" />
+      <module name="common" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.utils.TestPattern" />
       <module name="common" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -316,31 +330,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="account [clean]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="clean" />
-              </list>
-            </option>
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$/account" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
     </configuration>
     <configuration name="account [install]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
@@ -545,17 +534,17 @@
       <item itemvalue="Application.FoldersDeep" />
       <item itemvalue="Maven.common [install]" />
       <item itemvalue="Maven.account [install]" />
-      <item itemvalue="Maven.account [clean]" />
       <item itemvalue="Maven.common [clean]" />
       <item itemvalue="Tomcat Server.tomcat8.5.40" />
+      <item itemvalue="Application.TestPattern" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestPattern" />
         <item itemvalue="Application.FoldersDeep" />
         <item itemvalue="Maven.common [clean]" />
         <item itemvalue="Maven.common [install]" />
         <item itemvalue="Maven.account [install]" />
-        <item itemvalue="Maven.account [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -609,6 +598,8 @@
       <workItem from="1566911168306" duration="8564000" />
       <workItem from="1567004953148" duration="1636000" />
       <workItem from="1567081839391" duration="3030000" />
+      <workItem from="1567424875607" duration="125000" />
+      <workItem from="1567926661386" duration="1328000" />
     </task>
     <task id="LOCAL-00001" summary="2019.3.16">
       <created>1552720401818</created>
@@ -680,11 +671,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566750377019</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="定时更新+工具类">
+      <created>1567424968118</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1567424968118</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83235000" />
+    <option name="totallyTimeSpent" value="84688000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -699,7 +697,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.3090909" visible="true" weight="0.26541555" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3090909" visible="true" weight="0.15549597" />
       <window_info id="Structure" order="1" sideWeight="0.49446493" weight="0.24396783" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" sideWeight="0.6909091" side_tool="true" weight="0.17761394" />
@@ -710,7 +708,7 @@
       <window_info id="Web" order="8" sideWeight="0.08856089" side_tool="true" weight="0.17761394" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49262735" weight="0.37096775" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49262735" visible="true" weight="0.21847507" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" weight="0.3739003" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -737,7 +735,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
-      <window_info anchor="right" id="Maven" order="10" visible="true" weight="0.117962465" />
+      <window_info anchor="right" id="Maven" order="10" visible="true" weight="0.0844504" />
       <window_info anchor="right" id="JRebel Setup Guide" order="11" weight="0.17426273" />
     </layout>
   </component>
@@ -799,7 +797,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/log4j.properties" />
     <entry file="file://$PROJECT_DIR$/common/logs.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1048,13 +1045,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/utils/StrToDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/utils/UserPasswordUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -1107,6 +1097,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="579">
           <caret line="327" column="56" selection-start-line="327" selection-start-column="56" selection-end-line="327" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/utils/StrToDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="238" column="47" selection-start-line="238" selection-start-column="40" selection-end-line="238" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/utils/TestPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="41" />
         </state>
       </provider>
     </entry>
