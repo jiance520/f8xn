@@ -68,12 +68,12 @@ public class DelRepository {
                 if (sonFile.isDirectory()) {
                     delete(sonFile);
                 }
-//                sonFile.delete();
-//                System.out.println("-----删除文件或空文件夹:"+file);
+                sonFile.delete();
+                System.out.println("-----删除文件或空文件夹:"+file);
             }
         } else {
-//            file.delete();
-//            System.out.println("-----else删除空文件夹:"+file);
+            file.delete();
+            System.out.println("-----else删除空文件夹:"+file);
         }
     }
 }
