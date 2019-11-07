@@ -42,7 +42,7 @@ public class DelRepository {
                     System.out.println("-----lastUpdated:"+sonFile);
                 }
                 if(sonFile.getName().equals("m2e-lastUpdated.properties")){
-                    sonFile.delete();
+//                    sonFile.delete();
                     System.out.println("-----m2e-lastUpdated.properties:"+sonFile);
                 }
             }
@@ -55,7 +55,7 @@ public class DelRepository {
             System.out.println("-----lastUpdated:"+file);
         }
         if(file.getName().equals("m2e-lastUpdated.properties")){
-            file.delete();
+//            file.delete();
             System.out.println("-----m2e-lastUpdated.properties:"+file);
         }
         return flagJar;
@@ -68,11 +68,11 @@ public class DelRepository {
                 if (sonFile.isDirectory()) {
                     delete(sonFile);
                 }
-                sonFile.delete();
+//                sonFile.delete();
                 System.out.println("-----删除文件或空文件夹:"+file);
             }
         } else {
-            file.delete();
+//            file.delete();
             System.out.println("-----else删除空文件夹:"+file);
         }
     }
