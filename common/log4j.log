@@ -1,2 +1,5 @@
 2019-05-02 07:46:09 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655) DruidDataSource.java INFO {dataSource-1} inited
 2019-05-02 07:46:10 com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1370) DruidDataSource.java INFO {dataSource-1} closed
+2020-02-12 13:02:25 com.utils.JdbcUtil.<init>(JdbcUtil.java:54) JdbcUtil.java DEBUG 构造一个新JdbcUtil
+2020-02-12 13:09:50 com.utils.JdbcUtil.<init>(JdbcUtil.java:54) JdbcUtil.java DEBUG 构造一个新JdbcUtil
+2020-02-12 13:13:03 com.utils.JdbcUtil.<init>(JdbcUtil.java:54) JdbcUtil.java DEBUG 构造一个新JdbcUtil
