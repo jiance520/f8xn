@@ -11,7 +11,8 @@
 
     <name>${project.artifactId}</name>
     <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
+    <!--<url>http://www.example.com</url>-->
+    <description>${project.artifactId} project for Spring Boot</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -32,63 +33,87 @@
     </parent>
 
     <dependencies>
+        <!--
+        查找依赖关系，解决jar包冲突
+在打开的pom.xml文件上右键Diagrams-Show Dependencies>看它的maven依赖图，
+红色表示存在依赖冲突。单击有冲突的包。可以看到有多条红色虚线。先选中最底层冲突包(否则排除按钮灰色)，右键点击有冲突的依赖图标-> Exclude>import changes>pom.xml文件会自动更新，添加排除语句。
+
+        在POM 4中，<dependency>中还引入了<scope>，它主要管理依赖的部署。目前<scope>可以使用5个值：
+    * compile，缺省值，适用于所有阶段，会随着项目一起发布。
+    * provided，类似compile，期望JDK、容器或使用者会提供这个依赖。如servlet.jar。
+    * runtime，只在运行时使用，如JDBC驱动，适用运行和测试阶段。
+    * test，只在测试时使用，用于编译和运行测试代码。不会随项目发布。
+    * system，类似provided，需要显式提供包含依赖的jar，Maven不会在Repository中查找它。
+依赖范围控制哪些依赖在哪些classpath 中可用，哪些依赖包含在一个应用中。让我们详细看一下每一种范围：
+<optional>防止将devtools依赖传递到其他模块中，防止与其他工程的jar包冲突-
+
+        使用<version>LATEST</version>自动依赖最新版本
+        缺省会使用本地已存在的最新版本，以及按最近最先原则。
+        如果有两个名称相同版本不同的依赖声明，那么先写的会生效。
+        直接依赖优先于传递依赖，-->
         <!-- web支持，SpringMVC， Servlet支持等 -->
+        <!--要加，否则接口不返回数据，rundashboard不显示端口？-->
+        <!-- Sprig Boot/SpringJUnit支持 测试支持,spring-boot-starter-test中已经集成了junit4.12，spring-test-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.0.3.RELEASE</version>
         </dependency>
-        <!-- Sprig Boot 测试支持 -->
+        <!-- Sprig Boot/SpringJUnit支持 测试支持,spring-boot-starter-test中已经集成了junit4.12，org.springframework:spring-test-->
+        <!--spring-boot-starter-test 和org.springframework.boot:spring-boot-test两者的依赖包一样-->
+        <!--引用common.jar的类，也要加依赖：<artifactId>spring-boot-starter-test</artifactId>不冲突！-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <!--test，只在测试时使用，用于编译和运行测试代码。不会随项目发布。-->
             <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <artifactId>spring-test</artifactId>
-                    <groupId>org.springframework</groupId>
-                </exclusion>
-            </exclusions>
+            <version>2.0.3.RELEASE</version>
         </dependency>
-        <!-- 未启动tomcat,执行@Test测试时，以下可省略，热启动的测试也可省略 -->
+        <!--spring-boot-starter-test：spring-test，只用于编译<scope>compile</scope>-->
+        <!--<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.0.7.RELEASE</version>
+            <scope>provided</scope>
+        </dependency>-->
+        <!-- 未启动tomcat,执行@Test测试时，有spring-boot-starter-test时，以下可省略，但是common被引用时，必须一起打包 -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
-            <scope>test</scope>
+            <!--test，只在测试时使用，用于编译和运行测试代码。不会随项目发布。provided会随项目发布-->
+            <scope>provided</scope>
         </dependency>
 
         <!-- spring boot 热部署 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
+            <!-- <optional>防止将devtools依赖传递到其他模块中，防止与其他工程的jar包冲突-->
             <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-test</artifactId>
+            <version>2.0.4.RELEASE</version>
         </dependency>
 
         <!--jsp页面使用jstl标签-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
+            <version>1.2</version>
             <scope>provided</scope>
         </dependency>
         <!--用于编译jsp-->
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
+            <version>9.0.27</version>
+            <!--provided，类似compile，期望JDK、容器或使用者会提供这个依赖。如servlet.jar-->
             <scope>provided</scope>
         </dependency>
         <!--声明spring boot内嵌tomcat 在本地tomcat运行时不起作用，执行App启动器时，与系统默认tomcat冲突ApplicationContextException: Unable to start web server; nested exception is org.springframework-->
         <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
+            <version>2.2.2.RELEASE</version>
             <scope>provided</scope>
         </dependency>-->
 
@@ -96,17 +121,19 @@
         <dependency>
             <groupId>org.quartz-scheduler</groupId>
             <artifactId>quartz</artifactId>
-            <version>2.2.1</version>
+            <version>2.3.0</version>
         </dependency>
         <dependency>
             <groupId>org.quartz-scheduler</groupId>
             <artifactId>quartz-jobs</artifactId>
-            <version>2.2.1</version>
+            <version>2.3.0</version>
         </dependency>
-        <dependency><!-- quartz，该依赖必加，里面有sping对schedule的支持 -->
+        <!-- quartz，该依赖必加，里面有sping对schedule的支持,spring-boot-starter-data-redis中包含该依赖 -->
+        <!--<dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
-        </dependency>
+            <version>5.2.2.RELEASE</version>
+        </dependency>-->
         <!-- SpringBoot的Mybatis启动器 -->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -122,18 +149,19 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.31</version>
+            <version>1.2.58</version>
         </dependency>
+        <!--mysql 6以下版本已废弃-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.6</version>
+            <version>6.0.6</version>
         </dependency>
-<!--        <dependency>-->
-<!--          <groupId>com.oracle</groupId>-->
-<!--          <artifactId>ojdbc6</artifactId>-->
-<!--          <version>11.2.0.4.0-atlassian-hosted</version>-->
-<!--        </dependency>-->
+        <!--<dependency>
+          <groupId>com.oracle</groupId>
+          <artifactId>ojdbc6</artifactId>
+          <version>11.2.0.4.0-atlassian-hosted</version>
+        </dependency>-->
 
         <!--导出导入excel-->
         <dependency>
@@ -146,13 +174,14 @@
             <artifactId>poi-ooxml</artifactId>
             <version>3.17</version>
         </dependency>
+        <!--以下使用比poi多-->
+        <!--<dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.17</version>
+        </dependency>-->
 
-        <!--自己手动加的，文件上传下载-->
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.5</version>
-        </dependency>
+        <!--自己手动加的，文件上传下载commons-fileupload包括commons-io-->
         <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
@@ -162,27 +191,24 @@
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
             <version>1.3.3</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>commons-io</artifactId>
-                    <groupId>commons-io</groupId>
-                </exclusion>
-            </exclusions>
         </dependency>
+        <!--<dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
+        </dependency>-->
         <!--阿里云不能更新以下版本，不可以取代log4j，无方法Logger.getLogger()-->
-<!--        <dependency>-->
-<!--            <groupId>org.apache.logging.log4j</groupId>-->
-<!--            <artifactId>log4j-core</artifactId>-->
-<!--            <version>2.11.1</version>-->
-<!--        </dependency>-->
+        <!--<dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.12.1</version>
+        </dependency>-->
         <!--log4j会导致警告，但是Logger.getLogger(JdbcUtil.class.getName()要用以下依赖-->
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.gitee.qdbp.thirdparty/ueditor -->
-        <!-- https://mvnrepository.com/artifact/com.baidu.ueditor/ueditor -->
 
         <!--shiro相关依赖-->
         <!-- Spring对Shiro支持 -->
@@ -195,21 +221,23 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
-            <version>1.1.6</version>
+            <version>1.1.20</version>
         </dependency>
         <!--thymeleaf，th标签 -->
         <!-- 也可在html中加<html xmlns:th="http://www.w3.org/1999/xhtml" xmlns:shiro="http://www.w3.org/1999/xhtml"> -->
-<!--        <dependency>-->
-<!--            <groupId>org.thymeleaf</groupId>-->
-<!--            <artifactId>thymeleaf</artifactId>-->
-<!--            <version>3.0.9.RELEASE</version>-->
-<!--        </dependency>-->
+        <!--<dependency>
+            <groupId>org.thymeleaf</groupId>
+            <artifactId>thymeleaf</artifactId>
+            <version>3.0.11.RELEASE</version>
+        </dependency>-->
         <!-- springbbot中的thymeleaf，eclipse中默认版本为2.1.5，maven库中只有2.1.1-->
         <!--这个配置文件,启动tomcat会默认映射到resources的templates目录，而不是webapp-->
         <!--被thymeleaf修饰的页面一般是thymeleaf默认在resources>templates目录下-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <!--<version>2.1.3.RELEASE</version>-->
+            <version>2.2.2.RELEASE</version>
         </dependency>
         <!--用于shiro配置文件中的@Bean-->
         <dependency>
@@ -231,11 +259,11 @@
         </dependency>
 
         <!--百度ueditor依赖/坐标-->
-<!--        <dependency>-->
-<!--        <groupId>cn.songxinqiang</groupId>-->
-<!--        <artifactId>com.baidu.ueditor</artifactId>-->
-<!--        <version>1.1.2-offical</version>-->
-<!--        </dependency>-->
+        <!--<dependency>
+            <groupId>cn.songxinqiang</groupId>
+            <artifactId>com.baidu.ueditor</artifactId>
+            <version>1.1.2-offical</version>
+        </dependency>-->
         <!--仅用于百度ueditor的json-->
         <dependency>
             <groupId>org.json</groupId>
@@ -247,113 +275,142 @@
         <dependency>
             <groupId>com.alipay.sdk</groupId>
             <artifactId>alipay-sdk-java</artifactId>
-            <version>3.4.27.ALL</version>
+            <version>3.7.110.ALL</version>
         </dependency>
 
         <!--使用java生成二维码，Google二维码框架zxing-->
         <dependency>
             <groupId>com.google.zxing</groupId>
             <artifactId>core</artifactId>
-            <version>3.1.0</version>
+            <version>3.3.3</version>
         </dependency>
         <dependency>
             <groupId>com.google.zxing</groupId>
             <artifactId>javase</artifactId>
-            <version>3.1.0</version>
+            <version>3.3.3</version>
         </dependency>
 
-        <!--在pom.xml配置jedis包-->
+        <!--在pom.xml配置jedis包,包括spring-context-support-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
+            <version>2.2.2.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
-            <version>2.9.0</version>
+            <version>3.0.1</version>
         </dependency>
-        <!--    AOP代理，通知    -->
+        <!--AOP代理，通知-->
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
-            <version>1.9.2</version>
+            <version>1.9.5</version>
         </dependency>
 
-        <!--<dependency>-->
-        <!--<groupId>net.sourceforge.nekohtml</groupId>-->
-        <!--<artifactId>nekohtml</artifactId>-->
-        <!--<version>1.9.22</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>net.sourceforge.nekohtml</groupId>
+            <artifactId>nekohtml</artifactId>
+            <version>1.9.22</version>
+        </dependency>
 
         <!--短信验证码jar？以下可有可无，暂时不知道用处-->
-        <!--<dependency>-->
-        <!--<groupId>org.springframework</groupId>-->
-        <!--<artifactId>spring-tx</artifactId>-->
-        <!--<version>5.0.5.RELEASE</version>-->
-        <!--<scope>test</scope>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.boot</groupId>-->
-        <!--<artifactId>spring-boot-autoconfigure</artifactId>-->
-        <!--<version>2.0.1.RELEASE</version>-->
-        <!--</dependency>-->
+        <!--<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>5.2.2.RELEASE</version>
+            &lt;!&ndash;test，只在测试时使用，用于编译和运行测试代码。不会随项目发布。&ndash;&gt;
+            <scope>test</scope>
+        </dependency>-->
+        <!--<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>2.2.2.RELEASE</version>
+        </dependency>-->
 
         <!--mongodb的jar包,必须要配置mongodb的连接-->
-<!--        <dependency>-->
-<!--        <groupId>org.springframework.boot</groupId>-->
-<!--        <artifactId>spring-boot-starter-data-mongodb</artifactId>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.mongodb</groupId>-->
-<!--            <artifactId>mongo-java-driver</artifactId>-->
-<!--            <version>3.6.3</version>-->
-<!--            &lt;!&ndash;<scope>provided</scope>&ndash;&gt;-->
-<!--        </dependency>-->
-    </dependencies>
+        <!--<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <version>2.1.6.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>3.11.2</version>
+            <scope>provided</scope>
+        </dependency>-->
 
-  <build>
-    <finalName>${project.artifactId}</finalName>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
-      <plugins>
-        <plugin>
-          <artifactId>maven-clean-plugin</artifactId>
-          <version>3.1.0</version>
-        </plugin>
-        <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
-        <plugin>
-          <artifactId>maven-resources-plugin</artifactId>
-          <version>3.0.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.0</version>
-        </plugin>
-        <!--<plugin>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.22.1</version>
-        </plugin>-->
-        <!--如果报错Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.1:test (default-test) on project，使用以下配置-->
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.22.1</version>
-          <configuration>
-            <skipTests>true</skipTests>
-          </configuration>
-        </plugin>
-        <plugin>
-          <artifactId>maven-war-plugin</artifactId>
-          <version>3.2.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-install-plugin</artifactId>
-          <version>2.5.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-deploy-plugin</artifactId>
-          <version>2.8.2</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
+        <!--Warning:java: 未知的枚举常量 javax.annotation.meta.When.MAYBE-->
+        <dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>annotations</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+            <plugins>
+                <plugin>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
+                <!-- maven-resources-plugin:插件负责处理项目资源文件并拷贝到输出目录-->
+                <plugin>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.0.2</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.0</version>
+                </plugin>
+                <!--maven-surefire-plugin：会按照配置文件去寻找JUnit的版本并执行测试用例。-->
+                <plugin>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.0.0-M3</version>
+                </plugin>
+                <!--如果报错Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.1:test (default-test) on project，使用以下配置-->
+                <!--<plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.0.0-M3</version>
+                    <configuration>
+                        <skipTests>true</skipTests>
+                    </configuration>
+                </plugin>-->
+                <plugin>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>3.2.2</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>3.0.0-M1</version>
+                </plugin>
+                <plugin>
+                   <artifactId>maven-deploy-plugin</artifactId>
+                   <version>3.0.0-M1</version>
+                </plugin>
+
+                <!-- 执行site报错：Error injecting: org.apache.maven.report.projectinfo.CiManagementReport,可不加，会下载大量几百M文件？需要几十分钟-->
+                <!--<plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-project-info-reports-plugin</artifactId>
+                    <version>3.0.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>3.7.1</version>
+                    <configuration>
+                        <locales>zh_CN</locales>
+                    </configuration>
+                </plugin>-->
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
