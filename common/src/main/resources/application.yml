@@ -1,11 +1,38 @@
 #application.yml我的配置如下：
-
-spring:
-mvc:
-static-path-pattern: /**
-resources:
-static-locations: classpath:/static/
-thymeleaf:
-prefix: classpath:/templates/
-suffix: .html
-cache: false #关闭缓存
+#server:
+#  port: 8771
+##  servlet:
+##    context-path: /top.f8xn.productservice
+#
+#spring:
+#  application:
+#    name: productservice
+#  profiles:
+#    active: dev
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    #用于6以上版本mysql，MySQL 5.5.45+，6+版本默认要求建立SSL连接。
+#    url: jdbc:mysql://localhost:3306/epet?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    username: root
+#    password: root
+#  mvc:
+#    static-path-pattern: /**
+#    favicon:
+#      enabled: false
+#    view:
+#      prefix: /templates #classpath:/templates/
+#      suffix: .html
+#  thymeleaf:
+#    cache: false #关闭缓存
+#    mode: HTML #LEGACYHTML5
+#
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml
+#  configuration:
+#    auto-mapping-behavior: full
+#    #解决spring boot整合mybatis时 返回map value为空字段不显示
+#    call-setters-on-nulls: true
+#  #可有可无的配置
+#  #引用类时，可简写，配置mapper.xml文件中，如com.entity.User在User,resultType="user"写成User
+#  type-aliases-package: com.entity

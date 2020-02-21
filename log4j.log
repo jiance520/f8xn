@@ -1,3 +1,21 @@
 2019-03-13 23:47:04 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655) DruidDataSource.java INFO {dataSource-1} inited
 2019-03-14 21:49:04 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655) DruidDataSource.java INFO {dataSource-1} inited
 2019-03-14 21:51:24 com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655) DruidDataSource.java INFO {dataSource-1} inited
+2020-02-18 19:15:44 com.utils.JdbcUtil.<init>(JdbcUtil.java:54) JdbcUtil.java DEBUG 构造一个新JdbcUtil
+2020-02-18 19:20:31 com.utils.JdbcUtil.<init>(JdbcUtil.java:54) JdbcUtil.java DEBUG 构造一个新JdbcUtil
+2020-02-18 23:13:26 com.utils.JdbcUtil.getConn(JdbcUtil.java:62) JdbcUtil.java DEBUG 开始执行
+2020-02-18 23:13:26 com.utils.JdbcUtil.getConn(JdbcUtil.java:64) JdbcUtil.java DEBUG 加载驱动成功
+2020-02-18 23:13:26 com.utils.JdbcUtil.getConn(JdbcUtil.java:66) JdbcUtil.java DEBUG 连接成功
+2020-02-18 23:13:26 com.utils.JdbcUtil.executeQueryRS(JdbcUtil.java:153) JdbcUtil.java DEBUG 开始查询结果集
+2020-02-18 23:13:26 com.utils.JdbcUtil.executeQueryRS(JdbcUtil.java:161) JdbcUtil.java DEBUG 查询结果集成功
+2020-02-18 23:13:26 com.utils.JdbcUtil.exectueQuery(JdbcUtil.java:185) JdbcUtil.java DEBUG 开始查询List集合
+2020-02-18 23:13:26 com.utils.JdbcUtil.exectueQuery(JdbcUtil.java:203) JdbcUtil.java DEBUG 查询List成功
+2020-02-18 23:13:26 com.utils.JdbcUtil.closeAll(JdbcUtil.java:344) JdbcUtil.java DEBUG 全部关闭成功：Tue Feb 18 23:13:26 CST 2020
+2020-02-18 23:14:39 com.utils.JdbcUtil.getConn(JdbcUtil.java:62) JdbcUtil.java DEBUG 开始执行
+2020-02-18 23:14:39 com.utils.JdbcUtil.getConn(JdbcUtil.java:64) JdbcUtil.java DEBUG 加载驱动成功
+2020-02-18 23:14:40 com.utils.JdbcUtil.getConn(JdbcUtil.java:66) JdbcUtil.java DEBUG 连接成功
+2020-02-18 23:14:40 com.utils.JdbcUtil.executeQueryRS(JdbcUtil.java:153) JdbcUtil.java DEBUG 开始查询结果集
+2020-02-18 23:14:40 com.utils.JdbcUtil.executeQueryRS(JdbcUtil.java:161) JdbcUtil.java DEBUG 查询结果集成功
+2020-02-18 23:14:40 com.utils.JdbcUtil.exectueQuery(JdbcUtil.java:185) JdbcUtil.java DEBUG 开始查询List集合
+2020-02-18 23:14:40 com.utils.JdbcUtil.exectueQuery(JdbcUtil.java:203) JdbcUtil.java DEBUG 查询List成功
+2020-02-18 23:14:40 com.utils.JdbcUtil.closeAll(JdbcUtil.java:344) JdbcUtil.java DEBUG 全部关闭成功：Tue Feb 18 23:14:40 CST 2020

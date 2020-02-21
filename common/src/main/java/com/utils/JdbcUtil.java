@@ -20,17 +20,18 @@ import java.util.List;
 @Component
 public class JdbcUtil {//工具类，针对不同的数据库，使用同样的jdbc方法。
 	private static Logger logger = Logger.getLogger(JdbcUtil.class.getName());
-	private static String driver = "com.mysql.jdbc.Driver";//
-	private static String url = "jdbc:mysql://localhost:3306/milmajordb2012127?characterEncoding=utf8";
+//	private static String driver = "com.mysql.cj.jdbc.Driver";//
+	private static String driver = "com.mysql.cj.jdbc.Driver";//
+	private static String url = "jdbc:mysql://localhost:3306/epet?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8";
 	private static String user = "root";
 	private static String password = "root";
 	private static Connection conn = null;
 	private static PreparedStatement pst = null;
 	private static ResultSet rst = null;
 	private static CallableStatement cst = null;
-//	MySQL数据库的root用户的xsh数据库
-//		private static String driver = "com.mysql.jdbc.Driver";//前后不能有空格
-//		private static String url = "jdbc:mysql://localhost:3306/xsh";
+//	MySQL数据库的root用户的epet数据库
+//		private static String driver = "com.mysql.cj.jdbc.Driver";//前后不能有空格
+//		private static String url = "jdbc:mysql://localhost:3306/epet";
 //		private static String user= "root";
 //		private static String pwd= "root";
 //		private static Connection con = null;
@@ -342,7 +343,9 @@ public class JdbcUtil {//工具类，针对不同的数据库，使用同样的j
 		logger.debug("全部关闭成功："+time);
 	}
 	public static void main(String[] args) {
-		nullList("PRODUCT");
+//		nullList("PRODUCT");
 //		OracleTypes,用于向数据规定数据类型。
+//		Object object = JdbcUtil.exectueQuery("select * from dog");
+//		System.out.println("-----test:"+object);
 	}
 }

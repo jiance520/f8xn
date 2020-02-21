@@ -8,7 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //@MapperScan("com.dao")//重点，实列化Bean，只有扫描了dao，才能实例化mapper调用mapper.xml里面的方法！也可以在application.xml配置扫描。eclipse中用，加在idea中会有警告，
 public class App {
     public static void main(String[] args) {
-
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(CommomApp.class, args);
     }
 }

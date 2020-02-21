@@ -21,7 +21,7 @@ public class CommonController implements ServletContextAware {
     public void setServletContext(ServletContext servletContext) {
         this.application = servletContext;
     }
-    private JdbcUtil jdbcUtil = new JdbcUtil("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/milmajordb2012127?characterEncoding=utf8","root","root");
+    private JdbcUtil jdbcUtil = new JdbcUtil("com.mysql.cj.jdbc.Driver","jdbc:mysql://localhost:3306/epet?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8","root","root");
 //    @CrossOrigin
 //    @ResponseBody
 //    @RequestMapping(value = "/selectAll",produces = "application/json;chart=UTF-8")

@@ -16,14 +16,14 @@ import java.util.regex.Pattern;
 //@Configuration构造函数的入参，必须用存在的属性？
 //@PropertySource("classpath:/application.properties")自定义配置文件
 public class OneUpdate {
-    private String jarName = "";//mysql-connector-java-5.1.20.jar
+    private String jarName = "";//mysql-connector-java-6.0.6.jar
     private String propertiesName="";//application.properties
     private String resourcesPath="";//D:\workspace\idea\guo\zufang\src\main\resources
-    private String jarLocation="";//D:\workspace\idea\guo\zufang\src\main\resources\mybatisGenerator\mysql-connector-java-5.1.20.jar
+    private String jarLocation="";//D:\workspace\idea\guo\zufang\src\main\resources\mybatisGenerator\mysql-connector-java-6.0.6.jar
     @Value("${spring.datasource.driver-class-name}")
-    private String driverClass="";//com.mysql.jdbc.Driver
+    private String driverClass="";//com.mysql.cj.jdbc.Driver
     @Value("${spring.datasource.url}")
-    private String connectionURL="";//jdbc:mysql://localhost:3306/src?characterEncoding=utf8
+    private String connectionURL="";//jdbc:mysql://localhost:3306/epet?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8
     private String javaModelGenerator="";//guo.entity
     private String javaTargetProject="";//D:/workspace/idea/guo/zufang/src/main/java
     private String sqlMapGenerator="";//resources.mapper
@@ -155,12 +155,12 @@ public class OneUpdate {
             System.out.println("-----jarLocation:"+this.jarLocation);
         }
 //        if(this.jarName.contains("mysql")){
-//            this.driverClass="com.mysql.jdbc.Driver";
-//            this.connectionURL="jdbc:mysql://localhost:3306/"+this.projectName+"?characterEncoding=utf8";
+//            this.driverClass="com.mysql.cj.jdbc.Driver";
+//            this.connectionURL="jdbc:mysql://localhost:3306/"+this.projectName+"?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8";
 //        }
 //        else if(this.jarName.contains("ojdbc")||this.jarName.contains("oracle")){
 //            this.driverClass="oracle.jdbc.driver.OracleDriver";
-//            this.connectionURL="jdbc:oracle:thin:@localhost:1521:orcl";
+//            this.connectionURL="jdbc:oracle:thin:@106.13.100.117:1521:helowin";
 //        }
 //        else {
 //            System.out.println("-----输入的jarName不规范:");
@@ -957,8 +957,8 @@ public class OneUpdate {
 //                "t_m_troops_info\n" +//废表
                 "t_weapon_worktask_info" ;
         //执行前，必须先生成target,否则无法获取路径
-//        OneUpdate oneUpdate = new OneUpdate("application.properties","mysql-connector-java-5.1.20.jar", "dao","Mapper", "service","impl",true,tableStr);
-        OneUpdate oneUpdate = new OneUpdate("application.properties","mysql-connector-java-5.1.20.jar", "dao","Mapper", "service","impl",true,"t_user");
+//        OneUpdate oneUpdate = new OneUpdate("application.properties","mysql-connector-java-6.0.6.jar", "dao","Mapper", "service","impl",true,tableStr);
+        OneUpdate oneUpdate = new OneUpdate("application.properties","mysql-connector-java-6.0.6.jar", "dao","Mapper", "service","impl",true,"t_user");
 //        oneUpdate.mapperToIService();
 //        oneUpdate.iServiceToService();
         oneUpdate.runFun();//最后输出-----serviceFile，表示运行成功,如果不输出service，需要重新启动idea更新。重新更新，需要删除原来生成的文件。

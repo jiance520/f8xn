@@ -7,6 +7,7 @@
     <groupId>f8xn</groupId>
     <artifactId>common</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <!--<packaging>jar</packaging>-->
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>
@@ -33,8 +34,7 @@
     </parent>
 
     <dependencies>
-        <!--
-        查找依赖关系，解决jar包冲突
+        <!--查找依赖关系，解决jar包冲突
 在打开的pom.xml文件上右键Diagrams-Show Dependencies>看它的maven依赖图，
 红色表示存在依赖冲突。单击有冲突的包。可以看到有多条红色虚线。先选中最底层冲突包(否则排除按钮灰色)，右键点击有冲突的依赖图标-> Exclude>import changes>pom.xml文件会自动更新，添加排除语句。
 
@@ -53,7 +53,6 @@
         直接依赖优先于传递依赖，-->
         <!-- web支持，SpringMVC， Servlet支持等 -->
         <!--要加，否则接口不返回数据，rundashboard不显示端口？-->
-        <!-- Sprig Boot/SpringJUnit支持 测试支持,spring-boot-starter-test中已经集成了junit4.12，spring-test-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -66,7 +65,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <!--test，只在测试时使用，用于编译和运行测试代码。不会随项目发布。-->
-            <scope>test</scope>
+            <!--<scope>test</scope>-->
             <version>2.0.3.RELEASE</version>
         </dependency>
         <!--spring-boot-starter-test：spring-test，只用于编译<scope>compile</scope>-->
@@ -146,6 +145,12 @@
             <artifactId>mybatis</artifactId>
             <version>3.4.6</version>
         </dependency>
+        <!--mybatis-generator-core自动生成工具mybatisGenerator-mysql-->
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
+            <version>1.3.7</version>
+        </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
@@ -192,11 +197,12 @@
             <artifactId>commons-fileupload</artifactId>
             <version>1.3.3</version>
         </dependency>
-        <!--<dependency>
+        <!--必须有，否则FileUtils.copyInputStreamToFile报错-->
+        <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.6</version>
-        </dependency>-->
+        </dependency>
         <!--阿里云不能更新以下版本，不可以取代log4j，无方法Logger.getLogger()-->
         <!--<dependency>
             <groupId>org.apache.logging.log4j</groupId>
