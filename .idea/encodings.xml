@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/account" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/account/log4j.log" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/account/src/main/java" charset="UTF-8" />
@@ -9,5 +9,6 @@
     <file url="file://$PROJECT_DIR$/wenjia" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wenjia/log4j.log" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wenjia/src/main/java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
