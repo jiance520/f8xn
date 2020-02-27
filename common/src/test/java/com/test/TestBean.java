@@ -1,6 +1,5 @@
 package com.test;
 
-
 import com.CommomApp;
 import org.junit.Test;
 import org.junit.runner.RunWith;

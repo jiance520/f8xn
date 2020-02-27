@@ -1,15 +1,5 @@
-[DEBUG]2019-05-03 03:57:01,324-==>  Preparing: select * from t_user where name=? 
-[DEBUG]2019-05-03 03:57:01,355-==> Parameters: eric(String)
-[DEBUG]2019-05-03 03:57:01,373-<==      Total: 0
-[DEBUG]2019-05-03 03:57:01,384-==>  Preparing: update shiro.t_user set password = ? where id=? 
-[DEBUG]2019-05-03 03:57:01,385-==> Parameters: ef83d5a0a7e52c2bab29db9d4026ae4f(String), 1(Integer)
-[DEBUG]2020-02-12 13:17:33,187-==>  Preparing: select * from t_user where name=? 
-[DEBUG]2020-02-12 13:17:33,226-==> Parameters: eric(String)
-[DEBUG]2020-02-12 13:17:33,269-<==      Total: 0
-[DEBUG]2020-02-12 13:17:33,280-==>  Preparing: update shiro.t_user set password = ? where id=? 
-[DEBUG]2020-02-12 13:17:33,280-==> Parameters: ef83d5a0a7e52c2bab29db9d4026ae4f(String), 1(Integer)
-[DEBUG]2020-02-12 16:36:09,139-==>  Preparing: select * from t_user where name=? 
-[DEBUG]2020-02-12 16:36:09,201-==> Parameters: eric(String)
-[DEBUG]2020-02-12 16:36:09,225-<==      Total: 0
-[DEBUG]2020-02-12 16:36:09,241-==>  Preparing: update shiro.t_user set password = ? where id=? 
-[DEBUG]2020-02-12 16:36:09,242-==> Parameters: ef83d5a0a7e52c2bab29db9d4026ae4f(String), 1(Integer)
+[DEBUG]2020-02-27 23:46:49,686-==>  Preparing: select * from t_user where name=? 
+[DEBUG]2020-02-27 23:46:49,707-==> Parameters: eric(String)
+[DEBUG]2020-02-27 23:46:49,721-<==      Total: 0
+[DEBUG]2020-02-27 23:46:49,733-==>  Preparing: update shiro.t_user set password = ? where id=? 
+[DEBUG]2020-02-27 23:46:49,733-==> Parameters: ef83d5a0a7e52c2bab29db9d4026ae4f(String), 1(Integer)

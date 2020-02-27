@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="win10-mysql@localhost" uuid="ccee2891-ce55-4d7f-8974-892317c2e802">
+    <data-source source="LOCAL" name="win10-shiro@localhost" uuid="47978f22-2fd4-442b-bf13-c08a5024e29f">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
-      <driver-properties>
-        <property name="autoReconnect" value="true" />
-        <property name="zeroDateTimeBehavior" value="convertToNull" />
-        <property name="tinyInt1isBit" value="false" />
-        <property name="characterEncoding" value="utf8" />
-        <property name="characterSetResults" value="utf8" />
-        <property name="yearIsDateType" value="false" />
-      </driver-properties>
+      <jdbc-url>jdbc:mysql://localhost:3306/shiro</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="win10-account@localhost" uuid="a0607715-c3dd-4742-a67c-69b668f3ecb3">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/account</jdbc-url>
     </data-source>
   </component>
 </project>

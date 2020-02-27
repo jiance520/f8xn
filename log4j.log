@@ -19,3 +19,4 @@
 2020-02-18 23:14:40 com.utils.JdbcUtil.exectueQuery(JdbcUtil.java:185) JdbcUtil.java DEBUG 开始查询List集合
 2020-02-18 23:14:40 com.utils.JdbcUtil.exectueQuery(JdbcUtil.java:203) JdbcUtil.java DEBUG 查询List成功
 2020-02-18 23:14:40 com.utils.JdbcUtil.closeAll(JdbcUtil.java:344) JdbcUtil.java DEBUG 全部关闭成功：Tue Feb 18 23:14:40 CST 2020
+2020-02-27 22:39:22 com.utils.JdbcUtil.<init>(JdbcUtil.java:55) JdbcUtil.java DEBUG 构造一个新JdbcUtil

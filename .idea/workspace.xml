@@ -7,8 +7,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1568dfca-8969-4884-97bc-00b72aab7ae1" name="Default" comment="更新FileUtils.copyInputStreamToFile">
+      <change afterPath="$PROJECT_DIR$/account/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/Mytest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/SpringBootStartApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/dao/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/shiro/Kaptcha/KaptchaConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/shiro/Kaptcha/KaptchaController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/shiro/action/MainController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/shiro/action/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/shiro/action/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/shiro/config/ShiroConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/shiro/dao/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/shiro/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/shiro/filter/UserFormAuthenticationFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/shiro/realm/MyRealm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/shiro/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/shiro/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/templates/product/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/templates/product/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/templates/product/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/templates/unauth.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/test-classes/com/test/TestBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/test-classes/com/test/UserMapperTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wenjia/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wenjia/target/classes/com/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wenjia/target/classes/com/SpringBootStartApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wenjia/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wenjia/target/classes/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wenjia/target/classes/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wenjia/target/test-classes/com/test/TestBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/log4j.log" beforeDir="false" afterPath="$PROJECT_DIR$/account/log4j.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/account/logs.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/log4j.log" beforeDir="false" afterPath="$PROJECT_DIR$/common/log4j.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/common/logs.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/CommomApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/CommomApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/test/java/com/test/TestBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/test/java/com/test/TestBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4j.log" beforeDir="false" afterPath="$PROJECT_DIR$/log4j.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wenjia/log4j.log" beforeDir="false" afterPath="$PROJECT_DIR$/wenjia/log4j.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wenjia/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wenjia/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +80,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="win10-mysql@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
@@ -108,6 +154,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -118,12 +165,12 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Oracle&#10;MySQL&#10;PostgreSQL" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/common/src/main/java/com" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springcloud-f8xn-Greenwich.SR5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../guo" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -143,65 +190,9 @@
       <recent name="D:\workspace\idea\f8xn\account\src\main\webapp" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JdbcUtil">
+  <component name="RunManager" selected="Spring Boot.CommomApp">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DelRepository" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.utils.DelRepository" />
-      <module name="common" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FoldersDeep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.utils.FoldersDeep" />
-      <module name="common" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JdbcUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.utils.JdbcUtil" />
-      <module name="common" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.utils.TestPattern" />
-      <module name="common" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -356,21 +347,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.FoldersDeep" />
-      <item itemvalue="Application.TestPattern" />
-      <item itemvalue="Application.DelRepository" />
-      <item itemvalue="Application.JdbcUtil" />
-      <item itemvalue="Spring Boot.CommomApp" />
-      <item itemvalue="Tomcat Server.account-tomcat8.5.40" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JdbcUtil" />
         <item itemvalue="Spring Boot.CommomApp" />
-        <item itemvalue="Application.DelRepository" />
-        <item itemvalue="Application.TestPattern" />
-        <item itemvalue="Application.FoldersDeep" />
       </list>
     </recent_temporary>
   </component>
@@ -451,7 +430,10 @@
       <workItem from="1582097528706" duration="47000" />
       <workItem from="1582098553956" duration="703000" />
       <workItem from="1582291626711" duration="2137000" />
-      <workItem from="1582295517258" duration="1192000" />
+      <workItem from="1582295517258" duration="1547000" />
+      <workItem from="1582810665373" duration="2632000" />
+      <workItem from="1582814189363" duration="1572000" />
+      <workItem from="1582815782285" duration="2773000" />
     </task>
     <task id="LOCAL-00001" summary="2019.3.16">
       <created>1552720401818</created>
@@ -634,106 +616,93 @@
     <option name="LAST_COMMIT_MESSAGE" value="更新FileUtils.copyInputStreamToFile" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1582296156563">
+    <state x="361" y="70" key="#HTTP_Proxy" timestamp="1582813517041">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1536.783@0.0.1536.783" timestamp="1582296156563" />
-    <state x="549" y="150" key="FileChooserDialogImpl" timestamp="1582296478046">
+    <state x="361" y="70" key="#HTTP_Proxy/0.0.1536.783@0.0.1536.783" timestamp="1582813517041" />
+    <state x="361" y="54" key="#Notifications" timestamp="1582816479375">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state x="549" y="150" key="FileChooserDialogImpl/0.0.1536.783@0.0.1536.783" timestamp="1582296478046" />
+    <state x="361" y="54" key="#Notifications/0.0.1536.783@0.0.1536.783" timestamp="1582816479375" />
+    <state x="531" y="57" key="#Tomcat_Server" timestamp="1582814096918">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state x="531" y="57" key="#Tomcat_Server/0.0.1536.783@0.0.1536.783" timestamp="1582814096918" />
+    <state x="361" y="54" width="1155" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582817953611">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state x="361" y="54" width="1155" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.783@0.0.1536.783" timestamp="1582817953611" />
+    <state x="669" y="185" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1582814052677">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state x="669" y="185" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.783@0.0.1536.783" timestamp="1582814052677" />
+    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1582818562781">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1536.783@0.0.1536.783" timestamp="1582818562781" />
+    <state x="549" y="150" key="FileChooserDialogImpl" timestamp="1582817150493">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state x="549" y="150" key="FileChooserDialogImpl/0.0.1536.783@0.0.1536.783" timestamp="1582817150493" />
     <state x="620" y="319" key="Github.Dialog.Accounts.Choose" timestamp="1582296186873">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
     <state x="620" y="319" key="Github.Dialog.Accounts.Choose/0.0.1536.783@0.0.1536.783" timestamp="1582296186873" />
-    <state x="272" y="37" key="SettingsEditor" timestamp="1582295638184">
+    <state width="1253" height="241" key="GridCell.Tab.0.bottom" timestamp="1582818594397">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state x="272" y="37" key="SettingsEditor/0.0.1536.783@0.0.1536.783" timestamp="1582295638184" />
+    <state width="1253" height="241" key="GridCell.Tab.0.bottom/0.0.1536.783@0.0.1536.783" timestamp="1582818594397" />
+    <state width="1253" height="241" key="GridCell.Tab.0.center" timestamp="1582818594397">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state width="1253" height="241" key="GridCell.Tab.0.center/0.0.1536.783@0.0.1536.783" timestamp="1582818594397" />
+    <state width="1253" height="241" key="GridCell.Tab.0.left" timestamp="1582818594397">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state width="1253" height="241" key="GridCell.Tab.0.left/0.0.1536.783@0.0.1536.783" timestamp="1582818594397" />
+    <state width="1253" height="241" key="GridCell.Tab.0.right" timestamp="1582818594397">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state width="1253" height="241" key="GridCell.Tab.0.right/0.0.1536.783@0.0.1536.783" timestamp="1582818594397" />
+    <state width="1493" height="229" key="GridCell.Tab.1.bottom" timestamp="1582814417653">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state width="1493" height="229" key="GridCell.Tab.1.bottom/0.0.1536.783@0.0.1536.783" timestamp="1582814417653" />
+    <state width="1493" height="229" key="GridCell.Tab.1.center" timestamp="1582814417653">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state width="1493" height="229" key="GridCell.Tab.1.center/0.0.1536.783@0.0.1536.783" timestamp="1582814417653" />
+    <state width="1493" height="229" key="GridCell.Tab.1.left" timestamp="1582814417652">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state width="1493" height="229" key="GridCell.Tab.1.left/0.0.1536.783@0.0.1536.783" timestamp="1582814417652" />
+    <state width="1493" height="229" key="GridCell.Tab.1.right" timestamp="1582814417653">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state width="1493" height="229" key="GridCell.Tab.1.right/0.0.1536.783@0.0.1536.783" timestamp="1582814417653" />
+    <state x="272" y="0" key="SettingsEditor" timestamp="1582813416973">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state x="272" y="0" key="SettingsEditor/0.0.1536.783@0.0.1536.783" timestamp="1582813416973" />
     <state x="361" y="128" key="Vcs.Push.Dialog.v2" timestamp="1582296166305">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
     <state x="361" y="128" key="Vcs.Push.Dialog.v2/0.0.1536.783@0.0.1536.783" timestamp="1582296166305" />
+    <state x="485" y="5" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1582815554876">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state x="485" y="5" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.783@0.0.1536.783" timestamp="1582815554876" />
+    <state x="620" y="120" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1582817361344">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state x="620" y="120" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.783@0.0.1536.783" timestamp="1582817361344" />
+    <state x="390" y="0" width="755" height="783" key="find.popup" timestamp="1582815024073">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state x="390" y="0" width="755" height="783" key="find.popup/0.0.1536.783@0.0.1536.783" timestamp="1582815024073" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>wenjia:war</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Web (account)|Web</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>lib</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring|common</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>lib</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
