@@ -6,14 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1568dfca-8969-4884-97bc-00b72aab7ae1" name="Default" comment="更新FileUtils.copyInputStreamToFile">
-      <change afterPath="$PROJECT_DIR$/wenjia/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wenjia/target/classes/com/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wenjia/target/classes/com/SpringBootStartApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wenjia/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wenjia/target/classes/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wenjia/target/classes/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wenjia/target/test-classes/com/test/TestBean.class" afterDir="false" />
+    <list default="true" id="1568dfca-8969-4884-97bc-00b72aab7ae1" name="Default" comment="更新数据库连接">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,17 +108,18 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Oracle&#10;MySQL&#10;PostgreSQL" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/common/src/main/java/com" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../guo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -388,7 +382,8 @@
       <workItem from="1582295517258" duration="1547000" />
       <workItem from="1582810665373" duration="2632000" />
       <workItem from="1582814189363" duration="1572000" />
-      <workItem from="1582815782285" duration="3020000" />
+      <workItem from="1582815782285" duration="3281000" />
+      <workItem from="1582819082445" duration="894000" />
     </task>
     <task id="LOCAL-00001" summary="2019.3.16">
       <created>1552720401818</created>
@@ -523,7 +518,21 @@
       <option name="project" value="LOCAL" />
       <updated>1582818671670</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="更新数据库连接">
+      <created>1582818947144</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1582818947144</updated>
+    </task>
+    <task id="LOCAL-00021" summary="更新数据库连接">
+      <created>1582819060446</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1582819060446</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView">
@@ -599,10 +608,10 @@
       <screen x="0" y="0" width="1536" height="783" />
     </state>
     <state x="669" y="185" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.783@0.0.1536.783" timestamp="1582814052677" />
-    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1582818946121">
+    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1582819059544">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1536.783@0.0.1536.783" timestamp="1582818946121" />
+    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1536.783@0.0.1536.783" timestamp="1582819059544" />
     <state x="549" y="150" key="FileChooserDialogImpl" timestamp="1582817150493">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
@@ -611,22 +620,22 @@
       <screen x="0" y="0" width="1536" height="783" />
     </state>
     <state x="620" y="319" key="Github.Dialog.Accounts.Choose/0.0.1536.783@0.0.1536.783" timestamp="1582296186873" />
-    <state width="829" height="241" key="GridCell.Tab.0.bottom" timestamp="1582818964494">
+    <state width="828" height="241" key="GridCell.Tab.0.bottom" timestamp="1582819093555">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state width="829" height="241" key="GridCell.Tab.0.bottom/0.0.1536.783@0.0.1536.783" timestamp="1582818964494" />
-    <state width="829" height="241" key="GridCell.Tab.0.center" timestamp="1582818964494">
+    <state width="828" height="241" key="GridCell.Tab.0.bottom/0.0.1536.783@0.0.1536.783" timestamp="1582819093555" />
+    <state width="828" height="241" key="GridCell.Tab.0.center" timestamp="1582819093555">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state width="829" height="241" key="GridCell.Tab.0.center/0.0.1536.783@0.0.1536.783" timestamp="1582818964494" />
-    <state width="829" height="241" key="GridCell.Tab.0.left" timestamp="1582818964493">
+    <state width="828" height="241" key="GridCell.Tab.0.center/0.0.1536.783@0.0.1536.783" timestamp="1582819093555" />
+    <state width="828" height="241" key="GridCell.Tab.0.left" timestamp="1582819093554">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state width="829" height="241" key="GridCell.Tab.0.left/0.0.1536.783@0.0.1536.783" timestamp="1582818964493" />
-    <state width="829" height="241" key="GridCell.Tab.0.right" timestamp="1582818964494">
+    <state width="828" height="241" key="GridCell.Tab.0.left/0.0.1536.783@0.0.1536.783" timestamp="1582819093554" />
+    <state width="828" height="241" key="GridCell.Tab.0.right" timestamp="1582819093555">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state width="829" height="241" key="GridCell.Tab.0.right/0.0.1536.783@0.0.1536.783" timestamp="1582818964494" />
+    <state width="828" height="241" key="GridCell.Tab.0.right/0.0.1536.783@0.0.1536.783" timestamp="1582819093555" />
     <state width="1493" height="229" key="GridCell.Tab.1.bottom" timestamp="1582814417653">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
@@ -643,14 +652,14 @@
       <screen x="0" y="0" width="1536" height="783" />
     </state>
     <state width="1493" height="229" key="GridCell.Tab.1.right/0.0.1536.783@0.0.1536.783" timestamp="1582814417653" />
-    <state x="272" y="0" key="SettingsEditor" timestamp="1582813416973">
+    <state x="272" y="0" key="SettingsEditor" timestamp="1582819976407">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state x="272" y="0" key="SettingsEditor/0.0.1536.783@0.0.1536.783" timestamp="1582813416973" />
-    <state x="361" y="128" key="Vcs.Push.Dialog.v2" timestamp="1582818949691">
+    <state x="272" y="0" key="SettingsEditor/0.0.1536.783@0.0.1536.783" timestamp="1582819976407" />
+    <state x="361" y="128" key="Vcs.Push.Dialog.v2" timestamp="1582819069018">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state x="361" y="128" key="Vcs.Push.Dialog.v2/0.0.1536.783@0.0.1536.783" timestamp="1582818949691" />
+    <state x="361" y="128" key="Vcs.Push.Dialog.v2/0.0.1536.783@0.0.1536.783" timestamp="1582819069018" />
     <state x="485" y="5" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1582815554876">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
