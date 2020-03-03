@@ -1,5 +1,7 @@
 package com.utils;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 
 import java.io.*;
@@ -16,14 +18,18 @@ import java.util.regex.Pattern;
 //@Configuration构造函数的入参，必须用存在的属性？
 //@PropertySource("classpath:/application.properties")自定义配置文件
 public class OneUpdate {
+    private final Logger logger = LoggerFactory.getLogger(getClass());
+    //private static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(OneUpdate.class.getName());
     private String jarName = "";//mysql-connector-java-6.0.6.jar
     private String propertiesName="";//application.properties
     private String resourcesPath="";//D:\workspace\idea\guo\zufang\src\main\resources
     private String jarLocation="";//D:\workspace\idea\guo\zufang\src\main\resources\mybatisGenerator\mysql-connector-java-6.0.6.jar
     @Value("${spring.datasource.driver-class-name}")
-    private String driverClass="";//com.mysql.cj.jdbc.Driver
+    private String driverClass;//com.mysql.jdbc.Driver
     @Value("${spring.datasource.url}")
-    private String connectionURL="";//jdbc:mysql://localhost:3306/epet?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8
+    private String connectionURL;//jdbc:mysql://localhost:3306/src?characterEncoding=utf8
+    @Value("spring.datasource.name")
+    private String dataBaseName;//数据库名不一定是工程名，所以generator.xml要检查。
     private String javaModelGenerator="";//guo.entity
     private String javaTargetProject="";//D:/workspace/idea/guo/zufang/src/main/java
     private String sqlMapGenerator="";//resources.mapper
@@ -31,11 +37,11 @@ public class OneUpdate {
     private String clientGenerator="";//guo.dao
     private String clientTargetProject="";//D:/workspace/idea/guo/zufang/src/main/java
     @Value("${spring.datasource.username}")//只有在项目运行时才能获取？
-    private String userId="";//root
+    private String userId;//root
     @Value("${spring.datasource.password}")
-    private String password="";//root
+    private String password;//root
     @Value("${server.servlet.context-path}")
-    private String projectName = "";//zufang,工程名不一定是数据库名，所以generator.xml要检查。
+    private String projectName;//zufang,工程名不一定是数据库名，所以generator.xml要检查。
     private String generatorPath = "";//D:\workspace\idea\guo\zufang\src\main\resources\mybatisGenerator\
     private String jarMybatis = "mybatis-generator-core-1.3.2.jar";
     private boolean flagDel = false;//重构是否删除原来的dao、entity、mapper.xml。false不删除
@@ -70,6 +76,8 @@ public class OneUpdate {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        //-----------由于不启动，不能通过@Value取application.properties里的属性值，以下必须-----------
         if(this.userId==null||"".equals(this.userId)){
             userId = properties.getProperty("spring.datasource.username");
         }
@@ -82,6 +90,33 @@ public class OneUpdate {
         if(this.connectionURL==null||"".equals(this.connectionURL)){
             connectionURL = properties.getProperty("spring.datasource.url");
         }
+        if(connectionURL.contains("?")){
+            connectionURL = connectionURL.replaceAll("&","&amp;");
+        }
+        if(this.dataBaseName==null||"".equals(this.dataBaseName)){
+            dataBaseName = properties.getProperty("spring.datasource.name");
+            if(this.dataBaseName==null||"".equals(this.dataBaseName)){
+                if(connectionURL.contains("mysql")){
+                    int indexStart = StringIndex.indexOf(connectionURL,"/" ,3);
+                    int indexEnd = connectionURL.indexOf("?");
+                    this.dataBaseName=connectionURL.substring(indexStart+1,indexEnd);
+                }
+                else if(connectionURL.contains("oracle")){
+                    int indexStart = connectionURL.lastIndexOf(":");
+                    this.dataBaseName=connectionURL.substring(indexStart+1);
+                }
+                else if(connectionURL.contains("postgresql")){
+                    int indexStart = StringIndex.indexOf(connectionURL,"/" ,3);
+                    int indexEnd = connectionURL.indexOf("?");
+                    this.dataBaseName=connectionURL.substring(indexStart+1,indexEnd);
+                }
+                else {
+                    logger.info("-----没有匹配到数据库名，请在OneUpdate.java的100行增加数据库");
+                    System.exit(0);//0停止程序，1是异常停止。
+                }
+            }
+        }
+        //-------------------以上必需------------------------
 
         if(this.daoFolderName==null||"".equals(this.daoFolderName)){this.daoFolderName =daoFolderName;}
         if(this.daoLastName==null||"".equals(this.daoLastName)){this.daoLastName =daoLastName;}
@@ -154,17 +189,6 @@ public class OneUpdate {
             this.jarLocation=this.generatorPath+this.jarName;
             System.out.println("-----jarLocation:"+this.jarLocation);
         }
-//        if(this.jarName.contains("mysql")){
-//            this.driverClass="com.mysql.cj.jdbc.Driver";
-//            this.connectionURL="jdbc:mysql://localhost:3306/"+this.projectName+"?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8";
-//        }
-//        else if(this.jarName.contains("ojdbc")||this.jarName.contains("oracle")){
-//            this.driverClass="oracle.jdbc.driver.OracleDriver";
-//            this.connectionURL="jdbc:oracle:thin:@106.13.100.117:1521:helowin";
-//        }
-//        else {
-//            System.out.println("-----输入的jarName不规范:");
-//        }
         if(this.javaModelGenerator==null||"".equals(this.javaModelGenerator)){
             this.javaModelGenerator=this.comName+"."+entityName;
         }
@@ -308,7 +332,7 @@ public class OneUpdate {
 //            StringBuffer stringBuffer = new StringBuffer();
 //            String tableStr = null;
 //            for (int i = 0; i <tableList.size() ; i++) {
-//                tableObj = tableObj.replaceAll("schema=\"\\S+\" ", "schema=\""+projectName+"\" ");
+//                tableObj = tableObj.replaceAll("schema=\"\\S+\" ", "schema=\""+dataBaseName+"\" ");
 //                tableObj = tableObj.replaceAll("tableName=\"\\S+\"", "tableName=\""+tableList.get(i)+"\"");
 //                tableStr = tableList.get(i).substring(0,1).toUpperCase()+tableList.get(i).substring(1);//截取第一个大写，再拼接，再替换
 //                tableObj = tableObj.replaceAll("domainObjectName=\"\\S+\" ", "domainObjectName=\""+tableStr+"\" ");
@@ -318,7 +342,7 @@ public class OneUpdate {
         StringBuffer stringBuffer = new StringBuffer();
         String tableStr = null;
         for (int i = 0; i <tableNameArr.length ; i++) {
-            tableObj = tableObj.replaceAll("schema=\"\\S+\" ", "schema=\""+projectName+"\" ");
+            tableObj = tableObj.replaceAll("schema=\"\\S+\" ", "schema=\""+dataBaseName+"\" ");
             tableObj = tableObj.replaceAll("tableName=\"\\S+\"", "tableName=\""+tableNameArr[i]+"\"");
             tableStr = tableNameArr[i].substring(0,1).toUpperCase()+tableNameArr[i].substring(1);//截取第一个大写，再拼接，再替换
             tableObj = tableObj.replaceAll("domainObjectName=\"\\S+\" ", "domainObjectName=\""+tableStr+"\" ");
@@ -347,12 +371,17 @@ public class OneUpdate {
                 unicode = bufferedReader.read();
             }
             String generatorXmlStr = generatorXml.toString();
-            generatorXmlStr = generatorXmlStr.replaceAll("location=\"[\\u4e00-\\u9fa5\\w\\.-:-/\\\\]+\\.jar\"","location=\""+jarLocation+"\"");
-            generatorXmlStr = generatorXmlStr.replaceAll("driverClass=\"[\\w\\.]+Driver","driverClass=\""+driverClass);
-            generatorXmlStr = generatorXmlStr.replaceAll("connectionURL=\"[\\w\\.-_:=/\\\\]+\" userId","connectionURL=\""+connectionURL+"\" userId");
-            generatorXmlStr = generatorXmlStr.replaceAll("<javaModelGenerator[\\s]+targetPackage=\"[\\w\\./]*+\"[\\s]+targetProject=\"[\\u4e00-\\u9fa5\\w\\.-_:/\\\\]+\">","<javaModelGenerator targetPackage=\""+javaModelGenerator+"\" targetProject=\""+javaTargetProject+"\">");
-            generatorXmlStr = generatorXmlStr.replaceAll("<sqlMapGenerator[\\s]+targetPackage=\"[\\w\\./]*+\"[\\s]+targetProject=\"[\\u4e00-\\u9fa5\\w\\.-_:/\\\\]+\">","<sqlMapGenerator targetPackage=\""+sqlMapGenerator+"\" targetProject=\""+sqlTargetProject+"\">");
-            generatorXmlStr = generatorXmlStr.replaceAll("<javaClientGenerator[\\s]+targetPackage=\"[\\w\\./]*+\"[\\s]+targetProject=\"[\\u4e00-\\u9fa5\\w\\.-_:/\\\\]+\" type=\"XMLMAPPER\">","<javaClientGenerator targetPackage=\""+clientGenerator+"\" targetProject=\""+clientTargetProject+"\" type=\"XMLMAPPER\">");
+            generatorXmlStr = generatorXmlStr.replaceAll("location=\"[\\u4e00-\\u9fa5\\w\\.\\-:/\\\\]+\\.jar\"","location=\""+jarLocation+"\"");
+            if(connectionURL.contains("mysql-connector-java-6")||connectionURL.contains("mysql-connector-java-8")){
+                //generatorXmlStr = generatorXmlStr.replaceAll("driverClass=\"[\\w\\.]+Driver","driverClass=\""+driverClass); //后面不要加+"\""
+                generatorXmlStr = generatorXmlStr.replaceAll("driverClass=\"[\\w\\.]+Driver","driverClass=\""+"com.mysql.jdbc.Driver"); //后面不要加+"\""
+                logger.info("请使用低于6版本的mysql驱动，否则修改generator和OneUpdate.java");
+                System.exit(0);
+            }
+            generatorXmlStr = generatorXmlStr.replaceAll("connectionURL=\"[\\w\\.\\-:=&;\\? /\\\\]*\" userId","connectionURL=\""+connectionURL+"\" userId");
+            generatorXmlStr = generatorXmlStr.replaceAll("<javaModelGenerator[\\s]+targetPackage=\"[\\w\\./]*+\"[\\s]+targetProject=\"[\\u4e00-\\u9fa5\\w\\.\\-:/\\\\]+\">","<javaModelGenerator targetPackage=\""+javaModelGenerator+"\" targetProject=\""+javaTargetProject+"\">");
+            generatorXmlStr = generatorXmlStr.replaceAll("<sqlMapGenerator[\\s]+targetPackage=\"[\\w\\./]*+\"[\\s]+targetProject=\"[\\u4e00-\\u9fa5\\w\\.\\-:/\\\\]+\">","<sqlMapGenerator targetPackage=\""+sqlMapGenerator+"\" targetProject=\""+sqlTargetProject+"\">");
+            generatorXmlStr = generatorXmlStr.replaceAll("<javaClientGenerator[\\s]+targetPackage=\"[\\w\\./]*+\"[\\s]+targetProject=\"[\\u4e00-\\u9fa5\\w\\.\\-:/\\\\]+\" type=\"XMLMAPPER\">","<javaClientGenerator targetPackage=\""+clientGenerator+"\" targetProject=\""+clientTargetProject+"\" type=\"XMLMAPPER\">");
             generatorXmlStr = generatorXmlStr.replaceAll("<table[\\s\\w=\">]+</table>","");
             generatorXmlStr = generatorXmlStr.replaceAll("javaClientGenerator>\\s+","javaClientGenerator>\n"+stringBuffer.toString()+"\n");
             //System.out.println("-----generatorXmlStr:"+generatorXmlStr);
@@ -376,7 +405,7 @@ public class OneUpdate {
                 unicode2=bufferedReader.read();
             }
             String runBatStr = stringBufferRun.toString();
-            runBatStr = runBatStr.replaceAll("java[\\s\\w-\\.:/\n]*-overwrite[\\sa-z\n]*","java -jar "+generatorPath+jarMybatis+" -configfile "+generatorPath+"generator.xml -overwrite\nexit");
+            runBatStr = runBatStr.replaceAll("java[\\s\\w\\-\\.:/\n]*-overwrite[\\sa-z\n]*","java -jar "+generatorPath+jarMybatis+" -configfile "+generatorPath+"generator.xml -overwrite\nexit");
             System.out.println("-----runBatStr:"+runBatStr);
             fileWriter = new FileWriter(runFile);
             bufferedWriter = new BufferedWriter(fileWriter);
@@ -772,7 +801,7 @@ public class OneUpdate {
             runbat();//重新生成实体类
         }
         try {
-            Thread.sleep(1000);//程序更新需要时间？使用join()无效！否则mapperFileStrArr获取不到generator()删除的daoMapper.java
+            Thread.sleep(2000);//程序更新需要时间？使用join()无效！否则mapperFileStrArr获取不到generator()删除的daoMapper.java，1秒不够，
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -780,48 +809,20 @@ public class OneUpdate {
         iServiceToService();
     }
     //生成Controller
-    public void controller(String actionPath,String tableNames) throws IOException {
+    public void controller(String actionPath,String tableNames,String groupId) throws IOException {
         String tableName = "";
         if(tableNames==null||"".equals(tableNames)){
             tableNames = "t_weapon_photoelectricity_info\n" +
                     "t_troops_basic_uint\n" +
-                    "t_troops_armyman_ammo\n" +
                     "t_troops_uint\n" +
+                    "t_user\n" +
                     "t_weapon_communicate_info\n" +
                     "t_flatequip_correspond\n" +
                     "t_weapon_logistics_info\n" +
                     "t_weaponammo_correspond\n" +
-                    "t_troops_armyman\n" +
-                    "t_weapon_cook_info\n" +
-                    "t_troops_armyman_weapon\n" +
-                    "t_troops_unitkind\n" +
-                    "t_troops_armyman_equip\n" +
-                    "t_weapon_jam_info\n" +
-                    "t_m_troops_info\n" +
-                    "t_weapon_worktask_info\n" +
-                    "t_troops_commandership\n" +
-                    "t_weapon_blowfire_info\n" +
-                    "t_weapon_demolish_info\n" +
-                    "t_m_troops_bu_weapon\n" +
-                    "t_weapon_missile_info\n" +
-                    "t_troops_military_rank\n" +
-                    "t_weapon_shrapnel_info\n" +
-                    "t_troops_bu_equip\n" +
-                    "t_weapon_electronrecon_info\n" +
-                    "t_weapon_ammo_info\n" +
-                    "t_decisemanagetable\n" +
-                    "t_gun_shootstraight_table\n" +
-                    "t_weapon_artillery_info\n" +
-                    "t_weapon_medical_info\n" +
-                    "t_weapon_vehicle_flat_info\n" +
-                    "t_weapon_types\n" +
-                    "t_weapon_gun_info\n" +
-                    "t_weapon_defendchem_info\n" +
-                    "t_trajectory_data\n" +
-                    "t_flatweapon_correspond\n" +
                     "t_weapon_cannon_info";
         }
-        String str = "package guo.action;\n" +
+        String strController = "package guo.action;\n" +
                 "\n" +
                 "import com.alibaba.fastjson.JSON;\n" +
                 "import guo.entity.T_troops_commandership;\n" +
@@ -834,7 +835,7 @@ public class OneUpdate {
                 "import javax.servlet.ServletContext;\n" +
                 "import javax.servlet.http.HttpServletRequest;\n" +
                 "\n" +
-                "@Controller\n" +
+                "@RestController\n" +
                 "public class T_troops_commandershipController implements ServletContextAware {\n" +
                 "    private ServletContext application;\n" +
                 "    @Resource\n" +
@@ -887,22 +888,30 @@ public class OneUpdate {
             oneUpdatePath=oneUpdatePath.replaceAll("target/classes","src/main/java");
             //oneUpdatePath=D:/workspace/idea/guo/zufang/src/main/java/guo/utils/
             String utils = StringIndex.substringLastIndexOf(oneUpdatePath,"/",1,2);
-            this.actionPath = oneUpdatePath.replaceAll(utils, "action");
+            actionPath = oneUpdatePath.replaceAll(utils, "action");
+            this.actionPath = actionPath;
+            File actionPathFolderFile = new File(actionPath);
+            //文件夹路径不存在
+            if (!actionPathFolderFile.exists() && !actionPathFolderFile.isDirectory()) {
+                actionPathFolderFile.mkdirs();
+                logger.info("文件夹路径不存在，创建路径:" + actionPath);
+            }
             System.out.println("-----actionPath:"+this.actionPath);
         }
 
         File file = null;
         FileWriter fileWriter = null;
         BufferedWriter bufferedWriter = null;
-        StringBuffer stringBuffer = new StringBuffer(str);
+        StringBuffer stringBuffer = new StringBuffer(strController);
 
         if(tableNames.contains("\n")){
             String[] tableArr = tableNames.split("\n");
             for (int i = 0; i <tableArr.length ; i++) {
                 tableArr[i]=StringIndex.upFirstWord(tableArr[i]);
                 tableName=tableArr[i];
-                String newStr = str.replaceAll("T_troops_commandership",StringIndex.upFirstWord(tableName));
+                String newStr = strController.replaceAll("T_troops_commandership",StringIndex.upFirstWord(tableName));
                 newStr = newStr.replaceAll("t_troops_commandership",StringIndex.lowerFirstWord(tableName));
+                newStr = newStr.replaceAll("guo",groupId);
                 String conPath = actionPath+"/"+StringIndex.upFirstWord(tableName)+"Controller.java";
                 file = new File(conPath);
                 fileWriter = new FileWriter(file);
@@ -910,6 +919,19 @@ public class OneUpdate {
                 bufferedWriter.write(newStr);
                 bufferedWriter.flush();
             }
+        }
+        else{
+            tableNames=StringIndex.upFirstWord(tableNames);
+            tableName=tableNames;
+            String newStr = strController.replaceAll("T_troops_commandership",StringIndex.upFirstWord(tableName));
+            newStr = newStr.replaceAll("t_troops_commandership",StringIndex.lowerFirstWord(tableName));
+            newStr = newStr.replaceAll("guo",groupId);
+            String conPath = actionPath+"/"+StringIndex.upFirstWord(tableName)+"Controller.java";
+            file = new File(conPath);
+            fileWriter = new FileWriter(file);//能创建文件，不能创建文件夹。
+            bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write(newStr);
+            bufferedWriter.flush();
         }
         bufferedWriter.close();
         fileWriter.close();
@@ -919,53 +941,26 @@ public class OneUpdate {
         //手动配置好application.properties
         //String daoFolderName,String daoLastName,String serviceFolderName,Object... tableNames
 //        String tableStr="t_decisemanagetable\n" + "t_flatequip_correspond";
-        String tableStr="t_decisemanagetable\n" +
-//                "t_flatequip_correspond\n" +//联合主键
-//                "t_flatweapon_correspond\n" +//联合主键
-                "t_gun_shootstraight_table\n" +
-                "t_trajectory_data\n" +//重复主键非联合主键
-                "t_troops_armyman\n" +
-                "t_troops_armyman_ammo\n" +
-//                "t_troops_armyman_equip\n" +//改联合主键
-                "t_troops_armyman_weapon\n" +
+        String tableStr = "t_weapon_photoelectricity_info\n" +
                 "t_troops_basic_uint\n" +
-//                "t_troops_bu_equip\n" +//改联合主键
-                "t_troops_commandership\n" +
-                "t_troops_military_rank\n" +
-//                "t_troops_uint\n" +//改4个id组成联合主键
-                "t_troops_unitkind\n" +
-                "t_weapon_ammo_info\n" +
-                "t_weapon_artillery_info\n" +
-                "t_weapon_blowfire_info\n" +
-                "t_weapon_cannon_info\n" +
+                "t_troops_uint\n" +
+                "t_user\n" +
                 "t_weapon_communicate_info\n" +
-                "t_weapon_cook_info\n" +
-                "t_weapon_defendchem_info\n" +
-                "t_weapon_demolish_info\n" +
-                "t_weapon_electronrecon_info\n" +
-                "t_weapon_gun_info\n" +
-                "t_weapon_jam_info\n" +
+                "t_flatequip_correspond\n" +
                 "t_weapon_logistics_info\n" +
-                "t_weapon_medical_info\n" +
-                "t_weapon_missile_info\n" +
-                "t_weapon_photoelectricity_info\n" +
-                "t_weapon_shrapnel_info\n" +
-                "t_weapon_types\n" +
-                "t_weapon_vehicle_flat_info\n" +
-//                "t_weaponammo_correspond\n" +//联合主键
-//                "t_m_troops_bu_weapon\n" +//废表
-//                "t_m_troops_info\n" +//废表
-                "t_weapon_worktask_info" ;
-        //执行前，必须先生成target,否则无法获取路径
-//        OneUpdate oneUpdate = new OneUpdate("application.properties","mysql-connector-java-6.0.6.jar", "dao","Mapper", "service","impl",true,tableStr);
-        OneUpdate oneUpdate = new OneUpdate("application.properties","mysql-connector-java-6.0.6.jar", "dao","Mapper", "service","impl",true,"t_user");
-//        oneUpdate.mapperToIService();
-//        oneUpdate.iServiceToService();
-        oneUpdate.runFun();//最后输出-----serviceFile，表示运行成功,如果不输出service，需要重新启动idea更新。重新更新，需要删除原来生成的文件。
+                "t_weaponammo_correspond\n" +
+                "t_weapon_cannon_info";
+        //读取配置文件值https://blog.csdn.net/jiangyu1013/article/details/82188593,能读a.bc=3和a.c: 4格式，不分yml或properties。
+        //执行前，必须先build生成target,否则无法获取路径，使用mysql5，不要用6和8.要改配置。
+        //OneUpdate oneUpdate = new OneUpdate("application.properties","mysql-connector-java-5.1.20.jar", "dao","Mapper", "service","impl",true,tableStr);
+        OneUpdate oneUpdate = new OneUpdate("application.properties","mysql-connector-java-5.1.20.jar", "dao","Mapper", "service","impl",true,"t_user");
+        //根据传入的表(一个或多个)进行重新生成该表的相关信息，tableNames在调用时指定.
+        oneUpdate.runFun();//最后输出-----serviceFile，生成xml配置文件，生成实体类，生成服务接口，实现接口，可拆分执行。
 
-
-        //生成controller
-//        OneUpdate oneUpdate = new OneUpdate();
-//        oneUpdate.controller("D:/workspace/idea/guo/milmajordb2012127/src/main/java/guo/action/","");
+        //生成controller,只调用其中的一个方法。生成最后的控制层，前面的注消。//不需要依赖其它属性，因些不初始化有参构造。
+        //OneUpdate oneUpdate = new OneUpdate();
+        //oneUpdate.controller("D:\\workspace\\idea\\springcloud\\f8xn\\autof8\\src\\main\\java\\com\\action","t_decisemanagetable");
+        //可以不指定actionPath,tableNames要么在方法里指定，要么调用时指定.
+        //oneUpdate.controller("","t_user","com");
     }
 }

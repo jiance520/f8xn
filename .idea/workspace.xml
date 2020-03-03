@@ -7,8 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1568dfca-8969-4884-97bc-00b72aab7ae1" name="Default" comment="更新数据库连接">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/log4j.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -384,7 +387,10 @@
       <workItem from="1582810665373" duration="2632000" />
       <workItem from="1582814189363" duration="1572000" />
       <workItem from="1582815782285" duration="3281000" />
-      <workItem from="1582819082445" duration="1461000" />
+      <workItem from="1582819082445" duration="1926000" />
+      <workItem from="1582822213236" duration="648000" />
+      <workItem from="1582823044183" duration="2240000" />
+      <workItem from="1583208458148" duration="1261000" />
     </task>
     <task id="LOCAL-00001" summary="2019.3.16">
       <created>1552720401818</created>
@@ -540,7 +546,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582819983725</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="更新数据库连接">
+      <created>1582820675613</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1582820675613</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView">
@@ -620,34 +633,34 @@
       <screen x="0" y="0" width="1536" height="783" />
     </state>
     <state x="669" y="185" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.783@0.0.1536.783" timestamp="1582814052677" />
-    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1582819982718">
+    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1582820674000">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1536.783@0.0.1536.783" timestamp="1582819982718" />
-    <state x="549" y="150" key="FileChooserDialogImpl" timestamp="1582817150493">
+    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1536.783@0.0.1536.783" timestamp="1582820674000" />
+    <state x="549" y="150" key="FileChooserDialogImpl" timestamp="1583213659807">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state x="549" y="150" key="FileChooserDialogImpl/0.0.1536.783@0.0.1536.783" timestamp="1582817150493" />
+    <state x="549" y="150" key="FileChooserDialogImpl/0.0.1536.783@0.0.1536.783" timestamp="1583213659807" />
     <state x="620" y="319" key="Github.Dialog.Accounts.Choose" timestamp="1582296186873">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
     <state x="620" y="319" key="Github.Dialog.Accounts.Choose/0.0.1536.783@0.0.1536.783" timestamp="1582296186873" />
-    <state width="828" height="241" key="GridCell.Tab.0.bottom" timestamp="1582819093555">
+    <state width="1272" height="241" key="GridCell.Tab.0.bottom" timestamp="1582825287387">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state width="828" height="241" key="GridCell.Tab.0.bottom/0.0.1536.783@0.0.1536.783" timestamp="1582819093555" />
-    <state width="828" height="241" key="GridCell.Tab.0.center" timestamp="1582819093555">
+    <state width="1272" height="241" key="GridCell.Tab.0.bottom/0.0.1536.783@0.0.1536.783" timestamp="1582825287387" />
+    <state width="1272" height="241" key="GridCell.Tab.0.center" timestamp="1582825287387">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state width="828" height="241" key="GridCell.Tab.0.center/0.0.1536.783@0.0.1536.783" timestamp="1582819093555" />
-    <state width="828" height="241" key="GridCell.Tab.0.left" timestamp="1582819093554">
+    <state width="1272" height="241" key="GridCell.Tab.0.center/0.0.1536.783@0.0.1536.783" timestamp="1582825287387" />
+    <state width="1272" height="241" key="GridCell.Tab.0.left" timestamp="1582825287387">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state width="828" height="241" key="GridCell.Tab.0.left/0.0.1536.783@0.0.1536.783" timestamp="1582819093554" />
-    <state width="828" height="241" key="GridCell.Tab.0.right" timestamp="1582819093555">
+    <state width="1272" height="241" key="GridCell.Tab.0.left/0.0.1536.783@0.0.1536.783" timestamp="1582825287387" />
+    <state width="1272" height="241" key="GridCell.Tab.0.right" timestamp="1582825287387">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state width="828" height="241" key="GridCell.Tab.0.right/0.0.1536.783@0.0.1536.783" timestamp="1582819093555" />
+    <state width="1272" height="241" key="GridCell.Tab.0.right/0.0.1536.783@0.0.1536.783" timestamp="1582825287387" />
     <state width="1493" height="229" key="GridCell.Tab.1.bottom" timestamp="1582814417653">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
@@ -668,10 +681,10 @@
       <screen x="0" y="0" width="1536" height="783" />
     </state>
     <state x="272" y="0" key="SettingsEditor/0.0.1536.783@0.0.1536.783" timestamp="1582820563524" />
-    <state x="361" y="128" key="Vcs.Push.Dialog.v2" timestamp="1582819985480">
+    <state x="361" y="128" key="Vcs.Push.Dialog.v2" timestamp="1582820679494">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state x="361" y="128" key="Vcs.Push.Dialog.v2/0.0.1536.783@0.0.1536.783" timestamp="1582819985480" />
+    <state x="361" y="128" key="Vcs.Push.Dialog.v2/0.0.1536.783@0.0.1536.783" timestamp="1582820679494" />
     <state x="485" y="5" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1582815554876">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
@@ -684,6 +697,10 @@
       <screen x="0" y="0" width="1536" height="783" />
     </state>
     <state x="390" y="0" width="755" height="783" key="find.popup/0.0.1536.783@0.0.1536.783" timestamp="1582815024073" />
+    <state x="178" y="8" key="new project wizard" timestamp="1582824856304">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state x="178" y="8" key="new project wizard/0.0.1536.783@0.0.1536.783" timestamp="1582824856304" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

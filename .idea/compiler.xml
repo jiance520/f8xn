@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="wenjia" />
         <module name="common" />
+        <module name="f8xn" />
         <module name="account" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="account" target="1.8" />
       <module name="common" target="1.8" />
+      <module name="f8xn" target="1.5" />
       <module name="wenjia" target="1.8" />
     </bytecodeTargetLevel>
   </component>

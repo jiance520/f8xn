@@ -6,15 +6,16 @@ public class TestPattern {
     public static void main(String[] args) {
 //        Boolean isTwoNum = Pattern.matches("a(.*|\n)*","a\na\n\n");
 //        Boolean isTwoNum = Pattern.matches("java[\\s\\w-\\.:/\n]*-overwrite","java -jar D:/workspace/idea/guo/milmajordb2012127/src/main/resources/mybatisGenerator/mybatis-generator-core-1.3.2.jar-overwrite");
-        String oldStr = "#allow 192.168.0.0/16";
-        String regEx = "#allow [0-9\\./]*";
-        String newStr = "#allow 10/8";
+        String oldStr = "jdbc:mysql://localhost:3306/milmajordb2012127?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8 userId";
+        String regEx = "[\\w\\.\\-:=&\\? /\\\\]+\\ userId";
+        //\\w小写w匹配字母或数字或下划线或汉字
+        //\\.匹配一个点. \将后面的字符做特殊字符或原义字符。
+        //\用\\\\表示！
+        String newStr = "jdbc:mysql://localhost:3306/milmajordb2012127";
         Boolean flag = Pattern.matches(regEx,oldStr);
         if(flag){
-            StringBuffer stringBufferRun = new StringBuffer(oldStr);
-            String str = stringBufferRun.toString();
-            str = str.replaceAll(oldStr,newStr);
-            System.out.println("-----str:"+str);
+            oldStr = oldStr.replaceAll(regEx,newStr);
+            System.out.println("-----oldStr:"+oldStr);
         }
         else {
             System.out.println("-----没有匹配到");
