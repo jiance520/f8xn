@@ -6,11 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1568dfca-8969-4884-97bc-00b72aab7ae1" name="Default" comment="更新工具类">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/utils/OneUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/utils/OneUpdate.java" afterDir="false" />
-    </list>
+    <list default="true" id="1568dfca-8969-4884-97bc-00b72aab7ae1" name="Default" comment="更新工具类" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,21 +121,21 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\idea\f8xn\common\src\main\resources\static\service" />
+      <recent name="D:\workspace\idea\f8xn\common\src\main\resources\static" />
+      <recent name="D:\workspace\idea\f8xn\common\src\main\resources\static\baidu" />
+      <recent name="D:\workspace\idea\f8xn\common\src\main\resources\static\alipay" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.utils" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\workspace\idea\f8xn\common\src\main\resources\bak_data\MyBatis Generator" />
       <recent name="D:\workspace\idea\f8xn\common\src\main\resources\bak_data\mybatisGenerator-mysql" />
       <recent name="D:\workspace\idea\f8xn\common\src\main\java\com\utils" />
       <recent name="D:\workspace\idea\f8xn\account\src\main\webapp\js" />
       <recent name="D:\workspace\idea\f8xn\account\src\main\webapp" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.utils" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\workspace\idea\f8xn\common\src\main\resources\static\service" />
-      <recent name="D:\workspace\idea\f8xn\common\src\main\resources\static" />
-      <recent name="D:\workspace\idea\f8xn\common\src\main\resources\static\baidu" />
-      <recent name="D:\workspace\idea\f8xn\common\src\main\resources\static\alipay" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.CommomApp">
@@ -408,7 +404,7 @@
       <workItem from="1583265399766" duration="54000" />
       <workItem from="1583308124756" duration="5276000" />
       <workItem from="1583320251487" duration="680000" />
-      <workItem from="1583344009699" duration="250000" />
+      <workItem from="1583344009699" duration="961000" />
     </task>
     <task id="LOCAL-00001" summary="2019.3.16">
       <created>1552720401818</created>
@@ -585,7 +581,21 @@
       <option name="project" value="LOCAL" />
       <updated>1583320313522</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="更新工具类">
+      <created>1583344273690</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1583344273690</updated>
+    </task>
+    <task id="LOCAL-00027" summary="更新工具类">
+      <created>1583344358183</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1583344358183</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView">
@@ -665,10 +675,10 @@
       <screen x="0" y="0" width="1536" height="783" />
     </state>
     <state x="669" y="185" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.783@0.0.1536.783" timestamp="1582814052677" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1583344329021">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1583344356720">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.783@0.0.1536.783" timestamp="1583344329021" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.783@0.0.1536.783" timestamp="1583344356720" />
     <state x="549" y="150" key="FileChooserDialogImpl" timestamp="1583213659807">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
@@ -713,10 +723,10 @@
       <screen x="0" y="0" width="1536" height="783" />
     </state>
     <state x="272" y="0" key="SettingsEditor/0.0.1536.783@0.0.1536.783" timestamp="1583344350663" />
-    <state x="361" y="128" key="Vcs.Push.Dialog.v2" timestamp="1583344275537">
+    <state x="361" y="128" key="Vcs.Push.Dialog.v2" timestamp="1583344359931">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state x="361" y="128" key="Vcs.Push.Dialog.v2/0.0.1536.783@0.0.1536.783" timestamp="1583344275537" />
+    <state x="361" y="128" key="Vcs.Push.Dialog.v2/0.0.1536.783@0.0.1536.783" timestamp="1583344359931" />
     <state x="485" y="5" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1582815554876">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
