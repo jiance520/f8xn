@@ -122,7 +122,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -665,10 +665,10 @@
       <screen x="0" y="0" width="1536" height="783" />
     </state>
     <state x="669" y="185" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.783@0.0.1536.783" timestamp="1582814052677" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1583320311309">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1583344329021">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.783@0.0.1536.783" timestamp="1583320311309" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.783@0.0.1536.783" timestamp="1583344329021" />
     <state x="549" y="150" key="FileChooserDialogImpl" timestamp="1583213659807">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
@@ -709,14 +709,14 @@
       <screen x="0" y="0" width="1536" height="783" />
     </state>
     <state width="1493" height="292" key="GridCell.Tab.1.right/0.0.1536.783@0.0.1536.783" timestamp="1583310946719" />
-    <state x="272" y="0" key="SettingsEditor" timestamp="1582820563524">
+    <state x="272" y="0" key="SettingsEditor" timestamp="1583344350663">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state x="272" y="0" key="SettingsEditor/0.0.1536.783@0.0.1536.783" timestamp="1582820563524" />
-    <state x="361" y="128" key="Vcs.Push.Dialog.v2" timestamp="1583320315289">
+    <state x="272" y="0" key="SettingsEditor/0.0.1536.783@0.0.1536.783" timestamp="1583344350663" />
+    <state x="361" y="128" key="Vcs.Push.Dialog.v2" timestamp="1583344275537">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
-    <state x="361" y="128" key="Vcs.Push.Dialog.v2/0.0.1536.783@0.0.1536.783" timestamp="1583320315289" />
+    <state x="361" y="128" key="Vcs.Push.Dialog.v2/0.0.1536.783@0.0.1536.783" timestamp="1583344275537" />
     <state x="485" y="5" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1582815554876">
       <screen x="0" y="0" width="1536" height="783" />
     </state>
