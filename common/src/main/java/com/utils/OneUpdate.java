@@ -22,8 +22,8 @@ public class OneUpdate {
     //private static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(OneUpdate.class.getName());
     private String jarName = "";//mysql-connector-java-6.0.6.jar
     private String propertiesName="";//application.properties
-    private String resourcesPath="";//D:\workspace\idea\guo\zufang\src\main\resources
-    private String jarLocation="";//D:\workspace\idea\guo\zufang\src\main\resources\mybatisGenerator\mysql-connector-java-6.0.6.jar
+    private String resourcesPath="";//D:/workspace/idea/guo/zufang/src/main/resources
+    private String jarLocation="";//D:/workspace/idea/guo/zufang/src/main/resources/mybatisGenerator/mysql-connector-java-6.0.6.jar
     @Value("${spring.datasource.driver-class-name}")
     private String driverClass;//com.mysql.jdbc.Driver
     @Value("${spring.datasource.url}")
@@ -42,10 +42,10 @@ public class OneUpdate {
     private String password;//root
     @Value("${server.servlet.context-path}")
     private String projectName;//zufang,工程名不一定是数据库名，所以generator.xml要检查。
-    private String generatorPath = "";//D:\workspace\idea\guo\zufang\src\main\resources\mybatisGenerator\
+    private String generatorPath = "D:/workspace/idea/springcloud/f8xn/src/resources/mybatisGenerator/";// D:/workspace/idea/springcloud/f8xn/src/resources/mybatisGenerator/，不能是路径\\
     private String jarMybatis = "mybatis-generator-core-1.3.2.jar";
     private boolean flagDel = false;//重构是否删除原来的dao、entity、mapper.xml。false不删除
-    private String cmd = "";//"cmd /k start D:\\workspace\\idea\\guo\\zufang\\src\\main\\resources\\mybatisGenerator\\run.bat";
+    private String cmd = "";//"cmd /k start D:/workspace/idea/guo/zufang/src/main/resources/mybatisGenerator/run.bat";
     private String comName = "";//guo 、com
     private String daoFolderName = "";//dao
     private String daoLastName = "";//Dao、Mapper
@@ -56,9 +56,9 @@ public class OneUpdate {
     private String[] tableNameArr = null;
     //oneUpdateURL=file:/D:/workspace/idea/guo/zufang/target/classes/guo/utils/
     private URL oneUpdateURL = OneUpdate.class.getResource("");//当前类所在的本地URL。
-    private String daoPath = "";//D:\workspace\idea\guo\zufang\src\main\java\guo\dao
-    private String iServicePath = "";//D:\workspace\idea\guo\zufang\src\main\java\guo\service
-    private String servicePath = "";//D:\workspace\idea\guo\zufang\src\main\java\guo\service\impl
+    private String daoPath = "";//D:/workspace/idea/guo/zufang/src/main/java/guo/dao
+    private String iServicePath = "";//D:/workspace/idea/guo/zufang/src/main/java/guo/service
+    private String servicePath = "";//D:/workspace/idea/guo/zufang/src/main/java/guo/service/impl
     private String actionPath = "";
     public OneUpdate(){
         super();
@@ -135,7 +135,7 @@ public class OneUpdate {
             }
             String[] tableArr = tableStr.split("\n");
             for (int i = 0; i <tableArr.length ; i++) {
-                tableArr[i]=StringIndex.upFirstWord(tableArr[i]);
+                tableArr[i]= StringIndex.upFirstWord(tableArr[i]);
             }
             this.tableNameArr = tableArr;
             this.tableName = tableArr[0];
@@ -147,7 +147,7 @@ public class OneUpdate {
             if(this.tableNameArr==null){
                 this.tableNameArr = new String[tableNames.length];
                 for (int i = 0; i <tableNames.length ; i++) {
-                    this.tableNameArr[i]=StringIndex.upFirstWord(tableNames[i].toString());
+                    this.tableNameArr[i]= StringIndex.upFirstWord(tableNames[i].toString());
                 }
             }
         }
@@ -162,7 +162,7 @@ public class OneUpdate {
             System.out.println("-----daoPath:"+this.daoPath);
         }
         if(this.projectName==null||"".equals(this.projectName)){
-            this.projectName=StringIndex.substringLastIndexOf(this.daoPath,"/",6,7);
+            this.projectName= StringIndex.substringLastIndexOf(this.daoPath,"/",6,7);
             //this.projectName=properties.getProperty("server.servlet.context-path");
         }
         if(this.comName==null||"".equals(this.comName)){
@@ -215,7 +215,7 @@ public class OneUpdate {
         }
         if(this.resourcesPath==null||"".equals(this.resourcesPath)){
             //oneUpdatePath=D:/workspace/idea/guo/zufang/src/main/java/guo/utils/
-            int index=StringIndex.lastIndexOf(oneUpdatePath,"/",4);
+            int index= StringIndex.lastIndexOf(oneUpdatePath,"/",4);
             this.resourcesPath = oneUpdatePath.substring(0,index+1)+"resources/";
             System.out.println("-----resourcesPath:"+resourcesPath);
         }
@@ -405,7 +405,7 @@ public class OneUpdate {
                 unicode2=bufferedReader.read();
             }
             String runBatStr = stringBufferRun.toString();
-            runBatStr = runBatStr.replaceAll("java[\\s\\w\\-\\.:/\n]*-overwrite[\\sa-z\n]*","java -jar "+generatorPath+jarMybatis+" -configfile "+generatorPath+"generator.xml -overwrite\nexit");
+            runBatStr = runBatStr.replaceAll("java[\\s\\w\\-\\.:/\n\\\\]*-overwrite[\\sa-z\n]*","java -jar "+generatorPath+jarMybatis+" -configfile "+generatorPath+"generator.xml -overwrite\nexit");
             System.out.println("-----runBatStr:"+runBatStr);
             fileWriter = new FileWriter(runFile);
             bufferedWriter = new BufferedWriter(fileWriter);
@@ -455,7 +455,7 @@ public class OneUpdate {
         if(tableNameArr==null){
             tableNameArr = new String[tableNames.length];
             for (int i = 0; i <tableNames.length ; i++) {
-                tableNameArr[i]=StringIndex.upFirstWord(tableNames[i].toString());
+                tableNameArr[i]= StringIndex.upFirstWord(tableNames[i].toString());
             }
         }
         File daoFolderFile = new File(daoPath);
@@ -575,7 +575,7 @@ public class OneUpdate {
         if(tableNameArr==null){
             tableNameArr = new String[tableNames.length];
             for (int i = 0; i <tableNames.length ; i++) {
-                tableNameArr[i]=StringIndex.upFirstWord(tableNames[i].toString());
+                tableNameArr[i]= StringIndex.upFirstWord(tableNames[i].toString());
             }
         }
         File iServiceFolderFile = new File(iServicePath);
@@ -631,8 +631,8 @@ public class OneUpdate {
                                 int indexWithBLOBs = StringIndex.patternIndexOf(string,"WithBLOBs");
                                 if(indexWithBLOBs>0){
                                     String addStr = "    @Override\n" +
-                                            "    public int updateByPrimaryKeyWithBLOBs("+tableName+" "+StringIndex.lowerFirstWord(tableName)+") {\n" +
-                                            "        return "+StringIndex.lowerFirstWord(tableName)+daoLastName+".updateByPrimaryKeyWithBLOBs("+StringIndex.lowerFirstWord(tableName)+");\n" +
+                                            "    public int updateByPrimaryKeyWithBLOBs("+tableName+" "+ StringIndex.lowerFirstWord(tableName)+") {\n" +
+                                            "        return "+ StringIndex.lowerFirstWord(tableName)+daoLastName+".updateByPrimaryKeyWithBLOBs("+ StringIndex.lowerFirstWord(tableName)+");\n" +
                                             "    }\n";
                                     string = string.replaceAll("//WithBLOBs\n",addStr);
                                 }
@@ -907,12 +907,12 @@ public class OneUpdate {
         if(tableNames.contains("\n")){
             String[] tableArr = tableNames.split("\n");
             for (int i = 0; i <tableArr.length ; i++) {
-                tableArr[i]=StringIndex.upFirstWord(tableArr[i]);
+                tableArr[i]= StringIndex.upFirstWord(tableArr[i]);
                 tableName=tableArr[i];
-                String newStr = strController.replaceAll("T_troops_commandership",StringIndex.upFirstWord(tableName));
-                newStr = newStr.replaceAll("t_troops_commandership",StringIndex.lowerFirstWord(tableName));
+                String newStr = strController.replaceAll("T_troops_commandership", StringIndex.upFirstWord(tableName));
+                newStr = newStr.replaceAll("t_troops_commandership", StringIndex.lowerFirstWord(tableName));
                 newStr = newStr.replaceAll("guo",groupId);
-                String conPath = actionPath+"/"+StringIndex.upFirstWord(tableName)+"Controller.java";
+                String conPath = actionPath+"/"+ StringIndex.upFirstWord(tableName)+"Controller.java";
                 file = new File(conPath);
                 fileWriter = new FileWriter(file);
                 bufferedWriter = new BufferedWriter(fileWriter);
@@ -921,12 +921,12 @@ public class OneUpdate {
             }
         }
         else{
-            tableNames=StringIndex.upFirstWord(tableNames);
+            tableNames= StringIndex.upFirstWord(tableNames);
             tableName=tableNames;
-            String newStr = strController.replaceAll("T_troops_commandership",StringIndex.upFirstWord(tableName));
-            newStr = newStr.replaceAll("t_troops_commandership",StringIndex.lowerFirstWord(tableName));
+            String newStr = strController.replaceAll("T_troops_commandership", StringIndex.upFirstWord(tableName));
+            newStr = newStr.replaceAll("t_troops_commandership", StringIndex.lowerFirstWord(tableName));
             newStr = newStr.replaceAll("guo",groupId);
-            String conPath = actionPath+"/"+StringIndex.upFirstWord(tableName)+"Controller.java";
+            String conPath = actionPath+"/"+ StringIndex.upFirstWord(tableName)+"Controller.java";
             file = new File(conPath);
             fileWriter = new FileWriter(file);//能创建文件，不能创建文件夹。
             bufferedWriter = new BufferedWriter(fileWriter);

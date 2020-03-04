@@ -9,19 +9,6 @@ public class DelRepository {
 //    static String path = "C:\\Users\\Administrator\\.m2\\repository";
     static String path = "D:\\OneDrive\\repository";
 
-    public static void main(String[] args) {
-
-        File file = new File(path);
-
-        File[] sonFiles = file.listFiles();
-        if (sonFiles != null && sonFiles.length > 0) {
-            for (File sonFile : sonFiles) {
-                haveJar(sonFile);
-            }
-        }
-
-    }
-
     public static boolean haveJar(File file) {
         boolean flagJar = false;
         File[] sonFiles = file.listFiles();
@@ -75,5 +62,18 @@ public class DelRepository {
 //            file.delete();
             System.out.println("-----else删除空文件夹:"+file);
         }
+    }
+
+    public static void main(String[] args) {
+
+        File file = new File(path);
+
+        File[] sonFiles = file.listFiles();
+        if (sonFiles != null && sonFiles.length > 0) {
+            for (File sonFile : sonFiles) {
+                haveJar(sonFile);
+            }
+        }
+
     }
 }

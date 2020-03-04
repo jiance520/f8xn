@@ -29,7 +29,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.3.RELEASE</version>
+        <version>2.1.12.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -56,7 +56,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.0.3.RELEASE</version>
         </dependency>
         <!-- Sprig Boot/SpringJUnit支持 测试支持,spring-boot-starter-test中已经集成了junit4.12，org.springframework:spring-test-->
         <!--spring-boot-starter-test 和org.springframework.boot:spring-boot-test两者的依赖包一样-->
@@ -66,7 +65,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <!--test，只在测试时使用，用于编译和运行测试代码。不会随项目发布。-->
             <!--<scope>test</scope>-->
-            <version>2.0.3.RELEASE</version>
         </dependency>
         <!--spring-boot-starter-test：spring-test，只用于编译<scope>compile</scope>-->
         <!--<dependency>
@@ -90,7 +88,6 @@
             <artifactId>spring-boot-devtools</artifactId>
             <!-- <optional>防止将devtools依赖传递到其他模块中，防止与其他工程的jar包冲突-->
             <optional>true</optional>
-            <version>2.0.4.RELEASE</version>
         </dependency>
 
         <!--jsp页面使用jstl标签-->
@@ -112,7 +109,6 @@
         <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
-            <version>2.2.2.RELEASE</version>
             <scope>provided</scope>
         </dependency>-->
 
@@ -137,7 +133,7 @@
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>1.3.2</version>
+            <version>2.1.1</version>
         </dependency>
         <!--插件idea-mybatis-generator(org.apache.ibatis.annotations.Param;)可有可无-->
         <dependency>
@@ -243,7 +239,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
             <!--<version>2.1.3.RELEASE</version>-->
-            <version>2.2.2.RELEASE</version>
         </dependency>
         <!--用于shiro配置文件中的@Bean-->
         <dependency>
@@ -300,7 +295,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
-            <version>2.2.2.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>redis.clients</groupId>
@@ -331,14 +325,12 @@
         <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
-            <version>2.2.2.RELEASE</version>
         </dependency>-->
 
         <!--mongodb的jar包,必须要配置mongodb的连接-->
         <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
-            <version>2.1.6.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.mongodb</groupId>
