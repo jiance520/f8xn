@@ -953,14 +953,14 @@ public class OneUpdate {
         //读取配置文件值https://blog.csdn.net/jiangyu1013/article/details/82188593,能读a.bc=3和a.c: 4格式，不分yml或properties。
         //执行前，必须先build生成target,否则无法获取路径，使用mysql5，不要用6和8.要改配置。
         //OneUpdate oneUpdate = new OneUpdate("application.properties","mysql-connector-java-5.1.20.jar", "dao","Mapper", "service","impl",true,tableStr);
-        OneUpdate oneUpdate = new OneUpdate("application.properties","mysql-connector-java-5.1.20.jar", "dao","Mapper", "service","impl",true,"t_user");
+//        OneUpdate oneUpdate = new OneUpdate("application.properties","mysql-connector-java-5.1.20.jar", "dao","Mapper", "service","impl",true,"dog");
         //根据传入的表(一个或多个)进行重新生成该表的相关信息，tableNames在调用时指定.
-        oneUpdate.runFun();//最后输出-----serviceFile，生成xml配置文件，生成实体类，生成服务接口，实现接口，可拆分执行。
+//        oneUpdate.runFun();//最后输出-----serviceFile，生成xml配置文件，生成实体类，生成服务接口，实现接口，可拆分执行。
 
         //生成controller,只调用其中的一个方法。生成最后的控制层，前面的注消。//不需要依赖其它属性，因些不初始化有参构造。
-        //OneUpdate oneUpdate = new OneUpdate();
+//        OneUpdate oneUpdate = new OneUpdate();
         //oneUpdate.controller("D:\\workspace\\idea\\springcloud\\f8xn\\autof8\\src\\main\\java\\com\\action","t_decisemanagetable");
         //可以不指定actionPath,tableNames要么在方法里指定，要么调用时指定.
-        //oneUpdate.controller("","t_user","com");
+//        oneUpdate.controller("","dog","com");
     }
 }

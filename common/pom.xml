@@ -7,7 +7,7 @@
     <groupId>f8xn</groupId>
     <artifactId>common</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <!--<packaging>jar</packaging>-->
+    <!--如果是启动springboot，不需要打包common,如果是install打包其它module,并且依赖了common，必须先install打包common-->
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>
