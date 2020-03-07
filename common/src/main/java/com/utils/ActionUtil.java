@@ -19,17 +19,23 @@ import java.util.Map;
 @Component
 public class ActionUtil implements ApplicationContextAware {
     private static final Logger logger = LoggerFactory.getLogger(ActionUtil.class);
-    private static String daoFolderName = "guo";
+    private static String daoFolderName = "dao";
     private static String comName = "com";
     private static String entityName = "entity";
     private static String iServiceFolderName = "service";
     private static String serviceFolderName = "impl";
     private static URL oneUpdateURL = null;//当前类所在的本地URL。
     //URL oneUpdateURL = OneUpdate.class.getResource("");//当前类所在的本地URL。
-    private static String selectByPrimaryKey = "selectByPrimaryKey";
-    private static String deleteByPrimaryKey = "deleteByPrimaryKey";
+
+    private static String tablenameKey = "tablename";
+    private static String actiontypeKey = "actiontype";
+    private static String primarynameKey = "primaryname";
+    //private static String primaryname1Key = "primaryname1";//必须包含primaryname，且后面跟数字1表示单主键，两个主键用12区分
+    //private static String primaryname2Key = "primaryname2";
+    private static String selectByPrimaryKey = "selectByKey";
+    private static String deleteByPrimaryKey = "deleteByKey";
     private static String insertSelective = "insertSelective";
-    private static String updateByPrimaryKeySelective = "updateByPrimaryKeySelective";
+    private static String updateByPrimaryKeySelective = "updateByKeySelective";
     private static ApplicationContext applicationContext;
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
@@ -51,10 +57,10 @@ public class ActionUtil implements ApplicationContextAware {
         File daoFolderFile = new File(daoPath);
         String[] mapperFileStrArr = daoFolderFile.list();/*返回所有的文件名*///TesttypeMapper.java,
         //System.out.println("-----mapperFileStrArr:"+ Arrays.toString(mapperFileStrArr));
-        String tableName = jsonMap.get("tablename").toString();
+        String tableName = jsonMap.get(tablenameKey).toString();
         tableName = tableName.substring(0,1).toUpperCase()+tableName.substring(1);
-        String actionType = jsonMap.get("actiontype").toString();
-        String mapPrimaryName=jsonMap.get("primaryname1").toString();//deciseID/mrank_id
+        String actionType = jsonMap.get(actiontypeKey).toString();
+        String mapPrimaryName=jsonMap.get(primarynameKey+"1").toString();//deciseID/mrank_id
         //primaryval1必须转化为跟bean属性一样
         String beanIdName = MapToBeanUtil.mapKeyToField(mapPrimaryName);//deciseid
         String idVal = null;
@@ -163,9 +169,9 @@ public class ActionUtil implements ApplicationContextAware {
         File daoFolderFile = new File(daoPath);
         String[] mapperFileStrArr = daoFolderFile.list();/*返回所有的文件名*///TesttypeMapper.java,
         //System.out.println("-----mapperFileStrArr:"+ Arrays.toString(mapperFileStrArr));
-        String tableName = jsonMap.get("tablename").toString();
+        String tableName = jsonMap.get(tablenameKey).toString();
         tableName = tableName.substring(0,1).toUpperCase()+tableName.substring(1);
-        String actionType = jsonMap.get("actiontype").toString();
+        String actionType = jsonMap.get(actiontypeKey).toString();
         //String primaryval1 = jsonMap.get("primaryname1").toString().toLowerCase();
         ArrayList<String> arrMapKeyName = new ArrayList<String>();
         ArrayList<String> arrMapPrimaryName = new ArrayList<String>();
@@ -181,7 +187,7 @@ public class ActionUtil implements ApplicationContextAware {
             for(Map.Entry<String,Object> jsonMapEntry:jsonMap.entrySet()){
                 String jsonMapAttrKey = jsonMapEntry.getKey();
                 String jsonmapattrkey = jsonMapAttrKey.substring(0,jsonMapAttrKey.length()-1);
-                if(jsonmapattrkey.equals("primaryname")){
+                if(jsonmapattrkey.equals(primarynameKey)){
                     primaryNum++;
                     arrMapKeyName.add(jsonmapattrkey+primaryNum);//jsonmapattrkey=primaryname
                     String mapPrimaryName = jsonMap.get(arrMapKeyName.get(primaryNum-1)).toString();//w_flat_id,w_equip_id

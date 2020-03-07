@@ -18,6 +18,9 @@ import java.util.Map;
 
 @Controller
 public class CommonController implements ServletContextAware {
+    private static String tablenameKey = "tablename";
+    private static String primaryvalKey = "primaryval";
+    private static String primarynameKey = "primaryname";
     //slf4j与log4j、log4j2:https://blog.csdn.net/HarderXin/article/details/80422903?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
     //Spring Boot 日志配置(超详细),https://blog.csdn.net/Inke88/article/details/75007649?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
     //SpringBoot 项目中使用Log4j2详细（避坑） https://blog.csdn.net/RyanDon/article/details/82589989
@@ -48,7 +51,7 @@ public class CommonController implements ServletContextAware {
     //private Logger logger = Logger.getLogger(getClass());
     private ServletContext application;
     /*@Value("spring.datasource.driver-class-name")
-    private String driverClassName="com.mysql.jdbc.Driver";
+    private String driverClassName="com.mysql.cj.jdbc.Driver";
     @Value("spring.datasource.url")
     private String datasourceUrl="jdbc:mysql://localhost:3306/shiro?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8";
     @Value("spring.datasource.username")
@@ -64,7 +67,7 @@ public class CommonController implements ServletContextAware {
     @ResponseBody
     @RequestMapping(value = "/selectAll",produces = "application/json;chart=UTF-8")
     public String selectAll(HttpServletRequest request){
-        String tablename = request.getParameter("tablename");
+        String tablename = request.getParameter(tablenameKey);
         String backStr = null;
         if(tablename==null||"".equals(tablename)){
             backStr="tablename为空";
@@ -80,9 +83,9 @@ public class CommonController implements ServletContextAware {
     @ResponseBody
     @RequestMapping(value = "/selectOne",produces = "application/json;chart=UTF-8")
     public String selectOne(HttpServletRequest request){
-        String tablename = request.getParameter("tablename");
-        String primaryname = request.getParameter("primaryname");
-        String primaryval = request.getParameter("primaryval");
+        String tablename = request.getParameter(tablenameKey);
+        String primaryname = request.getParameter(primarynameKey);
+        String primaryval = request.getParameter(primaryvalKey);
         String backStr = null;
         if(tablename==null||"".equals(tablename)){
             backStr="tablename为空,";
@@ -104,9 +107,9 @@ public class CommonController implements ServletContextAware {
     @ResponseBody
     @RequestMapping(value = "/deleteOne",produces = "application/json;chart=UTF-8")
     public Object deleteOne(HttpServletRequest request){
-        String tablename = request.getParameter("tablename");
-        String primaryname = request.getParameter("primaryname");
-        String primaryval = request.getParameter("primaryval");
+        String tablename = request.getParameter(tablenameKey);
+        String primaryname = request.getParameter(primarynameKey);
+        String primaryval = request.getParameter(primaryvalKey);
         String backStr = null;
         if(tablename==null||"".equals(tablename)){
             backStr="tablename为空,";
@@ -130,13 +133,13 @@ public class CommonController implements ServletContextAware {
     @RequestMapping(value = "/insertOne",produces = "application/json;chart=UTF-8")
     public String insertOne(HttpServletRequest request,@RequestParam(required = false) Map<String,Object> params){
         String sql = "";
-        String tablename = request.getParameter("tablename");
+        String tablename = request.getParameter(tablenameKey);
         logger.info("-----params:"+params.toString());
 
         sql="INSERT INTO "+tablename+" VALUES(";
         for(HashMap.Entry<String,Object> entry:params.entrySet()){
             String entryKey = entry.getKey();
-            if(!entryKey.equals("tablename")){
+            if(!entryKey.equals(tablenameKey)){
                 sql = sql +",\""+ entry.getValue().toString()+"\"";
             }
         }
@@ -154,13 +157,13 @@ public class CommonController implements ServletContextAware {
     public String insertOneAutoId(HttpServletRequest request,@RequestParam(required = false) Map<String,Object> params){
         String sql = "";
         System.out.println("-----params:"+params.toString());
-        String tablename = request.getParameter("tablename");
+        String tablename = request.getParameter(tablenameKey);
         logger.info("-----params:"+params.toString());
 
         sql="INSERT INTO "+tablename+" VALUES(DEFAULT";
         for(HashMap.Entry<String,Object> entry:params.entrySet()){
             String entryKey = entry.getKey();
-            if(!entryKey.equals("tablename")){
+            if(!entryKey.equals(tablenameKey)){
                 sql = sql +",\""+ entry.getValue().toString()+"\"";
             }
         }
@@ -176,14 +179,14 @@ public class CommonController implements ServletContextAware {
     @RequestMapping(value = "/updateOne",produces = "application/json;chart=UTF-8")
     public String updateOne(HttpServletRequest request,@RequestParam(required = false) Map<String,Object> params){
         String sql = "";
-        String tablename = request.getParameter("tablename");
-        String primaryname = request.getParameter("primaryname");
+        String tablename = request.getParameter(tablenameKey);
+        String primaryname = request.getParameter(primarynameKey);
         String primaryval = request.getParameter(primaryname);
 
         sql="UPDATE "+tablename+" SET ";
         for(HashMap.Entry<String,Object> entry:params.entrySet()){
             String entryKey = entry.getKey();
-            if(!entryKey.equals("tablename")&&!entryKey.equals("primaryname")&&!entryKey.equals(primaryname)){
+            if(!entryKey.equals(tablenameKey)&&!entryKey.equals(primarynameKey)&&!entryKey.equals(primaryname)){
                 sql = sql +entry.getKey()+"=\""+ entry.getValue().toString()+"\",";
             }
         }
