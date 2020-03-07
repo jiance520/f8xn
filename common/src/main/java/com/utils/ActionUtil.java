@@ -91,7 +91,7 @@ public class ActionUtil implements ApplicationContextAware {
                             if(mapPrimaryName!=null&&!"".equals(mapPrimaryName)){
                                 fieldType = MapToBeanUtil.mapAttrKeyType(backBean,beanIdName);//属性必须包含在实体类的bean中，否则抛异常,中止执行！
                             }
-                            Method method = cs.getDeclaredMethod(selectByPrimaryKey,fieldType);
+                            Method method = cs.getDeclaredMethod("selectByPrimaryKey",fieldType);
                             //System.out.println("-----method:"+method.toString());
                             String serviceBeanStr = mapperFileStrArr[i]+"Service";
                             serviceBeanStr=serviceBeanStr.substring(0,1).toLowerCase()+serviceBeanStr.substring(1);
@@ -105,7 +105,7 @@ public class ActionUtil implements ApplicationContextAware {
                         }
                         else if(actionType.equals(insertSelective)){
                             Class<?> cs = Class.forName(comName+"."+iServiceFolderName+"."+serviceFolderName+"."+mapperFileStrArr[i]+"Service");//+mapperFileStrArr[i]+"Service"
-                            Method method = cs.getDeclaredMethod(insertSelective,entityClass);
+                            Method method = cs.getDeclaredMethod("insertSelective",entityClass);
                             System.out.println("-----method:"+method.toString());
                             String serviceBeanStr = mapperFileStrArr[i]+"Service";
                             serviceBeanStr=serviceBeanStr.substring(0,1).toLowerCase()+serviceBeanStr.substring(1);
@@ -114,7 +114,7 @@ public class ActionUtil implements ApplicationContextAware {
                         }
                         else if(actionType.equals(updateByPrimaryKeySelective)){
                             Class<?> cs = Class.forName(comName+"."+iServiceFolderName+"."+serviceFolderName+"."+mapperFileStrArr[i]+"Service");//+mapperFileStrArr[i]+"Service"
-                            Method method = cs.getDeclaredMethod(updateByPrimaryKeySelective,entityClass);
+                            Method method = cs.getDeclaredMethod("updateByPrimaryKeySelective",entityClass);
                             System.out.println("-----method:"+method.toString());
                             String serviceBeanStr = mapperFileStrArr[i]+"Service";
                             serviceBeanStr=serviceBeanStr.substring(0,1).toLowerCase()+serviceBeanStr.substring(1);
@@ -128,7 +128,7 @@ public class ActionUtil implements ApplicationContextAware {
                                 fieldType = MapToBeanUtil.mapAttrKeyType(backBean,beanIdName);//属性必须包含在实体类的bean中，否则抛异常,中止执行！
                             }
 
-                            Method method = cs.getDeclaredMethod(deleteByPrimaryKey,fieldType);
+                            Method method = cs.getDeclaredMethod("deleteByPrimaryKey",fieldType);
                             System.out.println("-----method:"+method.toString());
                             String serviceBeanStr = mapperFileStrArr[i]+"Service";
                             serviceBeanStr=serviceBeanStr.substring(0,1).toLowerCase()+serviceBeanStr.substring(1);
@@ -216,7 +216,7 @@ public class ActionUtil implements ApplicationContextAware {
                             Class fieldKeyType2 = MapToBeanUtil.mapAttrKeyType(backBean,arrBeanIdName.get(1));
                             //for(String primaryname:arrMapKeyName){}
                             System.out.println("-----arrBeanIdName.get(0):"+arrBeanIdName.get(0));
-                            Method method = cs.getDeclaredMethod(selectByPrimaryKey,fieldKeyType1,fieldKeyType2);
+                            Method method = cs.getDeclaredMethod("selectByPrimaryKey",fieldKeyType1,fieldKeyType2);
                             //System.out.println("-----method:"+method.toString());
                             String serviceBeanStr = mapperFileStrArr[i]+"Service";
                             serviceBeanStr=serviceBeanStr.substring(0,1).toLowerCase()+serviceBeanStr.substring(1);
@@ -227,7 +227,7 @@ public class ActionUtil implements ApplicationContextAware {
                         }
                         else if(actionType.equals(insertSelective)){
                             Class<?> cs = Class.forName(comName+"."+iServiceFolderName+"."+serviceFolderName+"."+mapperFileStrArr[i]+"Service");//+mapperFileStrArr[i]+"Service"
-                            Method method = cs.getDeclaredMethod(insertSelective,entityClass);
+                            Method method = cs.getDeclaredMethod("insertSelective",entityClass);
                             System.out.println("-----method:"+method.toString());
                             String serviceBeanStr = mapperFileStrArr[i]+"Service";
                             serviceBeanStr=serviceBeanStr.substring(0,1).toLowerCase()+serviceBeanStr.substring(1);
@@ -236,7 +236,7 @@ public class ActionUtil implements ApplicationContextAware {
                         }
                         else if(actionType.equals(updateByPrimaryKeySelective)){
                             Class<?> cs = Class.forName(comName+"."+iServiceFolderName+"."+serviceFolderName+"."+mapperFileStrArr[i]+"Service");//+mapperFileStrArr[i]+"Service"
-                            Method method = cs.getDeclaredMethod(updateByPrimaryKeySelective,entityClass);
+                            Method method = cs.getDeclaredMethod("updateByPrimaryKeySelective",entityClass);
                             System.out.println("-----method:"+method.toString());
                             String serviceBeanStr = mapperFileStrArr[i]+"Service";
                             serviceBeanStr=serviceBeanStr.substring(0,1).toLowerCase()+serviceBeanStr.substring(1);
@@ -248,7 +248,7 @@ public class ActionUtil implements ApplicationContextAware {
                             Class fieldKeyType1 = MapToBeanUtil.mapAttrKeyType(backBean,arrBeanIdName.get(0));
                             Class fieldKeyType2 = MapToBeanUtil.mapAttrKeyType(backBean,arrBeanIdName.get(1));
 
-                            Method method = cs.getDeclaredMethod(deleteByPrimaryKey,fieldKeyType1,fieldKeyType2);
+                            Method method = cs.getDeclaredMethod("deleteByPrimaryKey",fieldKeyType1,fieldKeyType2);
                             System.out.println("-----method:"+method.toString());
                             String serviceBeanStr = mapperFileStrArr[i]+"Service";
                             serviceBeanStr=serviceBeanStr.substring(0,1).toLowerCase()+serviceBeanStr.substring(1);
