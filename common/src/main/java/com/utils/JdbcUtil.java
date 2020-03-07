@@ -1,7 +1,8 @@
 package com.utils;
 
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
@@ -19,10 +20,10 @@ import java.util.List;
  */
 @Component
 public class JdbcUtil {//工具类，针对不同的数据库，使用同样的jdbc方法。
-	private static Logger logger = Logger.getLogger(JdbcUtil.class.getName());
-//	private static String driver = "com.mysql.cj.jdbc.Driver";//
+	private static final Logger logger = LoggerFactory.getLogger(JdbcUtil.class);
+	//	private static String driver = "com.mysql.jdbc.Driver";//
 	private static String driver = "com.mysql.cj.jdbc.Driver";//
-	private static String url = "jdbc:mysql://localhost:3306/epet?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8";
+	private static String url = "jdbc:mysql://localhost:3306/milmajordb2012127?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8";
 	private static String user = "root";
 	private static String password = "root";
 	private static Connection conn = null;
@@ -85,7 +86,7 @@ public class JdbcUtil {//工具类，针对不同的数据库，使用同样的j
 			if(params!=null){
 				for (int i = 0; i < params.length; i++) {
 					pst.setObject(i+1,params[i]);
-					logger.debug(params[i]);
+					logger.debug(params[i].toString());
 				}
 			}
 	/*在此 PreparedStatement 对象中执行 SQL 语句，
