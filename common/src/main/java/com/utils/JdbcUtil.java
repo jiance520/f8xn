@@ -6,11 +6,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 //import oracle.jdbc.OracleTypes;
 
@@ -21,18 +18,18 @@ import java.util.List;
 @Component
 public class JdbcUtil {//工具类，针对不同的数据库，使用同样的jdbc方法。
 	private static final Logger logger = LoggerFactory.getLogger(JdbcUtil.class);
-	//	private static String driver = "com.mysql.jdbc.Driver";//
+	//private static Logger logger = Logger.getLogger(JdbcUtil.class.getName());
 	private static String driver = "com.mysql.cj.jdbc.Driver";//
-	private static String url = "jdbc:mysql://localhost:3306/milmajordb2012127?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8";
+	private static String url = "jdbc:mysql://localhost:3306/shiro?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8";
 	private static String user = "root";
 	private static String password = "root";
 	private static Connection conn = null;
 	private static PreparedStatement pst = null;
 	private static ResultSet rst = null;
 	private static CallableStatement cst = null;
-//	MySQL数据库的root用户的epet数据库
+//	MySQL数据库的root用户的shiro数据库
 //		private static String driver = "com.mysql.cj.jdbc.Driver";//前后不能有空格
-//		private static String url = "jdbc:mysql://localhost:3306/epet";
+//		private static String url = "jdbc:mysql://localhost:3306/shiro";
 //		private static String user= "root";
 //		private static String pwd= "root";
 //		private static Connection con = null;
@@ -346,7 +343,8 @@ public class JdbcUtil {//工具类，针对不同的数据库，使用同样的j
 	public static void main(String[] args) {
 //		nullList("PRODUCT");
 //		OracleTypes,用于向数据规定数据类型。
-//		Object object = JdbcUtil.exectueQuery("select * from dog");
-//		System.out.println("-----test:"+object);
+		Object object = JdbcUtil.exectueQuery("select * from t_user");
+		logger.debug(object.toString());
+		System.out.println("-----test:"+object);
 	}
 }
