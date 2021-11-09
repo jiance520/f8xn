@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="wenjia" />
-        <module name="common" />
         <module name="f8xn" />
         <module name="account" />
       </profile>

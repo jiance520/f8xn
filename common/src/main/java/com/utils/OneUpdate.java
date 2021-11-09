@@ -3,6 +3,7 @@ package com.utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 import java.io.*;
 import java.net.URL;
@@ -15,17 +16,20 @@ import java.util.regex.Pattern;
 //必须放在utils文件夹，否则手动修改必须保证所有文件夹名规范，dao,service,才能使用此工具
 //数据库中的大写在对象属性中是小写，数据库中下划线后的字母在对象属性中是大写，
 //@Component
-//@Configuration构造函数的入参，必须用存在的属性？
-//@PropertySource("classpath:/application.properties")自定义配置文件
+//@Configuration //当前类是一个配置类，同.xml,.properties。
+//浅析PropertySource 基本使用https://www.cnblogs.com/cxuanBlog/p/10927823.html
+//@PropertySource("classpath:/config.properties")自定义使用哪个配置文件来注入属性值，通常结合@Configuration
+//@PropertySource(value = "classpath:application.properties",ignoreResourceNotFound = false)
+@Component
 public class OneUpdate {
     private static final Logger logger = LoggerFactory.getLogger(OneUpdate.class);
     //private static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(OneUpdate.class.getName());
     private String jarName = "";//mysql-connector-java-5.1.47.jar
-    private String propertiesName="";//application.properties
+    private String propertiesName="";//config.properties
     private String resourcesPath="";//D:/workspace/idea/com/zufang/src/main/resources
     private String jarLocation="";//D:/workspace/idea/com/zufang/src/main/resources/mybatisGenerator/mysql-connector-java-5.1.47.jar
     @Value("${spring.datasource.driver-class-name}")
-    private String driverClass;//com.mysql.cj.jdbc.Driver
+    private String driverClass;//com.mysql.jdbc.Driver
     @Value("${spring.datasource.url}")
     private String connectionURL;//jdbc:mysql://localhost:3306/src?characterEncoding=utf8
     @Value("spring.datasource.name")
@@ -40,12 +44,12 @@ public class OneUpdate {
     private String userId;//root
     @Value("${spring.datasource.password}")
     private String password;//root
-    @Value("${server.servlet.context-path}")
+    //@Value("${server.servlet.context-path}") //由于springcloud的yml不配置context-path，这里读取会报错，
     private String projectName;//zufang,工程名不一定是数据库名，所以generator.xml要检查。
     private String generatorPath = "D:/workspace/idea/springcloud/f8xn/src/resources/mybatisGenerator/";// D:/workspace/idea/springcloud/f8xn/src/resources/mybatisGenerator/，不能是路径\\
     private String jarMybatis = "mybatis-generator-core-1.3.2.jar";
     //private URL oneUpdateURL = "file:/D:/workspace/idea/springcloud/f8xn/autof8/target/classes/com/utils/";
-    private URL oneUpdateURL = OneUpdate.class.getResource("");//当前类或utils所在的本地target中的URL。在当前调用类的同一路径下查找该资源""
+    private URL oneUpdateURL = OneUpdate.class.getResource("");//=this.getClass().getResource("/").toString();当前类或utils所在的本地target中的URL。在当前调用类的同一路径下查找该资源""
     private String oneUpdatePath = "";
     //private String oneUpdatePath = "file:/D:/workspace/idea/springcloud/f8xn/autof8/target/classes/com/utils/";//项目目录file /x:/xxx/target/classes/com/utils/
     private boolean flagDel = false;//重构是否删除原来的dao、entity、mapper.xml。false不删除
@@ -79,7 +83,7 @@ public class OneUpdate {
             e.printStackTrace();
         }
 
-        //-----------由于不启动，不能通过@Value取application.properties里的属性值(已验证)，以下必须-----------
+        //-----------由于不启动，不能通过@Value取config.properties里的属性值(已验证)，以下必须-----------
         if(this.userId==null||"".equals(this.userId)){
             userId = properties.getProperty("spring.datasource.username");
         }
@@ -378,12 +382,15 @@ public class OneUpdate {
             String generatorXmlStr = generatorXml.toString();
             generatorXmlStr = generatorXmlStr.replaceAll("location=\"[\\u4e00-\\u9fa5\\w\\.\\-:/\\\\]+\\.jar\"","location=\""+jarLocation+"\"");
             if(connectionURL.contains("mysql-connector-java-6")||connectionURL.contains("mysql-connector-java-8")){
-                //generatorXmlStr = generatorXmlStr.replaceAll("driverClass=\"[\\w\\.]+Driver","driverClass=\""+driverClass); //后面不要加+"\""
-                generatorXmlStr = generatorXmlStr.replaceAll("driverClass=\"[\\w\\.]+Driver","driverClass=\""+"com.mysql.cj.jdbc.Driver"); //后面不要加+"\""
                 logger.info("请使用低于6版本的mysql驱动，否则修改generator和OneUpdate.java");
                 System.exit(0);
             }
+            else {
+                //generatorXmlStr = generatorXmlStr.replaceAll("driverClass=\"[\\w\\.]+Driver","driverClass=\""+driverClass); //后面不要加+"\""
+                generatorXmlStr = generatorXmlStr.replaceAll("driverClass=\"[\\w\\.]+Driver","driverClass=\""+driverClass); //后面不要加+"\""
+            }
             generatorXmlStr = generatorXmlStr.replaceAll("connectionURL=\"[\\w\\.\\-:=&;\\? /\\\\]*\" userId","connectionURL=\""+connectionURL+"\" userId");
+            generatorXmlStr = generatorXmlStr.replaceAll("&(?!amp;)","&amp;");
             generatorXmlStr = generatorXmlStr.replaceAll("<javaModelGenerator[\\s]+targetPackage=\"[\\w\\./]*+\"[\\s]+targetProject=\"[\\u4e00-\\u9fa5\\w\\.\\-:/\\\\]+\">","<javaModelGenerator targetPackage=\""+javaModelGenerator+"\" targetProject=\""+javaTargetProject+"\">");
             generatorXmlStr = generatorXmlStr.replaceAll("<sqlMapGenerator[\\s]+targetPackage=\"[\\w\\./]*+\"[\\s]+targetProject=\"[\\u4e00-\\u9fa5\\w\\.\\-:/\\\\]+\">","<sqlMapGenerator targetPackage=\""+sqlMapGenerator+"\" targetProject=\""+sqlTargetProject+"\">");
             generatorXmlStr = generatorXmlStr.replaceAll("<javaClientGenerator[\\s]+targetPackage=\"[\\w\\./]*+\"[\\s]+targetProject=\"[\\u4e00-\\u9fa5\\w\\.\\-:/\\\\]+\" type=\"XMLMAPPER\">","<javaClientGenerator targetPackage=\""+clientGenerator+"\" targetProject=\""+clientTargetProject+"\" type=\"XMLMAPPER\">");
@@ -814,78 +821,102 @@ public class OneUpdate {
         iServiceToService();
     }
     //生成Controller
-    public void controller(String actionName,String tableNames,String groupId) throws IOException {
+    public void controller(String actionName,String groupId,String tableNames) throws IOException {
         String tableName = "";
         if(tableNames==null||"".equals(tableNames)){
-            tableNames = "t_weapon_photoelectricity_info\n" +
-                    "t_troops_basic_uint\n" +
-                    "t_troops_uint\n" +
-                    "t_user\n" +
-                    "t_weapon_communicate_info\n" +
-                    "t_flatequip_correspond\n" +
-                    "t_weapon_logistics_info\n" +
-                    "t_weaponammo_correspond\n" +
-                    "t_weapon_cannon_info";
+            tableNames = "s_role_permssion\n" +
+                    "s_role\n" +
+                    "credibilitylist\n" +
+                    "s_user_role\n" +
+                    "incomelist\n" +
+                    "s_permssion\n" +
+                    "accountlist\n" +
+                    "userinfo";
         }
         String strController = "package com.action;\n" +
                 "\n" +
                 "import com.alibaba.fastjson.JSON;\n" +
-                "import com.entity.T_troops_commandership;\n" +
-                "import com.service.IT_troops_commandershipService;\n" +
+                "import com.entity.T_user;\n" +
+                "import com.service.IT_userService;\n" +
+                "import com.utils.MapToBeanUtil;\n" +
                 "import org.springframework.stereotype.Controller;\n" +
                 "import org.springframework.web.bind.annotation.*;\n" +
                 "import org.springframework.web.context.ServletContextAware;\n" +
+                "import org.springframework.web.multipart.MultipartFile;\n" +
                 "\n" +
                 "import javax.annotation.Resource;\n" +
                 "import javax.servlet.ServletContext;\n" +
                 "import javax.servlet.http.HttpServletRequest;\n" +
+                "import java.io.File;\n" +
+                "import java.util.Iterator;\n" +
+                "import java.util.Map;\n" +
                 "\n" +
-                "@RestController\n" +
-                "public class T_troops_commandershipController implements ServletContextAware {\n" +
+                "@Controller\n" +
+                "public class T_userController implements ServletContextAware {\n" +
+                "    private static String primarynameKey = \"pidnamedjj\";\n" +
                 "    private ServletContext application;\n" +
                 "    @Resource\n" +
-                "    private IT_troops_commandershipService iT_troops_commandershipService;\n" +
+                "    private IT_userService iT_userService;\n" +
                 "    @Override\n" +
                 "    public void setServletContext(ServletContext servletContext) {\n" +
                 "        this.application = servletContext;\n" +
                 "    }\n" +
                 "    @CrossOrigin\n" +
                 "    @ResponseBody\n" +
-                "    @RequestMapping(value = \"/t_troops_commandershipInsert\",produces = \"application/json;chart=UTF-8\")\n" +
-                "    public String t_troops_commandershipInsert(HttpServletRequest request){\n" +
-                "        String commandership_name = request.getParameter(\"commandership_name\");\n" +
-                "        T_troops_commandership t_troops_commandership = new T_troops_commandership();\n" +
-                "        t_troops_commandership.setCommandershipName(commandership_name);\n" +
-                "        int i = iT_troops_commandershipService.insertSelective(t_troops_commandership);\n" +
+                "    @RequestMapping(value = \"/t_userInsert\",produces = \"application/json;chart=UTF-8\")\n" +
+                "    public String t_userInsert(HttpServletRequest request, @RequestParam(required = false) Map<String,Object> params,@RequestParam(required = false) MultipartFile[] excelfiledjj){\n" +
+                "        System.out.println(\"-----params36:\"+params.toString());\n" +
+                "        Iterator iterator = params.keySet().iterator();\n" +
+                "        while (iterator.hasNext()){\n" +
+                "            String entryKey = iterator.next().toString();\n" +
+                "            if(entryKey.equals(\"driverNamedjj\")||entryKey.equals(\"datasourceUrldjj\")||entryKey.equals(\"userNamedjj\")||entryKey.equals(\"passworddjj\")||entryKey.equals(\"pronamedjj\")||entryKey.equals(\"tabnamedjj\")||entryKey.contains(\"pidnamedjj\")||entryKey.equals(\"acttypedjj\")||entryKey.equals(\"excelfiledjj\")){\n" +
+                "                iterator.remove();\n" +
+                "            }\n" +
+                "        }\n" +
+                "        T_user t_user = (T_user)MapToBeanUtil.backInstanceMapBean(new T_user(),params);\n" +
+                "        int i = iT_userService.insertSelective(t_user);\n" +
                 "        return JSON.toJSONString(i);\n" +
                 "    }\n" +
                 "    @CrossOrigin\n" +
                 "    @ResponseBody\n" +
-                "    @RequestMapping(value = \"/t_troops_commandershipUpdate\",produces = \"application/json;chart=UTF-8\")\n" +
-                "    public String t_troops_commandershipUpdate(HttpServletRequest request){\n" +
-                "        String commandership_id = request.getParameter(\"commandership_id\");\n" +
-                "        T_troops_commandership t_troops_commandership = new T_troops_commandership();\n" +
-                "        t_troops_commandership.setCommandershipId(Integer.valueOf(commandership_id));\n" +
-                "        int i = iT_troops_commandershipService.updateByPrimaryKeySelective(t_troops_commandership);\n" +
+                "    @RequestMapping(value = \"/t_userDelete\",produces = \"application/json;chart=UTF-8\")\n" +
+                "    public String t_userDelete(HttpServletRequest request, @RequestParam(required = false) Map<String,Object> params){\n" +
+                "        System.out.println(\"-----params:\"+params.toString());\n" +
+                "        String primaryname = request.getParameter(primarynameKey+1);\n" +
+                "        String primaryval = params.get(primaryname).toString();\n" +
+                "        int i = iT_userService.deleteByPrimaryKey(Integer.valueOf(primaryval));\n" +
                 "        return JSON.toJSONString(i);\n" +
                 "    }\n" +
                 "    @CrossOrigin\n" +
                 "    @ResponseBody\n" +
-                "    @RequestMapping(value = \"/t_troops_commandershipSelect\",produces = \"application/json;chart=UTF-8\")\n" +
-                "    public String t_troops_commandershipSelect(HttpServletRequest request){\n" +
-                "        String commandership_id = request.getParameter(\"commandership_id\");\n" +
-                "        T_troops_commandership t_troops_commandership = iT_troops_commandershipService.selectByPrimaryKey(Integer.valueOf(commandership_id));\n" +
-                "        return JSON.toJSONString(t_troops_commandership);\n" +
+                "    @RequestMapping(value = \"/t_userUpdate\",produces = \"application/json;chart=UTF-8\")\n" +
+                "    public String t_userUpdate(HttpServletRequest request, @RequestParam(required = false) Map<String,Object> params,@RequestParam(required = false) MultipartFile[] excelfiledjj) throws Exception {\n" +
+                "        System.out.println(\"-----params:\"+params.toString());\n" +
+                "        String path = application.getRealPath(\"img\")+ File.separator;\n" +
+                "        System.out.println(\"-----img/product:\"+path);\n" +
+                "        //List<HashMap<String,Object>> mapList = PoiUtil.inxlsx(excelfiledjj);//把接收的文件中的数据转为listmap。\n" +
+                "        Iterator iterator = params.keySet().iterator();\n" +
+                "        while (iterator.hasNext()){\n" +
+                "            String entryKey = iterator.next().toString();\n" +
+                "            if(entryKey.equals(\"driverNamedjj\")||entryKey.equals(\"datasourceUrldjj\")||entryKey.equals(\"userNamedjj\")||entryKey.equals(\"passworddjj\")||entryKey.equals(\"pronamedjj\")||entryKey.equals(\"tabnamedjj\")||entryKey.contains(\"pidnamedjj\")||entryKey.equals(\"acttypedjj\")||entryKey.equals(\"excelfiledjj\")){\n" +
+                "                iterator.remove();\n" +
+                "            }\n" +
+                "        }\n" +
+                "        T_user t_user = (T_user) MapToBeanUtil.backInstanceMapBean(new T_user(),params);\n" +
+                "        int i = iT_userService.updateByPrimaryKeySelective(t_user);\n" +
+                "        return JSON.toJSONString(i);\n" +
                 "    }\n" +
                 "    @CrossOrigin\n" +
                 "    @ResponseBody\n" +
-                "    @RequestMapping(value = \"/t_troops_commandershipDelete\",produces = \"application/json;chart=UTF-8\")\n" +
-                "    public String t_troops_commandershipDelete(HttpServletRequest request){\n" +
-                "        String commandership_id = request.getParameter(\"commandership_id\");\n" +
-                "        int i = iT_troops_commandershipService.deleteByPrimaryKey(Integer.valueOf(commandership_id));\n" +
-                "        return JSON.toJSONString(i);\n" +
+                "    @RequestMapping(value = \"/t_userSelect\",produces = \"application/json;chart=UTF-8\")\n" +
+                "    public String t_userSelect(HttpServletRequest request, @RequestParam(required = false) Map<String,Object> params){\n" +
+                "        System.out.println(\"-----params:\"+params.toString());\n" +
+                "        String primaryname = request.getParameter(primarynameKey+1);\n" +
+                "        String primaryval = params.get(primaryname).toString();\n" +
+                "        T_user t_user = iT_userService.selectByPrimaryKey(Integer.valueOf(primaryval));\n" +
+                "        return JSON.toJSONString(t_user);\n" +
                 "    }\n" +
-                "}\n";
+                "}";
         if(this.actionPath==null||"".equals(this.actionPath)){
             if(this.oneUpdatePath==null||"".equals(this.oneUpdatePath)){
                 this.oneUpdatePath = this.oneUpdateURL.toString();
@@ -915,8 +946,8 @@ public class OneUpdate {
             for (int i = 0; i <tableArr.length ; i++) {
                 tableArr[i]= StringIndex.upFirstWord(tableArr[i]);
                 tableName=tableArr[i];
-                String newStr = strController.replaceAll("T_troops_commandership", StringIndex.upFirstWord(tableName));
-                newStr = newStr.replaceAll("t_troops_commandership", StringIndex.lowerFirstWord(tableName));
+                String newStr = strController.replaceAll("T_user", StringIndex.upFirstWord(tableName));
+                newStr = newStr.replaceAll("t_user", StringIndex.lowerFirstWord(tableName));
                 newStr = newStr.replaceAll("com\\.",groupId+".");
                 String conPath = actionPath+"/"+ StringIndex.upFirstWord(tableName)+"Controller.java";
                 file = new File(conPath);
@@ -929,8 +960,8 @@ public class OneUpdate {
         else{
             tableNames= StringIndex.upFirstWord(tableNames);
             tableName=tableNames;
-            String newStr = strController.replaceAll("T_troops_commandership", StringIndex.upFirstWord(tableName));
-            newStr = newStr.replaceAll("t_troops_commandership", StringIndex.lowerFirstWord(tableName));
+            String newStr = strController.replaceAll("T_user", StringIndex.upFirstWord(tableName));
+            newStr = newStr.replaceAll("t_user", StringIndex.lowerFirstWord(tableName));
             newStr = newStr.replaceAll("com\\.",groupId+".");
             String conPath = actionPath+"/"+ StringIndex.upFirstWord(tableName)+"Controller.java";
             file = new File(conPath);
@@ -944,22 +975,21 @@ public class OneUpdate {
 
     }
     public static void main(String[] args) throws IOException {
-        //手动配置好application.properties
+        //手动配置好config.properties
         //String daoFolderName,String daoLastName,String serviceFolderName,Object... tableNames
 //        String tableStr="t_decisemanagetable\n" + "t_flatequip_correspond";
-        String tableStr = "t_weapon_photoelectricity_info\n" +
-                "t_troops_basic_uint\n" +
-                "t_troops_uint\n" +
-                "t_user\n" +
-                "t_weapon_communicate_info\n" +
-                "t_flatequip_correspond\n" +
-                "t_weapon_logistics_info\n" +
-                "t_weaponammo_correspond\n" +
-                "t_weapon_cannon_info";
-        //读取配置文件值https://blog.csdn.net/jiangyu1013/article/details/82188593,能读a.bc=3和a.c: 4格式，不分yml或properties。
+        String tableStr = "s_role_permssion\n" +
+                "s_role\n" +
+                "credibilitylist\n" +
+                "s_user_role\n" +
+                "incomelist\n" +
+                "s_permssion\n" +
+                "accountlist\n" +
+                "userinfo";
+        //读取配置文件值https://blog.csdn.net/jiangyu1013/article/details/82188593,能读a.bc=3和a.c: 4格式，不分yml或properties。但是不支持getProperty读取不在同一行的bootstrap.yml格式！
         //执行前，必须先build生成target,否则无法获取路径，使用mysql5，不要用6和8.要改配置。
-        //OneUpdate oneUpdate = new OneUpdate("application.properties","mysql-connector-java-5.1.20.jar", "dao","Mapper", "service","impl",true,tableStr);
-        OneUpdate oneUpdate = new OneUpdate("application.properties","mysql-connector-java-5.1.20.jar", "dao","entity","Mapper", "service","impl",true,"t_user");
+        //OneUpdate oneUpdate = new OneUpdate("config.properties","mysql-connector-java-5.1.20.jar", "dao","Mapper", "service","impl",true,tableStr);
+        OneUpdate oneUpdate = new OneUpdate("config.properties","mysql-connector-java-5.1.20.jar", "dao","entity","Mapper", "service","impl",true,tableStr);
         //根据传入的表(一个或多个)进行重新生成该表的相关信息，tableNames在调用时指定.
         oneUpdate.runFun();//最后输出-----serviceFile，生成xml配置文件，生成实体类，生成服务接口，实现接口，可拆分执行。
 
@@ -967,6 +997,6 @@ public class OneUpdate {
 //        OneUpdate oneUpdate = new OneUpdate();
         //oneUpdate.controller("D:\\workspace\\idea\\springcloud\\f8xn\\autof8\\src\\main\\java\\com\\action","t_decisemanagetable");
         //可以不指定actionPath,tableNames要么在方法里指定，要么调用时指定.
-        oneUpdate.controller("action","t_user","com");
+        oneUpdate.controller("action","com",tableStr);
     }
 }
